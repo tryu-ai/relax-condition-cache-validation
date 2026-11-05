@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/tryu-ai/Relax.git",
+  "commit": "d7038b8773e7cbada01849cd597eb26435820717",
+  "pull_request": "https://github.com/redai-studio/Relax/pull/557",
+  "runtime_sha256": {
+    "relax/backends/fsdp/sft.py": "ce6b1dbf9eeee3e71cccad8387ca59f0c0671cae5a9194cc34e58b76ee56dd32",
+    "relax/backends/fsdp/sft_collectives.py": "c1e3a4c1475120857859564fae627720d2c3092fe4ccd086fbda704e86827409",
+    "relax/models/condition_cache.py": "75aeb6e9cfdef254abccb0550a38d34b422151179aab118e4f9dfe8f98d4425b",
+    "relax/models/qwen_image/sft_adapter.py": "99e33d4369a6cf89e8f4a58f21740b827548e9808561912781f4c2325808f307",
+    "relax/models/sensenova/adapter.py": "15c41c53b210367ba512c855c613ae9dc56fcc513763e910ee9689c174e20055",
+    "relax/models/sensenova/model.py": "ff3fd1eca1ab59114d56021ad57c5137a574dba003df292a152ed0e02e5eae24",
+    "relax/models/sensenova/pipeline.py": "21207a3db5fe6156a2e81f4c31e4cf8ad36646b33059027c57bd71bc4d7a9611",
+    "relax/utils/env.py": "a5c283a23c0fba3dae21df51833af74f4642071f667c9fd1386bc6f2d40ba068"
+  }
+}

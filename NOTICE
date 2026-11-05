@@ -1,0 +1,12 @@
+Relax frozen-condition cache validation
+
+Extracted from tryu-ai/Relax commit 9e13cf0398df9b0c4ae80ac644d238d24be06a04,
+contributed in https://github.com/redai-studio/Relax/pull/557.
+Original project: https://github.com/redai-studio/Relax
+Copyright (c) 2026 Relax Authors. All Rights Reserved.
+Code is distributed under the included Apache License 2.0.
+
+Changes in this repository separate validation tools from the Relax runtime
+and allow an explicit Relax source checkout. See MIGRATION.json and Git history.
+Recorded result files retain their original public bytes and provenance.
+Referenced model weights and datasets are not included; their own licenses apply.

@@ -1,0 +1,821 @@
+{
+  "source_repository": "https://github.com/tryu-ai/Relax",
+  "source_commit": "9e13cf0398df9b0c4ae80ac644d238d24be06a04",
+  "extracted_paths": [
+    ".gitleaksignore",
+    "docs/draft/task17-benchmark-en.md",
+    "docs/draft/task17-benchmark-zh.md",
+    "examples/frozen_condition_cache/README.md",
+    "examples/frozen_condition_cache/assets/__init__.py",
+    "examples/frozen_condition_cache/assets/manifest.json",
+    "examples/frozen_condition_cache/assets/prepare.py",
+    "examples/frozen_condition_cache/configs/campaign.json",
+    "examples/frozen_condition_cache/environment/__init__.py",
+    "examples/frozen_condition_cache/environment/capture_environment.py",
+    "examples/frozen_condition_cache/experiments/__init__.py",
+    "examples/frozen_condition_cache/experiments/compare.py",
+    "examples/frozen_condition_cache/experiments/copy_audit.py",
+    "examples/frozen_condition_cache/experiments/evidence.py",
+    "examples/frozen_condition_cache/experiments/native_runner.py",
+    "examples/frozen_condition_cache/experiments/performance_summary.py",
+    "examples/frozen_condition_cache/experiments/resources.py",
+    "examples/frozen_condition_cache/requirements.txt",
+    "examples/frozen_condition_cache/results/cuda-20261104/3090_smoke.py.gz",
+    "examples/frozen_condition_cache/results/cuda-20261104/README.md",
+    "examples/frozen_condition_cache/results/cuda-20261104/manifest.json",
+    "examples/frozen_condition_cache/results/cuda-20261104/result.json",
+    "examples/frozen_condition_cache/results/cuda-20261104/stdout.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/MANIFEST.json",
+    "examples/frozen_condition_cache/results/h200-20261103/README.md",
+    "examples/frozen_condition_cache/results/h200-20261103/history/pre-performance03-summary.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit-correctness-a1-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit-correctness-a1-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit-correctness-a2-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit-correctness-a2-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit-correctness-bcold-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit-correctness-bcold-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit-correctness-bwarm-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit-correctness-bwarm-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit-correctness-compare-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit-correctness-compare-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit_repeated-pair1-a-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit_repeated-pair1-a-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit_repeated-pair1-b-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit_repeated-pair1-b-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit_repeated-pair2-a-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit_repeated-pair2-a-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit_repeated-pair2-b-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit_repeated-pair2-b-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit_repeated-pair3-a-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit_repeated-pair3-a-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit_repeated-pair3-b-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit_repeated-pair3-b-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova-correctness-a1-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova-correctness-a1-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova-correctness-a2-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova-correctness-a2-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova-correctness-bcold-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova-correctness-bcold-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova-correctness-bwarm-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova-correctness-bwarm-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova-correctness-compare-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova-correctness-compare-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_low_reuse-pair1-a-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_low_reuse-pair1-a-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_low_reuse-pair1-b-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_low_reuse-pair1-b-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_low_reuse-pair2-a-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_low_reuse-pair2-a-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_low_reuse-pair2-b-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_low_reuse-pair2-b-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_low_reuse-pair3-a-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_low_reuse-pair3-a-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_low_reuse-pair3-b-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_low_reuse-pair3-b-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_repeated-pair1-a-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_repeated-pair1-a-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_repeated-pair1-b-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_repeated-pair1-b-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_repeated-pair2-a-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_repeated-pair2-a-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_repeated-pair2-b-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_repeated-pair2-b-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_repeated-pair3-a-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_repeated-pair3-a-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_repeated-pair3-b-attempt0-receipt.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_repeated-pair3-b-attempt0-receipt.log.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/numerical/qwen_edit.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/numerical/sensenova.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/original-summary.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/performance/qwen_edit_repeated-pair1-a.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/performance/qwen_edit_repeated-pair1-b.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/performance/qwen_edit_repeated-pair2-a.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/performance/qwen_edit_repeated-pair2-b.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/performance/qwen_edit_repeated-pair3-a.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/performance/qwen_edit_repeated-pair3-b.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/performance/sensenova_low_reuse-pair1-a.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/performance/sensenova_low_reuse-pair1-b.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/performance/sensenova_low_reuse-pair2-a.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/performance/sensenova_low_reuse-pair2-b.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/performance/sensenova_low_reuse-pair3-a.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/performance/sensenova_low_reuse-pair3-b.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/performance/sensenova_repeated-pair1-a.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/performance/sensenova_repeated-pair1-b.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/performance/sensenova_repeated-pair2-a.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/performance/sensenova_repeated-pair2-b.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/performance/sensenova_repeated-pair3-a.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/performance/sensenova_repeated-pair3-b.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/provenance/campaign-config.json",
+    "examples/frozen_condition_cache/results/h200-20261103/provenance/data-inputs.json.gz",
+    "examples/frozen_condition_cache/results/h200-20261103/provenance/download-manifest.json",
+    "examples/frozen_condition_cache/results/h200-20261103/provenance/environment.json",
+    "examples/frozen_condition_cache/results/h200-20261103/provenance/execution.json",
+    "examples/frozen_condition_cache/results/h200-20261103/provenance/hardware.json",
+    "examples/frozen_condition_cache/results/h200-20261103/provenance/identities.json",
+    "examples/frozen_condition_cache/results/h200-20261103/provenance/prepared.json",
+    "examples/frozen_condition_cache/results/h200-20261103/provenance/qwen_edit-assets.json",
+    "examples/frozen_condition_cache/results/h200-20261103/provenance/sensenova-assets.json",
+    "examples/frozen_condition_cache/results/h200-20261103/recompute.py",
+    "examples/frozen_condition_cache/results/h200-20261103/summary.json",
+    "examples/frozen_condition_cache/results/h200-20261103/verify.py",
+    "examples/frozen_condition_cache/runner/__init__.py",
+    "examples/frozen_condition_cache/runner/campaign.py",
+    "examples/frozen_condition_cache/runner/common.py",
+    "tests/cpu/examples/frozen_condition_cache/__init__.py",
+    "tests/cpu/examples/frozen_condition_cache/conftest.py",
+    "tests/cpu/examples/frozen_condition_cache/test_condition_phase_audit.py",
+    "tests/cpu/examples/frozen_condition_cache/test_copy_audit.py",
+    "tests/cpu/examples/frozen_condition_cache/test_deterministic_policy.py",
+    "tests/cpu/examples/frozen_condition_cache/test_evidence.py",
+    "tests/cpu/examples/frozen_condition_cache/test_native_contract.py",
+    "tests/cpu/examples/frozen_condition_cache/test_performance_summary.py",
+    "tests/cpu/examples/frozen_condition_cache/test_plan.py",
+    "tests/cpu/examples/frozen_condition_cache/test_process.py",
+    "tests/cpu/examples/frozen_condition_cache/test_public_entrypoint.py",
+    "tests/cpu/examples/frozen_condition_cache/test_resources.py",
+    "tests/cpu/examples/frozen_condition_cache/test_strict_acceptance.py"
+  ],
+  "original_files": [
+    {
+      "path": ".gitleaksignore",
+      "sha256": "9b305dd4879bb75df16a68a9dd157e59f04a0d8d09ffd7712a3dab397540a0b6",
+      "bytes": 186
+    },
+    {
+      "path": "docs/draft/task17-benchmark-en.md",
+      "sha256": "13e2ff750283ca629772d44f71ed7f0b995d69c8010307aec93a7044b72866b7",
+      "bytes": 4754
+    },
+    {
+      "path": "docs/draft/task17-benchmark-zh.md",
+      "sha256": "c3120bbf2ad98bc9e697475d20d980ad5e7d8d3425109b1d156b8f62bb9f23bd",
+      "bytes": 4146
+    },
+    {
+      "path": "examples/frozen_condition_cache/README.md",
+      "sha256": "573b34249c545e819306a2b1f6f5ee66f1c387a1a60ee9ee3c1d4a7b16a4938b",
+      "bytes": 4606
+    },
+    {
+      "path": "examples/frozen_condition_cache/assets/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "examples/frozen_condition_cache/assets/manifest.json",
+      "sha256": "0360f76eea544e16f329bd71c0eef643e38b7e052ac37a839bae1d084118ddbb",
+      "bytes": 33277
+    },
+    {
+      "path": "examples/frozen_condition_cache/assets/prepare.py",
+      "sha256": "dc45ae554f3d39b09c2db10dad1a14be49dca2bf48bfc49a34bd51fea9b9f9b7",
+      "bytes": 13462
+    },
+    {
+      "path": "examples/frozen_condition_cache/configs/campaign.json",
+      "sha256": "60a3b79c4d701df163ae6c42fd50d20db5dd9491db556a0f2190c4201bbc9a8e",
+      "bytes": 1911
+    },
+    {
+      "path": "examples/frozen_condition_cache/environment/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "examples/frozen_condition_cache/environment/capture_environment.py",
+      "sha256": "b2c3ae473d568cee59eca3ec212c69268c97789725e287d159435f772178c95c",
+      "bytes": 2980
+    },
+    {
+      "path": "examples/frozen_condition_cache/experiments/__init__.py",
+      "sha256": "3aeea21c57abfcd32675c8312f701a377020485d6cac99a40c8247ebb524e805",
+      "bytes": 59
+    },
+    {
+      "path": "examples/frozen_condition_cache/experiments/compare.py",
+      "sha256": "3f0b343dfed8d532f774adc4c4d1c68d544f27f53474d7c3b49ff18b7c4b0016",
+      "bytes": 3748
+    },
+    {
+      "path": "examples/frozen_condition_cache/experiments/copy_audit.py",
+      "sha256": "305dc0335dcddb332e156dde07b7351f29b695ac68589f00dc57985ed6400b2e",
+      "bytes": 13365
+    },
+    {
+      "path": "examples/frozen_condition_cache/experiments/evidence.py",
+      "sha256": "2bc873cacb4f034df31b470eb329f2c94fd752f31249ed0987b0579b92567a36",
+      "bytes": 9259
+    },
+    {
+      "path": "examples/frozen_condition_cache/experiments/native_runner.py",
+      "sha256": "09b37a16c207088b7cff10b916e940f710ba840a4e753a5bda511088dd51fcc8",
+      "bytes": 32186
+    },
+    {
+      "path": "examples/frozen_condition_cache/experiments/performance_summary.py",
+      "sha256": "28a17f78d032df492d531d72e5e5425751745dfc75122705280d932f12b221b8",
+      "bytes": 5576
+    },
+    {
+      "path": "examples/frozen_condition_cache/experiments/resources.py",
+      "sha256": "88c0a841f7f41a9f830d31495f6f7769824238a053eaf809518b405c56dcfbf3",
+      "bytes": 4066
+    },
+    {
+      "path": "examples/frozen_condition_cache/requirements.txt",
+      "sha256": "2f05abcbdb1d28c5ba7ed584919a404d0f2e4c04d17ef4b42d0c722141cb7166",
+      "bytes": 623
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/cuda-20261104/3090_smoke.py.gz",
+      "sha256": "fa84ecf0565bf6005a5911a07f6184adfbb480808d68615b348dbe496831c3c3",
+      "bytes": 2238
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/cuda-20261104/README.md",
+      "sha256": "f4f29bf9dadb2a3dec2b6cafe87a338bc81dcfdad2fe65d4d390c0c373d60aec",
+      "bytes": 1152
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/cuda-20261104/manifest.json",
+      "sha256": "2022f91eb7d1644dee8c1d8180360da679c7a117fce7516b0604f93205c8e527",
+      "bytes": 1631
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/cuda-20261104/result.json",
+      "sha256": "20bf3abe0e9d0a7789bee02786bed67247073d6635934efd805ec00cb82b110f",
+      "bytes": 4164
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/cuda-20261104/stdout.log.gz",
+      "sha256": "1c1565700fa2bcbaa69863c3a17a8c7f6779b190cd8fb6ed838b1afb2e8e3ae3",
+      "bytes": 684
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/MANIFEST.json",
+      "sha256": "e7b29c0904a5144a3c25d39475d72255248da79345cff2a07f22f3d4c2516435",
+      "bytes": 57025
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/README.md",
+      "sha256": "bbd9ef64e713a48a1e026f4e6beac1b601a3c3a051935624eb4fe8aa933915f5",
+      "bytes": 4066
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/history/pre-performance03-summary.json.gz",
+      "sha256": "6e80a69b90ce0c84377c9647ee9d0857ed52b1251d6b745f137e946932e97e48",
+      "bytes": 112755
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit-correctness-a1-attempt0-receipt.json.gz",
+      "sha256": "71859c35bb886923f3e1bbf968528cb8f44923036c7ec3d4d1cc5baa9f4259d7",
+      "bytes": 593
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit-correctness-a1-attempt0-receipt.log.gz",
+      "sha256": "baa7264446e14da727450bfddd2b7a728737b4d2c95bd7a76fef21e255756166",
+      "bytes": 1243
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit-correctness-a2-attempt0-receipt.json.gz",
+      "sha256": "9f08ea1d6739530f40ffa1710c211fce9db0834222b0781e06234f4845efa1b9",
+      "bytes": 592
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit-correctness-a2-attempt0-receipt.log.gz",
+      "sha256": "c1e32f2896c2e4792d70872b40a7bcecca63a6e63598225cab89adc03161a821",
+      "bytes": 1247
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit-correctness-bcold-attempt0-receipt.json.gz",
+      "sha256": "62948059ebb14b6e7a31e552d0a2c3d76d6d0a9edd20098f06eb0288d0726994",
+      "bytes": 600
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit-correctness-bcold-attempt0-receipt.log.gz",
+      "sha256": "0c1891988871368601187df2a23ee16811a7ef8b7ca66e0ae7964b10a01d0719",
+      "bytes": 1248
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit-correctness-bwarm-attempt0-receipt.json.gz",
+      "sha256": "3d6cdbab15328ca6af0a682e9fbe69c5cb659760c3d1da008a4a26a89d6baf95",
+      "bytes": 599
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit-correctness-bwarm-attempt0-receipt.log.gz",
+      "sha256": "c01268d5df67e4d54292cd669719a42e7298ad1c740ee51fbad23a782d0bc570",
+      "bytes": 1237
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit-correctness-compare-attempt0-receipt.json.gz",
+      "sha256": "d7f2beee32ee367baaeca7e8d08c7cc4b14f65f5a0203169619c03e0b5de4785",
+      "bytes": 287
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit-correctness-compare-attempt0-receipt.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "bytes": 20
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit_repeated-pair1-a-attempt0-receipt.json.gz",
+      "sha256": "29aa74569947d24379c21fb8b407bcbe28b3de0356a8824d30e5849342ad39b4",
+      "bytes": 597
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit_repeated-pair1-a-attempt0-receipt.log.gz",
+      "sha256": "93e0bab26267f1d03118edfb7b3883931f63bb889ca67a6b11fbdfc8dd0f4309",
+      "bytes": 2747
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit_repeated-pair1-b-attempt0-receipt.json.gz",
+      "sha256": "514906c9c1174b73c236307a7680a85a34f887d55382640eb23625fc868276d9",
+      "bytes": 602
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit_repeated-pair1-b-attempt0-receipt.log.gz",
+      "sha256": "70729a089c05d90e99bc1fbbf4133828fdb12d50d97fbf1a01c547abc5401fa5",
+      "bytes": 2767
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit_repeated-pair2-a-attempt0-receipt.json.gz",
+      "sha256": "6d39ff8d974e1241cd670ef15214c3ee46dcb0a86b1d695de3bab78c9fdf293a",
+      "bytes": 597
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit_repeated-pair2-a-attempt0-receipt.log.gz",
+      "sha256": "c6c14f33d1ff4035b59254180492118cdec8ffde40511a58bcad7033c592864d",
+      "bytes": 2738
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit_repeated-pair2-b-attempt0-receipt.json.gz",
+      "sha256": "2f229846f6c7c036581270f491ee0a190e9ab13f1cc94e5c36ee7703e377cd61",
+      "bytes": 601
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit_repeated-pair2-b-attempt0-receipt.log.gz",
+      "sha256": "e0be2ed87d1e88a3a4d83b075e70e4450644b22a93c5cf72b2dcd3fd0866a409",
+      "bytes": 2761
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit_repeated-pair3-a-attempt0-receipt.json.gz",
+      "sha256": "75e0bca4f124cbc3e4d51604ee5e6d8266c06a8a98fd683b38e8eac0d2e955f8",
+      "bytes": 596
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit_repeated-pair3-a-attempt0-receipt.log.gz",
+      "sha256": "400441dfb2d74707ddef7d849c4b0ccffbc96467ef3d754b105e536c4f500337",
+      "bytes": 2750
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit_repeated-pair3-b-attempt0-receipt.json.gz",
+      "sha256": "842eab189aabc70d5022fe8782b7cccff16613eb9b0bf4bae58cc5ecc60f909b",
+      "bytes": 603
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/qwen_edit_repeated-pair3-b-attempt0-receipt.log.gz",
+      "sha256": "fcdcbaa0ecb4f221dc5d8558e08d3daed7ef1d2b57d9c22b46b790dec6f322af",
+      "bytes": 2770
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova-correctness-a1-attempt0-receipt.json.gz",
+      "sha256": "8a4ba66419eabc8a6c66829f9beb2ff0b4e1ad8f198403f2c0c0cae81dc11af9",
+      "bytes": 587
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova-correctness-a1-attempt0-receipt.log.gz",
+      "sha256": "e8e8dbc486e6beeaa1a740dece43aeefd85c18e44128a51405687f685298e4a2",
+      "bytes": 679
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova-correctness-a2-attempt0-receipt.json.gz",
+      "sha256": "aa49c9502fb5c88fb1f89c0f7e4ca3f3b958d8581a2d9376f3759cff5b9b411c",
+      "bytes": 588
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova-correctness-a2-attempt0-receipt.log.gz",
+      "sha256": "e03c3715f6673e6648ff0699517bf1d1ff762a133d40daa1eb6c9f3a63373063",
+      "bytes": 682
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova-correctness-bcold-attempt0-receipt.json.gz",
+      "sha256": "9ed7485008d94932257b71f54153cb8ac8fb555a9b2574a710e3d25321844029",
+      "bytes": 596
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova-correctness-bcold-attempt0-receipt.log.gz",
+      "sha256": "668387e1074da2d4aa44b291fff2389121d3eb17930cd5ad114e12e9e3116e9e",
+      "bytes": 682
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova-correctness-bwarm-attempt0-receipt.json.gz",
+      "sha256": "76349f321c1159106559b4662d4622ebc3959cf486e5d8d363b6e490364b6409",
+      "bytes": 593
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova-correctness-bwarm-attempt0-receipt.log.gz",
+      "sha256": "f359e631608f09098aef66d607febdfca57725910d24db25d704d60330537f71",
+      "bytes": 681
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova-correctness-compare-attempt0-receipt.json.gz",
+      "sha256": "9fa9369ac0211257ebbf78dabf7e25e4f10845c8362364730af1bde12bfbed74",
+      "bytes": 287
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova-correctness-compare-attempt0-receipt.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "bytes": 20
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_low_reuse-pair1-a-attempt0-receipt.json.gz",
+      "sha256": "80929c5d0740b03485d91a0e87a796e6dbb3f5fbe89e21f0306d594f40efda92",
+      "bytes": 588
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_low_reuse-pair1-a-attempt0-receipt.log.gz",
+      "sha256": "a291ac944bbddf4aecc4dc8bb4d932f14d519050f50adde1734ca84df41166d9",
+      "bytes": 2103
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_low_reuse-pair1-b-attempt0-receipt.json.gz",
+      "sha256": "29c61b62edda70780d6829a2e18ce463a213222f20fe4e4c8fce5b367e00b2ff",
+      "bytes": 595
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_low_reuse-pair1-b-attempt0-receipt.log.gz",
+      "sha256": "92c6af2fc0ddef1ab4ff02dfc1e629ca7c3f95aecb4af870dc72dc47271187f2",
+      "bytes": 2128
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_low_reuse-pair2-a-attempt0-receipt.json.gz",
+      "sha256": "1852d6dc2b0f57f4f9cc357c8448e368f4389f82177a61c8a771f50453b4b9b4",
+      "bytes": 589
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_low_reuse-pair2-a-attempt0-receipt.log.gz",
+      "sha256": "07dacd07b5d9f13888e619f17935c7e5f06ee6a8b53a2724e3f0de761f64dc69",
+      "bytes": 2116
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_low_reuse-pair2-b-attempt0-receipt.json.gz",
+      "sha256": "f2edbb1345d2f9feca4e39edfea7d8e0a81bf57e06512747b16647056287135b",
+      "bytes": 596
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_low_reuse-pair2-b-attempt0-receipt.log.gz",
+      "sha256": "9b7f09df44bcd6824133e49d289d9ff09d4042afe98b837b657cafea95a9f61a",
+      "bytes": 2130
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_low_reuse-pair3-a-attempt0-receipt.json.gz",
+      "sha256": "8db263e8cbb75d5ef19464399160dd83f1f23ddcad39af13b78338778f462612",
+      "bytes": 589
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_low_reuse-pair3-a-attempt0-receipt.log.gz",
+      "sha256": "920af6428705f524a41545ee984d35ca1a7d25478b4c27d06d3b1fc5dd442228",
+      "bytes": 2100
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_low_reuse-pair3-b-attempt0-receipt.json.gz",
+      "sha256": "70376d8ccfe8a2ef0bcb534cb5caa41b7195642e3e0f969c4c7632c173884723",
+      "bytes": 595
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_low_reuse-pair3-b-attempt0-receipt.log.gz",
+      "sha256": "4ffe325e71a0730c497f257a75c854c0068c037a4e6fca9c4aa36521337c705c",
+      "bytes": 2123
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_repeated-pair1-a-attempt0-receipt.json.gz",
+      "sha256": "eed026425b501089bbbeea07d970f355765315d396497ebe770de8b781ad4121",
+      "bytes": 587
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_repeated-pair1-a-attempt0-receipt.log.gz",
+      "sha256": "c8de7b057923741138bf71c2a6195a3e1e6376572956b680babefb4e0c38a57d",
+      "bytes": 2080
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_repeated-pair1-b-attempt0-receipt.json.gz",
+      "sha256": "88bc6524439ed8bf7d24708537681b6c239c88a628842ce0455eaeb264020e3e",
+      "bytes": 591
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_repeated-pair1-b-attempt0-receipt.log.gz",
+      "sha256": "956f8906f3442da795b6d0636a06511ff171cb3a40ca1da146c2b5417f567309",
+      "bytes": 2101
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_repeated-pair2-a-attempt0-receipt.json.gz",
+      "sha256": "2f32ce3f46d54ceb618d00c7a795cc1650f138486261975e382048664a45a670",
+      "bytes": 587
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_repeated-pair2-a-attempt0-receipt.log.gz",
+      "sha256": "387517734b012c4d751608736842dc03d0e3440e8692ff39fe04d8582a3055b0",
+      "bytes": 2076
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_repeated-pair2-b-attempt0-receipt.json.gz",
+      "sha256": "234a5ba1f3227b6a75e4e845b8c6f869908cc704fb6905205cca36a90f241594",
+      "bytes": 593
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_repeated-pair2-b-attempt0-receipt.log.gz",
+      "sha256": "7ea4a7a0c27661771f98230aaf9fe5003bd6c7e7b2309e396ad9e56f9e8b32e9",
+      "bytes": 2103
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_repeated-pair3-a-attempt0-receipt.json.gz",
+      "sha256": "4cdeadcc8482ba4fb050b79befe69bcc41b0faab5c6911f88b00d9a4fc60f853",
+      "bytes": 589
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_repeated-pair3-a-attempt0-receipt.log.gz",
+      "sha256": "ac076d91527f471338ff223fb8ac9ae6905332ad6e7e36be75481ae3b172e4f6",
+      "bytes": 2084
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_repeated-pair3-b-attempt0-receipt.json.gz",
+      "sha256": "1db1ec3237ab692579bb4b044d82f88b1bbb10641e50c84f06a24333dff95f66",
+      "bytes": 591
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/logs/sensenova_repeated-pair3-b-attempt0-receipt.log.gz",
+      "sha256": "f2d7e35ad0202a97bbff77fc67dfcf1c7c9e9d15d3c3230af8df82b9a8ac9f47",
+      "bytes": 2100
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/numerical/qwen_edit.json.gz",
+      "sha256": "779b08d1ad013546599a9b5e33aa4a7ba387e7019f9a48c17421be9ec10ffad5",
+      "bytes": 67686
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/numerical/sensenova.json.gz",
+      "sha256": "35f2c2911811ef857bc2fdbdc42381d6b991faef4f2a7865fcfa5cb8f32d6a8b",
+      "bytes": 42381
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/original-summary.json.gz",
+      "sha256": "37d2e505714b440c0d39b33ff542200f49d7b83aaa432a17b25392efb349e251",
+      "bytes": 113079
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/performance/qwen_edit_repeated-pair1-a.json.gz",
+      "sha256": "acc2541060ae404ecbf01289e21a71d90db4acbcfe33eccb6dc937215f3f5b60",
+      "bytes": 10526
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/performance/qwen_edit_repeated-pair1-b.json.gz",
+      "sha256": "3aff9906b3515ea19543d6032b689fbe55c63d0b511bffabbc2d410bdba2badf",
+      "bytes": 12860
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/performance/qwen_edit_repeated-pair2-a.json.gz",
+      "sha256": "3863bb1a25b8f541e12bc51f911ad35c720fe7072fed764788cf6e4d0447830a",
+      "bytes": 10553
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/performance/qwen_edit_repeated-pair2-b.json.gz",
+      "sha256": "8f08b4a7861705cb85ebf157e3c76456e0f5f23e192420c48ba34ee7fcc8c4a5",
+      "bytes": 12859
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/performance/qwen_edit_repeated-pair3-a.json.gz",
+      "sha256": "1d89e8912053eb6e2320f6957f41acba615c75f32ffbf7987692550f3e245ae4",
+      "bytes": 10574
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/performance/qwen_edit_repeated-pair3-b.json.gz",
+      "sha256": "3f79ab1d79a35fd9781bf7f130f53767bf6e4e68113482e72569f1f3a3021f54",
+      "bytes": 12843
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/performance/sensenova_low_reuse-pair1-a.json.gz",
+      "sha256": "727d407e7eea1a0b400859255b36a00acf0418039a3d6c271b47b2eaaaec0870",
+      "bytes": 11105
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/performance/sensenova_low_reuse-pair1-b.json.gz",
+      "sha256": "bc15a760bd31dd693ce3ad76b43905c6f3e9931c35d709f8d19ce9964bb85576",
+      "bytes": 16086
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/performance/sensenova_low_reuse-pair2-a.json.gz",
+      "sha256": "87a479d293ab88204265e2259effd4ccdc19ac655bbae553dceb6241dfb9236d",
+      "bytes": 11119
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/performance/sensenova_low_reuse-pair2-b.json.gz",
+      "sha256": "1b3ba8b42e5e85a7b95736ca7abb81013a9047f2e2d2e6bd47cf2eeb1a4844c6",
+      "bytes": 16076
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/performance/sensenova_low_reuse-pair3-a.json.gz",
+      "sha256": "7d541a023f741dbadcd8922828aa1f806b7662698ec1e5565195270a5b446e2c",
+      "bytes": 11131
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/performance/sensenova_low_reuse-pair3-b.json.gz",
+      "sha256": "7187369d09cc44ecca01a5ec64f18c1d96d4c1909b2eb50fd6e84ccae1d0e4ec",
+      "bytes": 16070
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/performance/sensenova_repeated-pair1-a.json.gz",
+      "sha256": "278c74a4568f54c05d98c4313b2f5e16e09df8679824cd560bf79953919f3987",
+      "bytes": 10709
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/performance/sensenova_repeated-pair1-b.json.gz",
+      "sha256": "f67ec3d04bc33069ef76c52a7dfbf35cbe5b19f5971cc843fb26f81a394d0037",
+      "bytes": 13640
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/performance/sensenova_repeated-pair2-a.json.gz",
+      "sha256": "779f0d8c439d00f4b6c8e63506e15ffe7b1dcb6ae088bd76a08a85c1f155bb60",
+      "bytes": 10677
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/performance/sensenova_repeated-pair2-b.json.gz",
+      "sha256": "993db6566481ddac83139d853b465e13681281d3c7e5371616fcc9e6f5ec17ba",
+      "bytes": 13727
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/performance/sensenova_repeated-pair3-a.json.gz",
+      "sha256": "4939af7725d4fb259b2843c3ae53a291e4376131f6e0491e48aa6992acb2398f",
+      "bytes": 10709
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/performance/sensenova_repeated-pair3-b.json.gz",
+      "sha256": "2c72e2377d6fb24e8e619b87c2cc081c420ec4abf3152cf6af560aa40a9b11dd",
+      "bytes": 13693
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/provenance/campaign-config.json",
+      "sha256": "10d3dbacc6e76ae4cc36c33dd7e15c452593059eff6f55c0ff17c6d717e8f7a2",
+      "bytes": 2343
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/provenance/data-inputs.json.gz",
+      "sha256": "f68dfdf65b4d16fb97dff014291321cb2673bec0fc144790d7ade7a8eedc39d9",
+      "bytes": 201207
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/provenance/download-manifest.json",
+      "sha256": "0360f76eea544e16f329bd71c0eef643e38b7e052ac37a839bae1d084118ddbb",
+      "bytes": 33277
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/provenance/environment.json",
+      "sha256": "1c7fda0a2ab2dc6e5ddab5b2e01427fbda32575f8c14001ac1a5713e5c7b1519",
+      "bytes": 5644
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/provenance/execution.json",
+      "sha256": "ca8bf416c2c8a14f880ddc26008e7858cf7e4ace9eb161b87b31025280750c87",
+      "bytes": 2624
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/provenance/hardware.json",
+      "sha256": "93bd0137469ae4e69354659d015106a2d767bfe1d6901cb6e0644af5a302ddf3",
+      "bytes": 4048
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/provenance/identities.json",
+      "sha256": "f7fcb555b342cdbfccffc2506e202463266eb5d0ced91ec21148e51c0bdaee93",
+      "bytes": 3039
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/provenance/prepared.json",
+      "sha256": "3537d2f60eb377d837bd4a0a5751f74fa7468036c3d540622bbb911a693871e4",
+      "bytes": 919
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/provenance/qwen_edit-assets.json",
+      "sha256": "ca0e3dd65e0d88ee1d7c0f792ee0c71a1832aa5bc9e3b09d4045009f1385ae59",
+      "bytes": 17488
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/provenance/sensenova-assets.json",
+      "sha256": "33dc58a05401092ecd8a1db016755b02446fe3bfe2c8f3434826d2cea3fce0be",
+      "bytes": 8017
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/recompute.py",
+      "sha256": "9c4e0bde8fdc99d8310612026f4ff502cc76f105932a87e0a0abeb54952b3a43",
+      "bytes": 3911
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/summary.json",
+      "sha256": "87ed14a092791df82aa91f9281e84016d8132ef371d87beef32283906c978d53",
+      "bytes": 21443
+    },
+    {
+      "path": "examples/frozen_condition_cache/results/h200-20261103/verify.py",
+      "sha256": "84e3b102f36abe0fd3a4d16ace4a6307c9ddd0175a8e415055493c2b0e786948",
+      "bytes": 3927
+    },
+    {
+      "path": "examples/frozen_condition_cache/runner/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "examples/frozen_condition_cache/runner/campaign.py",
+      "sha256": "b8fb9ac5e7c6d32bdbb9fb3000a10568e7d33e65c9a740b6a6338ba26a59a572",
+      "bytes": 20226
+    },
+    {
+      "path": "examples/frozen_condition_cache/runner/common.py",
+      "sha256": "dcda4b25bb672803f6700a1bf62e66ac552d5b22785e0f6f9d7c04881454513c",
+      "bytes": 2956
+    },
+    {
+      "path": "tests/cpu/examples/frozen_condition_cache/__init__.py",
+      "sha256": "9d07fdad17c8e1baf40b9d1970ed94be5d0edb821d08f5e501d9d0573ffe561e",
+      "bytes": 57
+    },
+    {
+      "path": "tests/cpu/examples/frozen_condition_cache/conftest.py",
+      "sha256": "b7662b2244bd017f03b767958ef7f14839bdfdba4381353a08e41630457e2698",
+      "bytes": 191
+    },
+    {
+      "path": "tests/cpu/examples/frozen_condition_cache/test_condition_phase_audit.py",
+      "sha256": "41486f2f1e86996e11ff4f49d8c097a517276849a04701a660813303999ae745",
+      "bytes": 3785
+    },
+    {
+      "path": "tests/cpu/examples/frozen_condition_cache/test_copy_audit.py",
+      "sha256": "7beb974eaa858afb2bfb2fe89eeb71b4dd49d7ad85fbcf045f2aaba509c445a1",
+      "bytes": 7419
+    },
+    {
+      "path": "tests/cpu/examples/frozen_condition_cache/test_deterministic_policy.py",
+      "sha256": "d2e398ae993596d8cd252338bcc2fb470cc594bf0be808c3c8ba578a3d22d500",
+      "bytes": 1120
+    },
+    {
+      "path": "tests/cpu/examples/frozen_condition_cache/test_evidence.py",
+      "sha256": "9e59741935689deca0c2c234a22a85606dcbfb47e556733c0d1d8ddbe842d101",
+      "bytes": 2183
+    },
+    {
+      "path": "tests/cpu/examples/frozen_condition_cache/test_native_contract.py",
+      "sha256": "426352687b6088eaa87b12467e7bebed7bee29173e8b0cf1c06aeccb952782b4",
+      "bytes": 4682
+    },
+    {
+      "path": "tests/cpu/examples/frozen_condition_cache/test_performance_summary.py",
+      "sha256": "b0cb0ecc92608f338b1c342602aa76abce8c9ce7f0835de6e28703f7649e801d",
+      "bytes": 3204
+    },
+    {
+      "path": "tests/cpu/examples/frozen_condition_cache/test_plan.py",
+      "sha256": "16d3b63b9279c99547654946213398607643bcb87b3c3a32af447faa94ccc563",
+      "bytes": 3409
+    },
+    {
+      "path": "tests/cpu/examples/frozen_condition_cache/test_process.py",
+      "sha256": "11c63e1a52bffde815c071316809ddbb5d9a0bc9b36aeda7ef11f1e1f0840a54",
+      "bytes": 1129
+    },
+    {
+      "path": "tests/cpu/examples/frozen_condition_cache/test_public_entrypoint.py",
+      "sha256": "fc3e79ea542b199b9968cff4bd4bd00e555a9ab450640bde1f90b0b3d95c678e",
+      "bytes": 2945
+    },
+    {
+      "path": "tests/cpu/examples/frozen_condition_cache/test_resources.py",
+      "sha256": "3aec76f95e8a8d22da4ee8fcb9dabf24417a0ffe651275bfe0f295e707592e1f",
+      "bytes": 1967
+    },
+    {
+      "path": "tests/cpu/examples/frozen_condition_cache/test_strict_acceptance.py",
+      "sha256": "b07e622f66836470a8bc4392e283c3c78fa115e5d0a4b102e2df64fa74956704",
+      "bytes": 4900
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    {
+      "path": "tests/__init__.py",
+      "sha256": "9d07fdad17c8e1baf40b9d1970ed94be5d0edb821d08f5e501d9d0573ffe561e",
+      "bytes": 57
+    },
+    {
+      "path": "tests/cpu/__init__.py",
+      "sha256": "9d07fdad17c8e1baf40b9d1970ed94be5d0edb821d08f5e501d9d0573ffe561e",
+      "bytes": 57
+    },
+    {
+      "path": "tests/cpu/examples/__init__.py",
+      "sha256": "9d07fdad17c8e1baf40b9d1970ed94be5d0edb821d08f5e501d9d0573ffe561e",
+      "bytes": 57
+    }
+  ],
+  "layout_note": "Original relative paths retained so archived evidence links and inspection commands remain valid. Portable source selection changes are documented separately."
+}

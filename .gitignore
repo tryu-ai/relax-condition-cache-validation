@@ -1,0 +1,9 @@
+.venv*/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+runs/
+downloads/
+examples/frozen_condition_cache/assets/prepared.json
+Relax-source/
