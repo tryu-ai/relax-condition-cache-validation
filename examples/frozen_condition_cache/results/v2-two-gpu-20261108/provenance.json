@@ -1,0 +1,54 @@
+{
+  "recorded_source_id": "b1b380451750b009dcf3833829e8c234b1ea9c95598b450e0384158c46f604d0",
+  "runtime_sha256": {
+    "relax/backends/fsdp/sft.py": "82e1593d6287d7f8a372a5072b14244a28c78ada49cd48eb5bdd808bf38f12c9",
+    "relax/backends/fsdp/sft_collectives.py": "c1e3a4c1475120857859564fae627720d2c3092fe4ccd086fbda704e86827409",
+    "relax/models/condition_cache.py": "866686d415e0f2fbea36c1f9836261e1b685260886c5af78b2b627b8f0bd3554",
+    "relax/models/qwen_image/sft_adapter.py": "39b9dda1f25d1996720016bf4e9984d59c60baa507c73b371b8a452ee2d43d7f",
+    "relax/models/sensenova/adapter.py": "415d02803dfdadfdfad773babd6dc041d448704e603204146f9175608c13d106",
+    "relax/models/sensenova/model.py": "ff3fd1eca1ab59114d56021ad57c5137a574dba003df292a152ed0e02e5eae24",
+    "relax/models/sensenova/pipeline.py": "21207a3db5fe6156a2e81f4c31e4cf8ad36646b33059027c57bd71bc4d7a9611",
+    "relax/utils/env.py": "62fd07ec68e32fc9d8f7a2a457556030de2f64dbbe39a08dee351752f65f1d27"
+  },
+  "scope": "Eight runtime files used in both physical hardware domains; source_id is a combined content identity, not a Git commit",
+  "aliases": {
+    "host-a": "SenseNova performance plus both models strict Ray/native numerical checks",
+    "host-b": "Qwen performance only; full numerical four-trajectory checks were not rerun here"
+  },
+  "gpu_type": "NVIDIA RTX 6000D",
+  "gpus_per_job": 2,
+  "versions": {
+    "python": "3.12",
+    "torch": "2.9.0+cu128",
+    "cuda": "12.8",
+    "torchvision": "0.24.0+cu128",
+    "triton": "3.5.0",
+    "transformers": "5.10.1",
+    "diffusers": "0.37.1",
+    "peft": "0.20.0",
+    "ray": "2.58.0",
+    "flash-attn": "2.8.3"
+  },
+  "recipe": {
+    "ray": {
+      "world": 2,
+      "global_batch": 4,
+      "micro_batch": 1,
+      "gradient_accumulation_steps": 2,
+      "seed": 42,
+      "lora_rank": 32,
+      "learning_rate": 0.0001,
+      "max_pixels": 1048576,
+      "lr_warmup_iters": 200,
+      "attention_requested": "flash_attention_2",
+      "sensenova_image_prefetch_depth": 2,
+      "qwen_edit_image_prefetch_depth": 0
+    },
+    "native": {
+      "world": 2,
+      "global_batch": 8,
+      "scope": "supplemental one-update numerical comparison, not Ray performance"
+    }
+  },
+  "production_commit": "53a814afb7e9fc1b24e065c34cae451d2fbda316"
+}

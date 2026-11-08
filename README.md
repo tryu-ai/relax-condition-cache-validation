@@ -4,7 +4,26 @@ Standalone validation tools and recorded evidence for [Relax PR #557](https://gi
 
 The original directory layout is retained so the archived evidence and inspection commands remain usable. No model weights, dataset images, or private connection settings are included.
 
-## Inspect recorded results
+## Current shared-store validation
+
+The [November 8 two-GPU results](examples/frozen_condition_cache/results/v2-two-gpu-20261108/README.md) contain 16 formal Ray SFT jobs, 3328 optimizer updates and four strict numerical reports. Mean steady full-loop throughput improves 38.30% for SenseNova and 13.01% for Qwen Edit. The single-pass low-reuse results, including regressions, remain visible. The models ran in separate hardware domains; each A/B pair used the same physical GPU pair.
+
+```bash
+python3 examples/frozen_condition_cache/results/v2-two-gpu-20261108/verify.py
+python3 examples/frozen_condition_cache/results/v2-two-gpu-20261108/recompute.py
+```
+
+Use the [two-GPU harness](examples/frozen_condition_cache/two_gpu/README.md) and `sources.v2.lock.json` for this implementation at production commit `53a814afb7e9fc1b24e065c34cae451d2fbda316`. It exercises actual Ray/TQ SFT, so it needs a working Relax Ray environment. `FROZEN_CACHE_RELAX_SRC` selects a separate checkout; this repository does not vendor Relax or manage cloud resources.
+
+With the selected checkout and validation dependencies, run all 61 current CPU tool regressions:
+
+```bash
+CUDA_VISIBLE_DEVICES="" python -m pytest tests/cpu -q
+```
+
+The stored numerical reports passed the fixed 1%/strict-zero rules. Large original PT/DCP payloads are not public, so report inspection does not independently recompute tensor arithmetic. Public file manifests distinguish original and path-redacted hashes.
+
+## Historical native-only results
 
 These commands need only Python's standard library and do not launch training:
 
@@ -21,7 +40,7 @@ The recorded repeated-workload median throughput gains are +7.78% for SenseNova 
 
 The stored numerical reports cover loss, gradients, FP32 parameter updates, RNG state, and cached payloads. The public archive omits the large original tensor/checkpoint files, so inspecting the JSON reports does not recompute the tensor comparisons. Relocation does not create a new benchmark result.
 
-## Select the Relax implementation
+## Select the historical native implementation
 
 Use a separate checkout of the source revision recorded in `sources.lock.json`:
 
@@ -34,7 +53,7 @@ python3 scripts/verify_source.py
 
 The checkout contains the runtime implementation; this validation repository does not vendor or replace it. The source verifier checks the Git revision and hashes of the changed runtime files. New campaign receipts separately bind the validation and Relax source bytes, so resuming across a source change is rejected.
 
-## Reproduce or test the validation tools
+## Reproduce or test the historical native tools
 
 Follow the [environment and execution instructions](examples/frozen_condition_cache/README.md). They install the pinned model-library environment used by the recorded recipe. Keep `FROZEN_CACHE_RELAX_SRC` set in that environment. Installing Relax's entire Ray/SGLang dependency stack is not required for this standalone harness.
 

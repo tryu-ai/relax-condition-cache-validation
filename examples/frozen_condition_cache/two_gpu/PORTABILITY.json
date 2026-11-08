@@ -1,0 +1,212 @@
+{
+  "recorded_source_id": "b1b380451750b009dcf3833829e8c234b1ea9c95598b450e0384158c46f604d0",
+  "sources": {
+    "examples/frozen_condition_cache/two_gpu/scripts/20_prepare_assets.sh": {
+      "source_kind": "recorded final kit",
+      "original_sha256": "9d4f791b3a7e62c27800aefee623f8c46464f575d937a3516868904253609b7f",
+      "public_sha256": "bbc856c224191262f9619d1e44ed2917bd2419f2c36c215736e72dcad35207a8",
+      "byte_unchanged": false
+    },
+    "examples/frozen_condition_cache/two_gpu/scripts/30_numerics_native.sh": {
+      "source_kind": "recorded final kit",
+      "original_sha256": "dd20a6328398ba59d09a110c7a29e526145fc3aef2ce3a4eebd1a4eeada78783",
+      "public_sha256": "48a043843a8520c4a2f2dea5105ed71006ce6c38261dc1211c7c1ecfe0ad1399",
+      "byte_unchanged": false
+    },
+    "examples/frozen_condition_cache/two_gpu/scripts/35_ray_single_update.sh": {
+      "source_kind": "recorded final kit",
+      "original_sha256": "d1c811636c62cf56a2448b5912d5b643eb62ea5f98292bc67bcb8c2fe329262d",
+      "public_sha256": "254079db5fc4c840dd422b7c6ed45b88c9646aac8f6b2ff31fd96ed9678a948a",
+      "byte_unchanged": false
+    },
+    "examples/frozen_condition_cache/two_gpu/scripts/40_e2e_ray.sh": {
+      "source_kind": "recorded final kit",
+      "original_sha256": "ec5a94bf91b368cf5576971202c647a7f82bdbc311326a8696cadbfd31922492",
+      "public_sha256": "1e347007d4566db99b85bd2717b475f50edb6510265d1c6e76e617215e5ce0a4",
+      "byte_unchanged": false
+    },
+    "examples/frozen_condition_cache/two_gpu/scripts/41_e2e_matrix.sh": {
+      "source_kind": "recorded final kit",
+      "original_sha256": "2a6789edbfb380933bccfaec5d4735d601e63a5b000ffc8931fa19cb94f76a20",
+      "public_sha256": "2a6789edbfb380933bccfaec5d4735d601e63a5b000ffc8931fa19cb94f76a20",
+      "byte_unchanged": true
+    },
+    "examples/frozen_condition_cache/two_gpu/scripts/50_monitor.sh": {
+      "source_kind": "recorded final kit",
+      "original_sha256": "321e1072cb74fe026dee38c00cafc98debd42428d9f5a101972b642ebfaf7f7a",
+      "public_sha256": "321e1072cb74fe026dee38c00cafc98debd42428d9f5a101972b642ebfaf7f7a",
+      "byte_unchanged": true
+    },
+    "examples/frozen_condition_cache/two_gpu/scripts/60_summarize.py": {
+      "source_kind": "recorded final kit",
+      "original_sha256": "8a751380d68835425845db4cc35265da82709160b70ee8315e7f1fcbaf646540",
+      "public_sha256": "8a751380d68835425845db4cc35265da82709160b70ee8315e7f1fcbaf646540",
+      "byte_unchanged": true
+    },
+    "examples/frozen_condition_cache/two_gpu/scripts/check_job.py": {
+      "source_kind": "recorded final kit",
+      "original_sha256": "fabe454a8aa2206356f9b6e0d40487bf6379305018fcb7df188c8b658e7b181d",
+      "public_sha256": "fabe454a8aa2206356f9b6e0d40487bf6379305018fcb7df188c8b658e7b181d",
+      "byte_unchanged": true
+    },
+    "examples/frozen_condition_cache/two_gpu/scripts/gpu_preflight.py": {
+      "source_kind": "recorded final kit",
+      "original_sha256": "c641e9839dbb4d8e5a1e6b8b10f7e4a620e6d32f0f6e238c85190477e9cf3643",
+      "public_sha256": "c641e9839dbb4d8e5a1e6b8b10f7e4a620e6d32f0f6e238c85190477e9cf3643",
+      "byte_unchanged": true
+    },
+    "examples/frozen_condition_cache/two_gpu/scripts/submit_with_env.sh": {
+      "source_kind": "recorded final kit",
+      "original_sha256": "c5b685b057400a27479e6ab938bb82d9e1a9e7d2de557e7af3dcce241950b9a8",
+      "public_sha256": "c5b685b057400a27479e6ab938bb82d9e1a9e7d2de557e7af3dcce241950b9a8",
+      "byte_unchanged": true
+    },
+    "examples/frozen_condition_cache/two_gpu/diagnostics/__init__.py": {
+      "source_kind": "recorded final kit",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_unchanged": true
+    },
+    "examples/frozen_condition_cache/two_gpu/diagnostics/adapters.py": {
+      "source_kind": "recorded final kit",
+      "original_sha256": "dbca3e65b9bfab8d03c6c5757202b726330c427764d2848c0ba2ede2be027e53",
+      "public_sha256": "dbca3e65b9bfab8d03c6c5757202b726330c427764d2848c0ba2ede2be027e53",
+      "byte_unchanged": true
+    },
+    "examples/frozen_condition_cache/two_gpu/diagnostics/capture.py": {
+      "source_kind": "recorded final kit",
+      "original_sha256": "9956ab7b4a2bf10344caea5503f98ee88635b069565df0f298df87f877eb8a20",
+      "public_sha256": "9956ab7b4a2bf10344caea5503f98ee88635b069565df0f298df87f877eb8a20",
+      "byte_unchanged": true
+    },
+    "examples/frozen_condition_cache/two_gpu/diagnostics/compare.py": {
+      "source_kind": "recorded final kit",
+      "original_sha256": "9bdbbf0fcfb005387a61a88691e155bf587fbb95cf646c19f3c0a2459cb94b6a",
+      "public_sha256": "9bdbbf0fcfb005387a61a88691e155bf587fbb95cf646c19f3c0a2459cb94b6a",
+      "byte_unchanged": true
+    },
+    "examples/frozen_condition_cache/two_gpu/diagnostics/compare_lora.py": {
+      "source_kind": "recorded final kit",
+      "original_sha256": "a66868e585416ae3737056f5e069d75f2051a542982eda9534e8f9a201f1f68f",
+      "public_sha256": "a66868e585416ae3737056f5e069d75f2051a542982eda9534e8f9a201f1f68f",
+      "byte_unchanged": true
+    },
+    "examples/frozen_condition_cache/two_gpu/diagnostics/evidence.py": {
+      "source_kind": "recorded final kit",
+      "original_sha256": "2bc873cacb4f034df31b470eb329f2c94fd752f31249ed0987b0579b92567a36",
+      "public_sha256": "2bc873cacb4f034df31b470eb329f2c94fd752f31249ed0987b0579b92567a36",
+      "byte_unchanged": true
+    },
+    "examples/frozen_condition_cache/two_gpu/diagnostics/ray_hook.py": {
+      "source_kind": "recorded final kit",
+      "original_sha256": "26a0ea702d3e043b74f37a1946a5b3a73a4021a70d5026870db552bb01b41f68",
+      "public_sha256": "26a0ea702d3e043b74f37a1946a5b3a73a4021a70d5026870db552bb01b41f68",
+      "byte_unchanged": true
+    },
+    "examples/frozen_condition_cache/two_gpu/diagnostics/LICENSE": {
+      "source_kind": "recorded final kit",
+      "original_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "public_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "byte_unchanged": true
+    },
+    "examples/frozen_condition_cache/two_gpu/diagnostics/NOTICE.md": {
+      "source_kind": "recorded final kit",
+      "original_sha256": "04a99411c58d0e11b899e31f4486d01c7927ee93b2af11e284ace6bfb68949ca",
+      "public_sha256": "04a99411c58d0e11b899e31f4486d01c7927ee93b2af11e284ace6bfb68949ca",
+      "byte_unchanged": true
+    },
+    "examples/frozen_condition_cache/two_gpu/experiments/__init__.py": {
+      "source_kind": "recorded validation snapshot",
+      "original_sha256": "3aeea21c57abfcd32675c8312f701a377020485d6cac99a40c8247ebb524e805",
+      "public_sha256": "3aeea21c57abfcd32675c8312f701a377020485d6cac99a40c8247ebb524e805",
+      "byte_unchanged": true
+    },
+    "examples/frozen_condition_cache/two_gpu/experiments/compare.py": {
+      "source_kind": "recorded validation snapshot",
+      "original_sha256": "3f0b343dfed8d532f774adc4c4d1c68d544f27f53474d7c3b49ff18b7c4b0016",
+      "public_sha256": "18a567f525d83a0739d5e18b75efe0a983084fa7b79c783fe87378b7f097cd96",
+      "byte_unchanged": false
+    },
+    "examples/frozen_condition_cache/two_gpu/experiments/copy_audit.py": {
+      "source_kind": "recorded validation snapshot",
+      "original_sha256": "305dc0335dcddb332e156dde07b7351f29b695ac68589f00dc57985ed6400b2e",
+      "public_sha256": "305dc0335dcddb332e156dde07b7351f29b695ac68589f00dc57985ed6400b2e",
+      "byte_unchanged": true
+    },
+    "examples/frozen_condition_cache/two_gpu/experiments/evidence.py": {
+      "source_kind": "recorded validation snapshot",
+      "original_sha256": "2bc873cacb4f034df31b470eb329f2c94fd752f31249ed0987b0579b92567a36",
+      "public_sha256": "2bc873cacb4f034df31b470eb329f2c94fd752f31249ed0987b0579b92567a36",
+      "byte_unchanged": true
+    },
+    "examples/frozen_condition_cache/two_gpu/experiments/native_runner.py": {
+      "source_kind": "recorded validation snapshot",
+      "original_sha256": "9320534a7591a3126faadbd3a28706f12d35054540de6e341037649878b12bb7",
+      "public_sha256": "05488fb680a25c0ec81fbd8c91bd663a6df998b2f56c8ae2db82a0f9fb3f60c3",
+      "byte_unchanged": false
+    },
+    "examples/frozen_condition_cache/two_gpu/experiments/performance_summary.py": {
+      "source_kind": "recorded validation snapshot",
+      "original_sha256": "28a17f78d032df492d531d72e5e5425751745dfc75122705280d932f12b221b8",
+      "public_sha256": "9445c27b6db9672b5abda91b7ac7c60dcc98f01835c6bd2d667a295c7853d479",
+      "byte_unchanged": false
+    },
+    "examples/frozen_condition_cache/two_gpu/experiments/resources.py": {
+      "source_kind": "recorded validation snapshot",
+      "original_sha256": "88c0a841f7f41a9f830d31495f6f7769824238a053eaf809518b405c56dcfbf3",
+      "public_sha256": "88c0a841f7f41a9f830d31495f6f7769824238a053eaf809518b405c56dcfbf3",
+      "byte_unchanged": true
+    }
+  },
+  "scope": "Portable paths and two_gpu module namespace only; original numeric/comparison/timing equations and 2GPU/B4 Ray plus B8 native recipes retained. New validation source receipts necessarily differ from historical combined-kit source identity.",
+  "production_commit": "53a814afb7e9fc1b24e065c34cae451d2fbda316",
+  "changes": [
+    "External FROZEN_CACHE_RELAX_SRC instead of a vendored Relax checkout; canonical WORK/ASSETS/source paths",
+    "two_gpu Python package namespace for native experiments and diagnostic adapters",
+    "Pinned new production HEAD and8 exact runtime SHA checks; explicit production dirty-worktree flag",
+    "Source receipts separate production/launcher/validation/shared-asset namespace hashes; historical source ID remains separately labelled",
+    "Asset preparation calls unchanged portable parent assets.prepare and its pinned manifest",
+    "Ruff import ordering and one-file formatting only beyond portability edits; no numerical formula, threshold, RNG, data selection, batch, performance timing equation or record modified",
+    "No server setup/collector/rental controller/SSH/billing code migrated"
+  ],
+  "public_tool_files_sha256": {
+    "README.md": "39f108e13f90bf87e5e3a9270a82779f37d7ab960e9d79a1bf14cc84f08ebca5",
+    "examples/frozen_condition_cache/two_gpu/README.md": "e8573ea20901a7274f6911cfe58727e4efc035c043fd399aabbb3b6a37060bce",
+    "examples/frozen_condition_cache/two_gpu/__init__.py": "4fa63ae4c38df291d71212257975af8abdb40adf56f9b45c7f32effdf0a59dc7",
+    "examples/frozen_condition_cache/two_gpu/diagnostics/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "examples/frozen_condition_cache/two_gpu/diagnostics/NOTICE.md": "04a99411c58d0e11b899e31f4486d01c7927ee93b2af11e284ace6bfb68949ca",
+    "examples/frozen_condition_cache/two_gpu/diagnostics/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "examples/frozen_condition_cache/two_gpu/diagnostics/adapters.py": "dbca3e65b9bfab8d03c6c5757202b726330c427764d2848c0ba2ede2be027e53",
+    "examples/frozen_condition_cache/two_gpu/diagnostics/capture.py": "9956ab7b4a2bf10344caea5503f98ee88635b069565df0f298df87f877eb8a20",
+    "examples/frozen_condition_cache/two_gpu/diagnostics/compare.py": "9bdbbf0fcfb005387a61a88691e155bf587fbb95cf646c19f3c0a2459cb94b6a",
+    "examples/frozen_condition_cache/two_gpu/diagnostics/compare_lora.py": "a66868e585416ae3737056f5e069d75f2051a542982eda9534e8f9a201f1f68f",
+    "examples/frozen_condition_cache/two_gpu/diagnostics/evidence.py": "2bc873cacb4f034df31b470eb329f2c94fd752f31249ed0987b0579b92567a36",
+    "examples/frozen_condition_cache/two_gpu/diagnostics/ray_hook.py": "26a0ea702d3e043b74f37a1946a5b3a73a4021a70d5026870db552bb01b41f68",
+    "examples/frozen_condition_cache/two_gpu/env.sh": "2a7c14606b5642339b581bc83c8e05af4969312ea5408dea5023e4a5100fe967",
+    "examples/frozen_condition_cache/two_gpu/experiments/__init__.py": "3aeea21c57abfcd32675c8312f701a377020485d6cac99a40c8247ebb524e805",
+    "examples/frozen_condition_cache/two_gpu/experiments/compare.py": "18a567f525d83a0739d5e18b75efe0a983084fa7b79c783fe87378b7f097cd96",
+    "examples/frozen_condition_cache/two_gpu/experiments/copy_audit.py": "305dc0335dcddb332e156dde07b7351f29b695ac68589f00dc57985ed6400b2e",
+    "examples/frozen_condition_cache/two_gpu/experiments/evidence.py": "2bc873cacb4f034df31b470eb329f2c94fd752f31249ed0987b0579b92567a36",
+    "examples/frozen_condition_cache/two_gpu/experiments/native_runner.py": "05488fb680a25c0ec81fbd8c91bd663a6df998b2f56c8ae2db82a0f9fb3f60c3",
+    "examples/frozen_condition_cache/two_gpu/experiments/performance_summary.py": "9445c27b6db9672b5abda91b7ac7c60dcc98f01835c6bd2d667a295c7853d479",
+    "examples/frozen_condition_cache/two_gpu/experiments/resources.py": "88c0a841f7f41a9f830d31495f6f7769824238a053eaf809518b405c56dcfbf3",
+    "examples/frozen_condition_cache/two_gpu/scripts/20_prepare_assets.sh": "bbc856c224191262f9619d1e44ed2917bd2419f2c36c215736e72dcad35207a8",
+    "examples/frozen_condition_cache/two_gpu/scripts/30_numerics_native.sh": "48a043843a8520c4a2f2dea5105ed71006ce6c38261dc1211c7c1ecfe0ad1399",
+    "examples/frozen_condition_cache/two_gpu/scripts/35_ray_single_update.sh": "254079db5fc4c840dd422b7c6ed45b88c9646aac8f6b2ff31fd96ed9678a948a",
+    "examples/frozen_condition_cache/two_gpu/scripts/40_e2e_ray.sh": "1e347007d4566db99b85bd2717b475f50edb6510265d1c6e76e617215e5ce0a4",
+    "examples/frozen_condition_cache/two_gpu/scripts/41_e2e_matrix.sh": "2a6789edbfb380933bccfaec5d4735d601e63a5b000ffc8931fa19cb94f76a20",
+    "examples/frozen_condition_cache/two_gpu/scripts/50_monitor.sh": "321e1072cb74fe026dee38c00cafc98debd42428d9f5a101972b642ebfaf7f7a",
+    "examples/frozen_condition_cache/two_gpu/scripts/60_summarize.py": "8a751380d68835425845db4cc35265da82709160b70ee8315e7f1fcbaf646540",
+    "examples/frozen_condition_cache/two_gpu/scripts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "examples/frozen_condition_cache/two_gpu/scripts/check_job.py": "fabe454a8aa2206356f9b6e0d40487bf6379305018fcb7df188c8b658e7b181d",
+    "examples/frozen_condition_cache/two_gpu/scripts/gpu_preflight.py": "c641e9839dbb4d8e5a1e6b8b10f7e4a620e6d32f0f6e238c85190477e9cf3643",
+    "examples/frozen_condition_cache/two_gpu/scripts/source_receipt.py": "179a4e3bf18b945d15bdbd522001192fec01d4cd844b089f1a1e5077b8bfeb94",
+    "examples/frozen_condition_cache/two_gpu/scripts/submit_with_env.sh": "c5b685b057400a27479e6ab938bb82d9e1a9e7d2de557e7af3dcce241950b9a8",
+    "scripts/verify_source.py": "84da5ee61b9f26ed3800f12c6a018091ac05b60fb0b157e88dd9bba750d6a5ae",
+    "sources.v2.lock.json": "3666411475b849b1f706ab9d9d6372beda8d7b10dbd51e97c0568b7fc6844de1",
+    "tests/cpu/two_gpu_validation/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/cpu/two_gpu_validation/conftest.py": "da8430f84e0659392a1e229de589c182d9332ea8d5f9ac128be583ee3f4e15c1",
+    "tests/cpu/two_gpu_validation/test_diagnostics.py": "f55e02580088f03d4bfc03810357cdff6ca5c6d306fdd36b21b508099132eef3",
+    "tests/cpu/two_gpu_validation/test_portability.py": "2773b493be43e48883d677a430a9bb54bf36797c78754df9f3245f6e8ea8d41e"
+  }
+}

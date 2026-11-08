@@ -1,0 +1,5 @@
+<SHM_CACHE>:
+total 0
+drwxr-xr-x 2 root root 40 Nov  8 12:17 .
+drwxrwxrwt 3 root root 60 Nov  8 12:19 ..
+40	<SHM_CACHE>

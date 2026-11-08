@@ -1,0 +1,991 @@
+{
+  "all_rank_resource_summary": [
+    {
+      "final_cache": {
+        "bypasses": 0,
+        "enabled": false,
+        "global_hits": 0,
+        "global_misses": 0,
+        "prefix_encodes": 4
+      },
+      "peak_cache_bytes": 0,
+      "peak_cuda_allocated": 58479014912,
+      "peak_cuda_reserved": 70934069248,
+      "peak_process_rss": 3534704640,
+      "rank": 0,
+      "stage_boundary_resources": {
+        "after_checkpoint_before_result": {
+          "VmHWM": 6906187776,
+          "VmRSS": 4370116608,
+          "cpu_maxrss_platform_units": 6744324,
+          "cuda_allocated": 29526893056,
+          "cuda_peak_allocated": 58479014912,
+          "cuda_peak_reserved": 70934069248,
+          "cuda_reserved": 70934069248,
+          "storage": {
+            "run_directory": {
+              "allocated_file_bytes": 1899487232,
+              "complete": true,
+              "errors": 0,
+              "excludes": "directory metadata, external symlink targets, deleted-but-open files",
+              "logical_file_bytes": 1899451031,
+              "path": "<RUN_ROOT>/work/numerics/native-w2-r2/qwen_edit-w2-shm/a2",
+              "scope": "run_directory_only",
+              "symlinks_not_followed": 0,
+              "unique_regular_files": 13
+            },
+            "run_filesystem": {
+              "available": true,
+              "free_bytes": 83017674752,
+              "path": "<RUN_ROOT>/work/numerics/native-w2-r2/qwen_edit-w2-shm/a2",
+              "scope": "filesystem_global",
+              "total_bytes": 209379655680,
+              "used_bytes": 126361980928
+            },
+            "sampled_unix": 1794088624.093302,
+            "sampling": "stage_boundary_only; no recursive walk during optimizer updates",
+            "shared_memory_filesystem": {
+              "available": true,
+              "free_bytes": 118110453760,
+              "path": "/dev/shm",
+              "scope": "filesystem_global",
+              "total_bytes": 118111600640,
+              "used_bytes": 1146880
+            }
+          }
+        },
+        "before_model_load": {
+          "VmHWM": 1393123328,
+          "VmRSS": 1392869376,
+          "cpu_maxrss_platform_units": 1360472,
+          "cuda_allocated": 0,
+          "cuda_peak_allocated": 0,
+          "cuda_peak_reserved": 0,
+          "cuda_reserved": 0,
+          "storage": {
+            "run_directory": {
+              "allocated_file_bytes": 0,
+              "complete": true,
+              "errors": 0,
+              "excludes": "directory metadata, external symlink targets, deleted-but-open files",
+              "logical_file_bytes": 0,
+              "path": "<RUN_ROOT>/work/numerics/native-w2-r2/qwen_edit-w2-shm/a2",
+              "scope": "run_directory_only",
+              "symlinks_not_followed": 0,
+              "unique_regular_files": 0
+            },
+            "run_filesystem": {
+              "available": true,
+              "free_bytes": 84917170176,
+              "path": "<RUN_ROOT>/work/numerics/native-w2-r2/qwen_edit-w2-shm/a2",
+              "scope": "filesystem_global",
+              "total_bytes": 209379655680,
+              "used_bytes": 124462485504
+            },
+            "sampled_unix": 1794088551.737102,
+            "sampling": "stage_boundary_only; no recursive walk during optimizer updates",
+            "shared_memory_filesystem": {
+              "available": true,
+              "free_bytes": 118110461952,
+              "path": "/dev/shm",
+              "scope": "filesystem_global",
+              "total_bytes": 118111600640,
+              "used_bytes": 1138688
+            }
+          }
+        }
+      }
+    },
+    {
+      "final_cache": {
+        "bypasses": 0,
+        "enabled": false,
+        "global_hits": 0,
+        "global_misses": 0,
+        "prefix_encodes": 4
+      },
+      "peak_cache_bytes": 0,
+      "peak_cuda_allocated": 58479014912,
+      "peak_cuda_reserved": 70931972096,
+      "peak_process_rss": 10066264064,
+      "rank": 1,
+      "stage_boundary_resources": {
+        "after_checkpoint_before_result": {
+          "VmHWM": 14934204416,
+          "VmRSS": 10130452480,
+          "cpu_maxrss_platform_units": 14584184,
+          "cuda_allocated": 29526893056,
+          "cuda_peak_allocated": 58479014912,
+          "cuda_peak_reserved": 70931972096,
+          "cuda_reserved": 70931972096,
+          "storage": {
+            "run_directory": {
+              "allocated_file_bytes": 1899487232,
+              "complete": true,
+              "errors": 0,
+              "excludes": "directory metadata, external symlink targets, deleted-but-open files",
+              "logical_file_bytes": 1899451031,
+              "path": "<RUN_ROOT>/work/numerics/native-w2-r2/qwen_edit-w2-shm/a2",
+              "scope": "run_directory_only",
+              "symlinks_not_followed": 0,
+              "unique_regular_files": 13
+            },
+            "run_filesystem": {
+              "available": true,
+              "free_bytes": 83017674752,
+              "path": "<RUN_ROOT>/work/numerics/native-w2-r2/qwen_edit-w2-shm/a2",
+              "scope": "filesystem_global",
+              "total_bytes": 209379655680,
+              "used_bytes": 126361980928
+            },
+            "sampled_unix": 1794088624.0934267,
+            "sampling": "stage_boundary_only; no recursive walk during optimizer updates",
+            "shared_memory_filesystem": {
+              "available": true,
+              "free_bytes": 118110453760,
+              "path": "/dev/shm",
+              "scope": "filesystem_global",
+              "total_bytes": 118111600640,
+              "used_bytes": 1146880
+            }
+          }
+        },
+        "before_model_load": {
+          "VmHWM": 1393119232,
+          "VmRSS": 1392902144,
+          "cpu_maxrss_platform_units": 1360468,
+          "cuda_allocated": 0,
+          "cuda_peak_allocated": 0,
+          "cuda_peak_reserved": 0,
+          "cuda_reserved": 0,
+          "storage": {
+            "run_directory": {
+              "allocated_file_bytes": 0,
+              "complete": true,
+              "errors": 0,
+              "excludes": "directory metadata, external symlink targets, deleted-but-open files",
+              "logical_file_bytes": 0,
+              "path": "<RUN_ROOT>/work/numerics/native-w2-r2/qwen_edit-w2-shm/a2",
+              "scope": "run_directory_only",
+              "symlinks_not_followed": 0,
+              "unique_regular_files": 0
+            },
+            "run_filesystem": {
+              "available": true,
+              "free_bytes": 84917170176,
+              "path": "<RUN_ROOT>/work/numerics/native-w2-r2/qwen_edit-w2-shm/a2",
+              "scope": "filesystem_global",
+              "total_bytes": 209379655680,
+              "used_bytes": 124462485504
+            },
+            "sampled_unix": 1794088551.7386477,
+            "sampling": "stage_boundary_only; no recursive walk during optimizer updates",
+            "shared_memory_filesystem": {
+              "available": true,
+              "free_bytes": 118110461952,
+              "path": "/dev/shm",
+              "scope": "filesystem_global",
+              "total_bytes": 118111600640,
+              "used_bytes": 1138688
+            }
+          }
+        }
+      }
+    }
+  ],
+  "cache_audit": {
+    "checked_hits": 0,
+    "failed": 0,
+    "writes": 0
+  },
+  "cache_before_training": {
+    "bypasses": 0,
+    "enabled": false,
+    "global_hits": 0,
+    "global_misses": 0,
+    "prefix_encodes": 0
+  },
+  "cache_budget_per_rank": 0,
+  "cache_device": "shm",
+  "checkpoint": "<RUN_ROOT>/work/numerics/native-w2-r2/qwen_edit-w2-shm/a2/final/i2i_sft/iter_0000001",
+  "condition_cache_storage": {
+    "basis": "implementation uses an in-process OrderedDict and torch.Tensor.to(copy=True); no file/SHM API",
+    "enabled": false,
+    "implementation": "relax.models.condition_cache.ConditionFeatureCache",
+    "persistent_files_created_by_cache_backend": false,
+    "scope": "condition-feature cache only; does not attribute DataLoader, DCP or global filesystem use",
+    "shared_memory_segments_created_by_cache_backend": false,
+    "storage": "disabled"
+  },
+  "condition_phase_diagnostics": {
+    "added_model_forwards": 0,
+    "cuda_event_samples_complete": true,
+    "cuda_timing_requested": true,
+    "cuda_timing_scope": "current-stream event spans including launch gaps/observer overhead; not pure kernel time",
+    "extra_cuda_synchronizations": 0,
+    "host_timing_scope": "wrapper wall time; includes diagnostic CPU source hashing when active",
+    "max_samples_per_phase_per_region": 32,
+    "not_installed_in_performance": true,
+    "phases": {
+      "training/frozen_encoder": {
+        "calls": 4,
+        "cuda_sample_seconds": [
+          1.3021715087890624,
+          0.4507422790527344,
+          0.7747742919921875,
+          0.773978271484375
+        ],
+        "cuda_seconds": 3.3016663513183593,
+        "failed_calls": 0,
+        "host_seconds": 4.36720325332135,
+        "sampled_calls": 4,
+        "timing_errors": []
+      }
+    },
+    "sample_window_complete": true,
+    "scope": "existing frozen encoder/cache calls in correctness trajectories only; prefill and training separated"
+  },
+  "contract": {
+    "adapter": "relax.models.qwen_image.sft_adapter.QwenImageEditSFTAdapter",
+    "attention_implementation": "torch",
+    "base_identity": "8e5978f1f40129da6348bc9aebca1a8bd879d80d07cc1e7eabcda313272fbc1a",
+    "global_batch": 8,
+    "lora_rank": 32,
+    "lr_warmup_iters": 0,
+    "master_dtype": "fp32",
+    "optimizer": {
+      "amsgrad": false,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "capturable": false,
+      "decoupled_weight_decay": true,
+      "differentiable": false,
+      "eps": 1e-08,
+      "foreach": null,
+      "fused": null,
+      "lr": 0.0001,
+      "maximize": false,
+      "weight_decay": 0.01
+    },
+    "param_dtype": "bf16",
+    "reduce_dtype": "fp32",
+    "seed": 20261030,
+    "world": 2
+  },
+  "initial_reused": true,
+  "initialization_plus_total_seconds": 67.66430442221463,
+  "logical_copy_audit": {
+    "calls": 15951,
+    "completed_without_exception": true,
+    "excludes": [
+      "views and identity/self copies",
+      "numerical-evidence copies inside suspend_logical_copy_audit",
+      "wrapper-level tensors, background threads, collectives and backend-internal/compiled copies"
+    ],
+    "logical_bytes": 446701740036,
+    "logical_bytes_by_direction": {
+      "cpu->cpu": 93622784,
+      "cpu->cuda:0": 123966736,
+      "cuda:0->cpu": 84512,
+      "cuda:0->cuda:0": 446484066004
+    },
+    "metric": "logical destination payload bytes, not physical PCIe or memory-bus traffic",
+    "operations": [
+      {
+        "calls": 4,
+        "destination_bytes": 31196928,
+        "destination_dtype": "torch.float32",
+        "direction": "cpu->cpu",
+        "logical_bytes": 31196928,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.uint8",
+        "source_equivalent_bytes": 7799232
+      },
+      {
+        "calls": 10,
+        "destination_bytes": 20971520,
+        "destination_dtype": "torch.complex64",
+        "direction": "cpu->cuda:0",
+        "logical_bytes": 20971520,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.complex64",
+        "source_equivalent_bytes": 20971520
+      },
+      {
+        "calls": 24,
+        "destination_bytes": 40514048,
+        "destination_dtype": "torch.bfloat16",
+        "direction": "cpu->cuda:0",
+        "logical_bytes": 40514048,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.float32",
+        "source_equivalent_bytes": 81028096
+      },
+      {
+        "calls": 4,
+        "destination_bytes": 62393856,
+        "destination_dtype": "torch.float32",
+        "direction": "cpu->cuda:0",
+        "logical_bytes": 62393856,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.float32",
+        "source_equivalent_bytes": 62393856
+      },
+      {
+        "calls": 16,
+        "destination_bytes": 87312,
+        "destination_dtype": "torch.int64",
+        "direction": "cpu->cuda:0",
+        "logical_bytes": 87312,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.int64",
+        "source_equivalent_bytes": 87312
+      },
+      {
+        "calls": 1,
+        "destination_bytes": 8,
+        "destination_dtype": "torch.float32",
+        "direction": "cuda:0->cpu",
+        "logical_bytes": 8,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.float32",
+        "source_equivalent_bytes": 8
+      },
+      {
+        "calls": 384,
+        "destination_bytes": 84192,
+        "destination_dtype": "torch.int32",
+        "direction": "cuda:0->cpu",
+        "logical_bytes": 84192,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.int32",
+        "source_equivalent_bytes": 84192
+      },
+      {
+        "calls": 21,
+        "destination_bytes": 312,
+        "destination_dtype": "torch.int64",
+        "direction": "cuda:0->cpu",
+        "logical_bytes": 312,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.int64",
+        "source_equivalent_bytes": 312
+      },
+      {
+        "calls": 6788,
+        "destination_bytes": 275311338512,
+        "destination_dtype": "torch.float32",
+        "direction": "cuda:0->cuda:0",
+        "logical_bytes": 275311338512,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.bfloat16",
+        "source_equivalent_bytes": 137655669256
+      },
+      {
+        "calls": 7496,
+        "destination_bytes": 159489461000,
+        "destination_dtype": "torch.bfloat16",
+        "direction": "cuda:0->cuda:0",
+        "logical_bytes": 159489461000,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.float32",
+        "source_equivalent_bytes": 318978922000
+      },
+      {
+        "calls": 8,
+        "destination_bytes": 7268,
+        "destination_dtype": "torch.bool",
+        "direction": "cuda:0->cuda:0",
+        "logical_bytes": 7268,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.int64",
+        "source_equivalent_bytes": 58144
+      },
+      {
+        "calls": 4,
+        "destination_bytes": 43608,
+        "destination_dtype": "torch.float32",
+        "direction": "cuda:0->cuda:0",
+        "logical_bytes": 43608,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.int64",
+        "source_equivalent_bytes": 87216
+      },
+      {
+        "calls": 4,
+        "destination_bytes": 62393856,
+        "destination_dtype": "torch.float32",
+        "direction": "cpu->cpu",
+        "logical_bytes": 62393856,
+        "operator": "aten.clone.default",
+        "source_dtype": "torch.float32",
+        "source_equivalent_bytes": 62393856
+      },
+      {
+        "calls": 4,
+        "destination_bytes": 32000,
+        "destination_dtype": "torch.int64",
+        "direction": "cpu->cpu",
+        "logical_bytes": 32000,
+        "operator": "aten.clone.default",
+        "source_dtype": "torch.int64",
+        "source_equivalent_bytes": 32000
+      },
+      {
+        "calls": 212,
+        "destination_bytes": 9850262528,
+        "destination_dtype": "torch.bfloat16",
+        "direction": "cuda:0->cuda:0",
+        "logical_bytes": 9850262528,
+        "operator": "aten.clone.default",
+        "source_dtype": "torch.bfloat16",
+        "source_equivalent_bytes": 9850262528
+      },
+      {
+        "calls": 963,
+        "destination_bytes": 1832740864,
+        "destination_dtype": "torch.complex64",
+        "direction": "cuda:0->cuda:0",
+        "logical_bytes": 1832740864,
+        "operator": "aten.clone.default",
+        "source_dtype": "torch.complex64",
+        "source_equivalent_bytes": 1832740864
+      },
+      {
+        "calls": 8,
+        "destination_bytes": 212224,
+        "destination_dtype": "torch.int64",
+        "direction": "cuda:0->cuda:0",
+        "logical_bytes": 212224,
+        "operator": "aten.clone.default",
+        "source_dtype": "torch.int64",
+        "source_equivalent_bytes": 212224
+      }
+    ],
+    "repeated_transfers": {
+      "complete_traffic_measurement": false,
+      "cuda_value_readbacks_for_audit": 0,
+      "diagnostic_overhead": "CPU source hashing in correctness only; never installed in measured performance",
+      "directions": [
+        [
+          "cpu",
+          "cuda"
+        ]
+      ],
+      "enabled": true,
+      "fingerprints": [
+        {
+          "calls": 1,
+          "destination_bytes_per_call": 2992,
+          "destination_dtype": "torch.int64",
+          "destination_shape": [
+            1,
+            374
+          ],
+          "direction": "cpu->cuda:0",
+          "phases": {
+            "frozen_encoder": 1
+          },
+          "sha256": "1788ccb297c970e005191336d94e820d255708efdbce385d88888cb2b85d9b23",
+          "source_dtype": "torch.int64",
+          "source_payload_bytes": 2992,
+          "source_shape": [
+            1,
+            374
+          ]
+        },
+        {
+          "calls": 1,
+          "destination_bytes_per_call": 25759104,
+          "destination_dtype": "torch.float32",
+          "destination_shape": [
+            5476,
+            1176
+          ],
+          "direction": "cpu->cuda:0",
+          "phases": {
+            "frozen_encoder": 1
+          },
+          "sha256": "17cfafcb1565eaa0662c03403d1fa23d5ec1986a532c8cc0462fdc940fd70932",
+          "source_dtype": "torch.float32",
+          "source_payload_bytes": 25759104,
+          "source_shape": [
+            5476,
+            1176
+          ]
+        },
+        {
+          "calls": 1,
+          "destination_bytes_per_call": 11568,
+          "destination_dtype": "torch.int64",
+          "destination_shape": [
+            1,
+            1446
+          ],
+          "direction": "cpu->cuda:0",
+          "phases": {
+            "frozen_encoder": 1
+          },
+          "sha256": "2a5a45e05f839ba87ab9c9f642abcb4372dc274fafc4611797c602833b5306b5",
+          "source_dtype": "torch.int64",
+          "source_payload_bytes": 11568,
+          "source_shape": [
+            1,
+            1446
+          ]
+        },
+        {
+          "calls": 1,
+          "destination_bytes_per_call": 25759104,
+          "destination_dtype": "torch.float32",
+          "destination_shape": [
+            5476,
+            1176
+          ],
+          "direction": "cpu->cuda:0",
+          "phases": {
+            "frozen_encoder": 1
+          },
+          "sha256": "4538413ecaee4fb11def4e5a3b55bb3bf2ba58e551484eb2ddae46ac1aeaeaad",
+          "source_dtype": "torch.float32",
+          "source_payload_bytes": 25759104,
+          "source_shape": [
+            5476,
+            1176
+          ]
+        },
+        {
+          "calls": 1,
+          "destination_bytes_per_call": 5437824,
+          "destination_dtype": "torch.float32",
+          "destination_shape": [
+            1156,
+            1176
+          ],
+          "direction": "cpu->cuda:0",
+          "phases": {
+            "frozen_encoder": 1
+          },
+          "sha256": "4626ef7bd4dd74f6f277604848ea3537376381f16f64fb9513903983ed5cb955",
+          "source_dtype": "torch.float32",
+          "source_payload_bytes": 5437824,
+          "source_shape": [
+            1156,
+            1176
+          ]
+        },
+        {
+          "calls": 1,
+          "destination_bytes_per_call": 2912,
+          "destination_dtype": "torch.int64",
+          "destination_shape": [
+            1,
+            364
+          ],
+          "direction": "cpu->cuda:0",
+          "phases": {
+            "frozen_encoder": 1
+          },
+          "sha256": "4f0e709096f30e9ef7ba88ec3a77fb2c5a322cdc4f50f8dc056c5b87f48fdfa3",
+          "source_dtype": "torch.int64",
+          "source_payload_bytes": 2912,
+          "source_shape": [
+            1,
+            364
+          ]
+        },
+        {
+          "calls": 2,
+          "destination_bytes_per_call": 24,
+          "destination_dtype": "torch.int64",
+          "destination_shape": [
+            1,
+            3
+          ],
+          "direction": "cpu->cuda:0",
+          "phases": {
+            "frozen_encoder": 2
+          },
+          "sha256": "544a8d95ee8a192dd489162841464075fd4f3f9373fc54028492c40a437fbe6a",
+          "source_dtype": "torch.int64",
+          "source_payload_bytes": 24,
+          "source_shape": [
+            1,
+            3
+          ]
+        },
+        {
+          "calls": 1,
+          "destination_bytes_per_call": 11600,
+          "destination_dtype": "torch.int64",
+          "destination_shape": [
+            1,
+            1450
+          ],
+          "direction": "cpu->cuda:0",
+          "phases": {
+            "frozen_encoder": 1
+          },
+          "sha256": "54ee2215d3998542a01a6b3539e4a800b9873ca86a733802b129ce3e335bce52",
+          "source_dtype": "torch.int64",
+          "source_payload_bytes": 11600,
+          "source_shape": [
+            1,
+            1450
+          ]
+        },
+        {
+          "calls": 1,
+          "destination_bytes_per_call": 2912,
+          "destination_dtype": "torch.int64",
+          "destination_shape": [
+            1,
+            364
+          ],
+          "direction": "cpu->cuda:0",
+          "phases": {
+            "frozen_encoder": 1
+          },
+          "sha256": "67c630b675e6b9866e253bf6c9ba41d00f2c7b5840f0c0eeeed65e7587d2e66c",
+          "source_dtype": "torch.int64",
+          "source_payload_bytes": 2912,
+          "source_shape": [
+            1,
+            364
+          ]
+        },
+        {
+          "calls": 1,
+          "destination_bytes_per_call": 2992,
+          "destination_dtype": "torch.int64",
+          "destination_shape": [
+            1,
+            374
+          ],
+          "direction": "cpu->cuda:0",
+          "phases": {
+            "frozen_encoder": 1
+          },
+          "sha256": "77efdf9d6d56189969e7e4da37a30a91b3a8310935192fa0fd438427bf6db2e5",
+          "source_dtype": "torch.int64",
+          "source_payload_bytes": 2992,
+          "source_shape": [
+            1,
+            374
+          ]
+        },
+        {
+          "calls": 2,
+          "destination_bytes_per_call": 24,
+          "destination_dtype": "torch.int64",
+          "destination_shape": [
+            1,
+            3
+          ],
+          "direction": "cpu->cuda:0",
+          "phases": {
+            "frozen_encoder": 2
+          },
+          "sha256": "7995fbbd85bf5d79bcdeedd5a15671531c422eab36ba3d7ee1516b87fbec7256",
+          "source_dtype": "torch.int64",
+          "source_payload_bytes": 24,
+          "source_shape": [
+            1,
+            3
+          ]
+        },
+        {
+          "calls": 1,
+          "destination_bytes_per_call": 11568,
+          "destination_dtype": "torch.int64",
+          "destination_shape": [
+            1,
+            1446
+          ],
+          "direction": "cpu->cuda:0",
+          "phases": {
+            "frozen_encoder": 1
+          },
+          "sha256": "81876cec832631accbf1afad42244843bbda42592af3274b5c70eaa47679ba0a",
+          "source_dtype": "torch.int64",
+          "source_payload_bytes": 11568,
+          "source_shape": [
+            1,
+            1446
+          ]
+        },
+        {
+          "calls": 1,
+          "destination_bytes_per_call": 11600,
+          "destination_dtype": "torch.int64",
+          "destination_shape": [
+            1,
+            1450
+          ],
+          "direction": "cpu->cuda:0",
+          "phases": {
+            "frozen_encoder": 1
+          },
+          "sha256": "930ca426b340cb281960d147738e8766b478fe034b61c50405e457d289c25d5a",
+          "source_dtype": "torch.int64",
+          "source_payload_bytes": 11600,
+          "source_shape": [
+            1,
+            1450
+          ]
+        },
+        {
+          "calls": 1,
+          "destination_bytes_per_call": 5437824,
+          "destination_dtype": "torch.float32",
+          "destination_shape": [
+            1156,
+            1176
+          ],
+          "direction": "cpu->cuda:0",
+          "phases": {
+            "frozen_encoder": 1
+          },
+          "sha256": "ab31101aedc7cfa11568a3d767c5defc904f5e99154c4a8136f90f9e4191bf4e",
+          "source_dtype": "torch.float32",
+          "source_payload_bytes": 5437824,
+          "source_shape": [
+            1156,
+            1176
+          ]
+        },
+        {
+          "calls": 1,
+          "destination_bytes_per_call": 2912,
+          "destination_dtype": "torch.int64",
+          "destination_shape": [
+            1,
+            364
+          ],
+          "direction": "cpu->cuda:0",
+          "phases": {
+            "frozen_encoder": 1
+          },
+          "sha256": "bedf38c9bdfb1e7a0a54cc9b00b34d471b4e8834d31525bfcbc17ee1b4928de3",
+          "source_dtype": "torch.int64",
+          "source_payload_bytes": 2912,
+          "source_shape": [
+            1,
+            364
+          ]
+        },
+        {
+          "calls": 1,
+          "destination_bytes_per_call": 2992,
+          "destination_dtype": "torch.int64",
+          "destination_shape": [
+            1,
+            374
+          ],
+          "direction": "cpu->cuda:0",
+          "phases": {
+            "frozen_encoder": 1
+          },
+          "sha256": "dc500e9ce4fa18e1985842f7704d714fa0c182d0af75dd14785c96d8c347604e",
+          "source_dtype": "torch.int64",
+          "source_payload_bytes": 2992,
+          "source_shape": [
+            1,
+            374
+          ]
+        },
+        {
+          "calls": 1,
+          "destination_bytes_per_call": 11568,
+          "destination_dtype": "torch.int64",
+          "destination_shape": [
+            1,
+            1446
+          ],
+          "direction": "cpu->cuda:0",
+          "phases": {
+            "frozen_encoder": 1
+          },
+          "sha256": "ee92063e5e5f9385eb4bded2eb25aff9db97d87cfe2186ca100826351a25341e",
+          "source_dtype": "torch.int64",
+          "source_payload_bytes": 11568,
+          "source_shape": [
+            1,
+            1446
+          ]
+        },
+        {
+          "calls": 1,
+          "destination_bytes_per_call": 11600,
+          "destination_dtype": "torch.int64",
+          "destination_shape": [
+            1,
+            1450
+          ],
+          "direction": "cpu->cuda:0",
+          "phases": {
+            "frozen_encoder": 1
+          },
+          "sha256": "f43f6a639b4b90b66dc0f2bc8388a8bf87549d81b61be3b60778d5f016d44ed8",
+          "source_dtype": "torch.int64",
+          "source_payload_bytes": 11600,
+          "source_shape": [
+            1,
+            1450
+          ]
+        }
+      ],
+      "hashed_cpu_source_bytes": 62481168,
+      "limits": {
+        "fingerprint_entries": 1024,
+        "per_source_bytes": 33554432,
+        "total_hashed_bytes": 536870912
+      },
+      "metric": "logical destination bytes after the first identical observed source transfer; not physical PCIe bytes",
+      "repeated_destination_bytes": 48,
+      "repeated_transfer_calls": 2,
+      "scope": "actual condition-scoped copies with byte-identical CPU source plus identical shape/dtype transfer encoding",
+      "unfingerprinted": {
+        "outside_condition_phase": {
+          "calls": 13735,
+          "destination_bytes": 428641656376
+        },
+        "outside_declared_cpu_source_directions": {
+          "calls": 2196,
+          "destination_bytes": 17997602492
+        }
+      }
+    },
+    "schema": 1,
+    "scope": "current-thread dispatcher-visible concrete aten._to_copy/clone/copy_; correctness only",
+    "skipped": {
+      "empty_or_self_copy": 0,
+      "suspended_copy_calls": 1916,
+      "wrapper_or_unsupported_tensor": 0
+    }
+  },
+  "measured_seconds": 33.89761171769351,
+  "measured_updates": 1,
+  "metadata_sha256": "cb456da865600c2ac4d6a0b6829b215934c6f4e232092544235e654332dc2e8d",
+  "metrics": [
+    {
+      "perf/data_wait_seconds": 0.206207503,
+      "perf/peak_allocated_bytes": 58479014912,
+      "perf/peak_reserved_bytes": 70934069248,
+      "perf/train_seconds": 33.886342788115144,
+      "train/grad_norm": 0.004075064789503813,
+      "train/loss": 0.11594854295253754,
+      "train/lr": 0.0001,
+      "train/step": 1
+    }
+  ],
+  "mode": "correctness",
+  "native_contract": {
+    "adapter_path": "relax.models.qwen_image.sft_adapter.QwenImageEditSFTAdapter",
+    "clip_grad": 1.0,
+    "config": {
+      "attention_implementation": "torch",
+      "conditioning_images": 1,
+      "data_root": "<RUN_ROOT>/assets/data",
+      "dataset_size": 8,
+      "deterministic_attention": true,
+      "max_pixels": 1048576,
+      "prefix_gradient_checkpointing": true
+    },
+    "family": "qwen_image_edit",
+    "global_batch_size": 8,
+    "lora": {
+      "adapter_name": "default",
+      "alpha": 32,
+      "bias": "none",
+      "dropout": 0.0,
+      "rank": 32,
+      "scaling": 1.0,
+      "target_modules": [
+        "attn.to_q",
+        "attn.to_k",
+        "attn.to_v",
+        "attn.to_out.0",
+        "attn.add_q_proj",
+        "attn.add_k_proj",
+        "attn.add_v_proj",
+        "attn.to_add_out"
+      ],
+      "task_type": "FEATURE_EXTRACTION"
+    },
+    "master_dtype": "fp32",
+    "metadata_sha256": "cb456da865600c2ac4d6a0b6829b215934c6f4e232092544235e654332dc2e8d",
+    "model_path": "<RUN_ROOT>/assets/models/qwen_edit",
+    "optimizer": {
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "foreach": null,
+      "lr": 0.0001,
+      "weight_decay": 0.01
+    },
+    "param_dtype": "bf16",
+    "reduce_dtype": "fp32",
+    "sampler": "global-padded-randperm-v1",
+    "schema_version": 1,
+    "seed": 20261030,
+    "torch_version": "2.9.0+cu128",
+    "trainable_mode": "lora",
+    "warmup": 0,
+    "world_size": 2
+  },
+  "numerical_execution_policy": {
+    "cublas_workspace_config": ":4096:8",
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "deterministic_algorithms": true,
+    "torch_version": "2.9.0+cu128"
+  },
+  "passed": true,
+  "rank": 0,
+  "resources_and_cache": [
+    {
+      "cache": {
+        "bypasses": 0,
+        "enabled": false,
+        "global_hits": 0,
+        "global_misses": 0,
+        "prefix_encodes": 4
+      },
+      "completed_step": 1,
+      "resources": {
+        "VmHWM": 6906187776,
+        "VmRSS": 3534704640,
+        "cpu_maxrss_platform_units": 6744324,
+        "cuda_allocated": 29526892544,
+        "cuda_peak_allocated": 58479014912,
+        "cuda_peak_reserved": 70934069248,
+        "cuda_reserved": 70934069248
+      },
+      "wall_seconds": 33.89724381361157
+    }
+  ],
+  "sample_id_occurrences": [
+    [
+      3,
+      7,
+      6,
+      2,
+      1,
+      0,
+      4,
+      5
+    ]
+  ],
+  "samples_per_second": null,
+  "schema": 1,
+  "scope": "real native FSDPSFTTrainer; Ray/TQ and checkpoint I/O excluded from measured time",
+  "stagepass": true,
+  "status": "completed",
+  "warmup_seconds": 0.0,
+  "warmup_updates": 0
+}

@@ -1,0 +1,347 @@
+{
+  "public_payloads_included": false,
+  "raw_PT_count": 56,
+  "raw_PT_bytes": 14365626128,
+  "scope": "Previously hash-verified private raw tensor identities only; public reports cannot independently recompute tensors from these hashes",
+  "tensor_identities": [
+    {
+      "path": "Ray/data/work/ray-single/qw-b4-r2/a1/trajectory-rank0000.pt",
+      "bytes": 379840725,
+      "sha256": "17e89997b5fd679fb6e25b623c9c4b9cb4bf794f4e3fb540f0343a7d29ab5abd",
+      "group": "Ray"
+    },
+    {
+      "path": "Ray/data/work/ray-single/qw-b4-r2/a1/trajectory-rank0001.pt",
+      "bytes": 379840725,
+      "sha256": "f64fe8a9545828fbefde196a3dbf30b43ac9842ab77486b82135785efa075027",
+      "group": "Ray"
+    },
+    {
+      "path": "Ray/data/work/ray-single/qw-b4-r2/a2/trajectory-rank0000.pt",
+      "bytes": 379840725,
+      "sha256": "17e89997b5fd679fb6e25b623c9c4b9cb4bf794f4e3fb540f0343a7d29ab5abd",
+      "group": "Ray"
+    },
+    {
+      "path": "Ray/data/work/ray-single/qw-b4-r2/a2/trajectory-rank0001.pt",
+      "bytes": 379840725,
+      "sha256": "f64fe8a9545828fbefde196a3dbf30b43ac9842ab77486b82135785efa075027",
+      "group": "Ray"
+    },
+    {
+      "path": "Ray/data/work/ray-single/qw-b4-r2/bcold/trajectory-rank0000.pt",
+      "bytes": 379840725,
+      "sha256": "ec2827c0aa8742ac3bdfa26f0fe0d53496e83a4bfbcc3b2ce96779793a08b0b8",
+      "group": "Ray"
+    },
+    {
+      "path": "Ray/data/work/ray-single/qw-b4-r2/bcold/trajectory-rank0001.pt",
+      "bytes": 379840725,
+      "sha256": "01ebe6d2ff502508237ad8c4ade1870bdca3d599c683e78bec394ee00d7a4f15",
+      "group": "Ray"
+    },
+    {
+      "path": "Ray/data/work/ray-single/qw-b4-r2/bwarm/trajectory-rank0000.pt",
+      "bytes": 379840725,
+      "sha256": "fb3495a86456b560daf7efef7aca7f6fc8f4082cea9b59de84662bc08f55def2",
+      "group": "Ray"
+    },
+    {
+      "path": "Ray/data/work/ray-single/qw-b4-r2/bwarm/trajectory-rank0001.pt",
+      "bytes": 379840725,
+      "sha256": "468ffa3b0b59f71bf2464d0443d93beff3f3f144d6d1db1429bb1c990162b275",
+      "group": "Ray"
+    },
+    {
+      "path": "Ray/data/work/ray-single/qw-b4-r2/initial/rank0000.pt",
+      "bytes": 190121083,
+      "sha256": "fdb3a555120e6066bc5c50a4979bed2c785767e811778a350e43f6f2cdb67988",
+      "group": "Ray"
+    },
+    {
+      "path": "Ray/data/work/ray-single/qw-b4-r2/initial/rank0001.pt",
+      "bytes": 190121083,
+      "sha256": "faa9c008f7e82a88f709d9bd2d66c1d10af2f73eef44442ea324c2a7aac6a620",
+      "group": "Ray"
+    },
+    {
+      "path": "Ray/data/work/ray-single/sn-b4-r2/a1/trajectory-rank0000.pt",
+      "bytes": 433442873,
+      "sha256": "5112c1712e61a229419bf53954cb4166ad5bc296f74800af1f77090b34b01ebc",
+      "group": "Ray"
+    },
+    {
+      "path": "Ray/data/work/ray-single/sn-b4-r2/a1/trajectory-rank0001.pt",
+      "bytes": 433442873,
+      "sha256": "da7fcc29ab3f75ef9693e3c249278d868680ec2e82743464527ffa579d307427",
+      "group": "Ray"
+    },
+    {
+      "path": "Ray/data/work/ray-single/sn-b4-r2/a2/trajectory-rank0000.pt",
+      "bytes": 433442873,
+      "sha256": "5112c1712e61a229419bf53954cb4166ad5bc296f74800af1f77090b34b01ebc",
+      "group": "Ray"
+    },
+    {
+      "path": "Ray/data/work/ray-single/sn-b4-r2/a2/trajectory-rank0001.pt",
+      "bytes": 433442873,
+      "sha256": "da7fcc29ab3f75ef9693e3c249278d868680ec2e82743464527ffa579d307427",
+      "group": "Ray"
+    },
+    {
+      "path": "Ray/data/work/ray-single/sn-b4-r2/bcold/trajectory-rank0000.pt",
+      "bytes": 433442873,
+      "sha256": "52269562a93d1c55b1c2cf3f5e06e7acc7be7d9aa9d5a84dd5299fef9f8690dc",
+      "group": "Ray"
+    },
+    {
+      "path": "Ray/data/work/ray-single/sn-b4-r2/bcold/trajectory-rank0001.pt",
+      "bytes": 433442873,
+      "sha256": "1f25138834aacb3d4a85606d02692a4458c85ab885d7354f7b98f0e491323f67",
+      "group": "Ray"
+    },
+    {
+      "path": "Ray/data/work/ray-single/sn-b4-r2/bwarm/trajectory-rank0000.pt",
+      "bytes": 433442873,
+      "sha256": "36348d15ab4fc5a4d07a2072f2d43fbe64eb53a5c68666a47e198fcb16ca07ba",
+      "group": "Ray"
+    },
+    {
+      "path": "Ray/data/work/ray-single/sn-b4-r2/bwarm/trajectory-rank0001.pt",
+      "bytes": 433442873,
+      "sha256": "ac559f4dafdc08f3b1b4f4ce1b7cc109e2624aec7f4a750c52e7b20005ca2d50",
+      "group": "Ray"
+    },
+    {
+      "path": "Ray/data/work/ray-single/sn-b4-r2/initial/rank0000.pt",
+      "bytes": 204388387,
+      "sha256": "d849ced54316504384ec6418944757fc6bdfc506c1025fd97cbc75761ed11c39",
+      "group": "Ray"
+    },
+    {
+      "path": "Ray/data/work/ray-single/sn-b4-r2/initial/rank0001.pt",
+      "bytes": 204388387,
+      "sha256": "1d33e4a3f051b3f0ab054c3b7c9b84c0e5ca9cb7482fbc911feae6a0f0c008da",
+      "group": "Ray"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/qwen_edit-w2-shm/a1/final/i2i_sft/iter_0000001/rng_rank0.pt",
+      "bytes": 14899,
+      "sha256": "3e0eea9db0a241e2d7954df9813972e416f06de386ebd2c3188ad2e78c74d6bc",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/qwen_edit-w2-shm/a1/final/i2i_sft/iter_0000001/rng_rank1.pt",
+      "bytes": 14963,
+      "sha256": "1cdfb409043ed34a4c9ac1dc9e38677c6a390a7e5f4111fd8f891aee294d33ed",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/qwen_edit-w2-shm/a1/trajectory-rank0000.pt",
+      "bytes": 377732233,
+      "sha256": "7b58e2708325789bbd740307dbd2575279a33f89d77cec051bbe3c44799aab61",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/qwen_edit-w2-shm/a1/trajectory-rank0001.pt",
+      "bytes": 377732233,
+      "sha256": "261de069a5bb8dac12d5e0acc54dbd16113921d850c0de753757ad7f19ea5e0c",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/qwen_edit-w2-shm/a2/final/i2i_sft/iter_0000001/rng_rank0.pt",
+      "bytes": 14899,
+      "sha256": "3e0eea9db0a241e2d7954df9813972e416f06de386ebd2c3188ad2e78c74d6bc",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/qwen_edit-w2-shm/a2/final/i2i_sft/iter_0000001/rng_rank1.pt",
+      "bytes": 14963,
+      "sha256": "1cdfb409043ed34a4c9ac1dc9e38677c6a390a7e5f4111fd8f891aee294d33ed",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/qwen_edit-w2-shm/a2/trajectory-rank0000.pt",
+      "bytes": 377732233,
+      "sha256": "7b58e2708325789bbd740307dbd2575279a33f89d77cec051bbe3c44799aab61",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/qwen_edit-w2-shm/a2/trajectory-rank0001.pt",
+      "bytes": 377732233,
+      "sha256": "261de069a5bb8dac12d5e0acc54dbd16113921d850c0de753757ad7f19ea5e0c",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/qwen_edit-w2-shm/bcold/final/i2i_sft/iter_0000001/rng_rank0.pt",
+      "bytes": 14899,
+      "sha256": "3e0eea9db0a241e2d7954df9813972e416f06de386ebd2c3188ad2e78c74d6bc",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/qwen_edit-w2-shm/bcold/final/i2i_sft/iter_0000001/rng_rank1.pt",
+      "bytes": 14963,
+      "sha256": "1cdfb409043ed34a4c9ac1dc9e38677c6a390a7e5f4111fd8f891aee294d33ed",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/qwen_edit-w2-shm/bcold/trajectory-rank0000.pt",
+      "bytes": 377732233,
+      "sha256": "754ac55dcadae7cd259bb4a9d6d4a2890e8860c61f3c0a8006d58829fd0b0dcd",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/qwen_edit-w2-shm/bcold/trajectory-rank0001.pt",
+      "bytes": 377732233,
+      "sha256": "f2a3fd4618175f7ea475e82cec7d6e66112bb71936b5b4d4a1f03553064ca320",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/qwen_edit-w2-shm/bwarm/final/i2i_sft/iter_0000001/rng_rank0.pt",
+      "bytes": 14899,
+      "sha256": "3e0eea9db0a241e2d7954df9813972e416f06de386ebd2c3188ad2e78c74d6bc",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/qwen_edit-w2-shm/bwarm/final/i2i_sft/iter_0000001/rng_rank1.pt",
+      "bytes": 14963,
+      "sha256": "1cdfb409043ed34a4c9ac1dc9e38677c6a390a7e5f4111fd8f891aee294d33ed",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/qwen_edit-w2-shm/bwarm/trajectory-rank0000.pt",
+      "bytes": 377732233,
+      "sha256": "e1fe981300160cf90f40843dc24f1c9fef3a7a2ef0961c3987b7595e61aef40f",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/qwen_edit-w2-shm/bwarm/trajectory-rank0001.pt",
+      "bytes": 377732233,
+      "sha256": "dc2d655e15455c2059ae6b315b6212f9fb4d6632f91224e0058a0623e7d95d1c",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/qwen_edit-w2-shm/initial/initial-rank0000.pt",
+      "bytes": 189103043,
+      "sha256": "32a835f47a3089150cdc053b02f147a9a0f19a23067368384ef216bf7934071d",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/qwen_edit-w2-shm/initial/initial-rank0001.pt",
+      "bytes": 189103107,
+      "sha256": "4454e593433dd76a6c41e207b74a5ef8bfb7e37370b7011511682d81a900375b",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/sensenova-w2-shm/a1/final/i2i_sft/iter_0000001/rng_rank0.pt",
+      "bytes": 14899,
+      "sha256": "50addd5e976b6ea53ae4799f0f7daa0b453e3cacec5cabadc1f7db2cd84520ba",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/sensenova-w2-shm/a1/final/i2i_sft/iter_0000001/rng_rank1.pt",
+      "bytes": 14963,
+      "sha256": "99a517a93e15a4d8c1cf8e4eca17a0c4cb55180c4288b9a3eaed5dd32994ef04",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/sensenova-w2-shm/a1/trajectory-rank0000.pt",
+      "bytes": 407773863,
+      "sha256": "f4639d383a946ab471774673cba422e627bc2218059be923c04bc2f6ff54b223",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/sensenova-w2-shm/a1/trajectory-rank0001.pt",
+      "bytes": 407773863,
+      "sha256": "e6a1c1ef6da1164bb179e9e393669c6704f597944032035e4f92c342d590c0a1",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/sensenova-w2-shm/a2/final/i2i_sft/iter_0000001/rng_rank0.pt",
+      "bytes": 14899,
+      "sha256": "50addd5e976b6ea53ae4799f0f7daa0b453e3cacec5cabadc1f7db2cd84520ba",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/sensenova-w2-shm/a2/final/i2i_sft/iter_0000001/rng_rank1.pt",
+      "bytes": 14963,
+      "sha256": "99a517a93e15a4d8c1cf8e4eca17a0c4cb55180c4288b9a3eaed5dd32994ef04",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/sensenova-w2-shm/a2/trajectory-rank0000.pt",
+      "bytes": 407773863,
+      "sha256": "f4639d383a946ab471774673cba422e627bc2218059be923c04bc2f6ff54b223",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/sensenova-w2-shm/a2/trajectory-rank0001.pt",
+      "bytes": 407773863,
+      "sha256": "e6a1c1ef6da1164bb179e9e393669c6704f597944032035e4f92c342d590c0a1",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/sensenova-w2-shm/bcold/final/i2i_sft/iter_0000001/rng_rank0.pt",
+      "bytes": 14899,
+      "sha256": "50addd5e976b6ea53ae4799f0f7daa0b453e3cacec5cabadc1f7db2cd84520ba",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/sensenova-w2-shm/bcold/final/i2i_sft/iter_0000001/rng_rank1.pt",
+      "bytes": 14963,
+      "sha256": "99a517a93e15a4d8c1cf8e4eca17a0c4cb55180c4288b9a3eaed5dd32994ef04",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/sensenova-w2-shm/bcold/trajectory-rank0000.pt",
+      "bytes": 407773927,
+      "sha256": "45330e822ea389c02604763e4d72c7d3f93d649273eb5fb18dfdbfe3df60307a",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/sensenova-w2-shm/bcold/trajectory-rank0001.pt",
+      "bytes": 407773927,
+      "sha256": "bf8ef838d95502a73b7194b52c1e109680b54c3ddc4da98bfeaea5ec89ab91a1",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/sensenova-w2-shm/bwarm/final/i2i_sft/iter_0000001/rng_rank0.pt",
+      "bytes": 14899,
+      "sha256": "50addd5e976b6ea53ae4799f0f7daa0b453e3cacec5cabadc1f7db2cd84520ba",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/sensenova-w2-shm/bwarm/final/i2i_sft/iter_0000001/rng_rank1.pt",
+      "bytes": 14963,
+      "sha256": "99a517a93e15a4d8c1cf8e4eca17a0c4cb55180c4288b9a3eaed5dd32994ef04",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/sensenova-w2-shm/bwarm/trajectory-rank0000.pt",
+      "bytes": 407773927,
+      "sha256": "ecc2d02a9336f1bb43513118e027f48a44111004a9bb5c86cfa5d69f7d071c7c",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/sensenova-w2-shm/bwarm/trajectory-rank0001.pt",
+      "bytes": 407773927,
+      "sha256": "cd9dd1ce0ba507fba71605544e41ea35cf85e0cafb6d12579193b46456a84a0a",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/sensenova-w2-shm/initial/initial-rank0000.pt",
+      "bytes": 203922135,
+      "sha256": "0440943f60808c4a81abfd81dd765c50c95ff47c60d679711774c77560d401aa",
+      "group": "Native"
+    },
+    {
+      "path": "Native/data/work/numerics/native-w2-r2/sensenova-w2-shm/initial/initial-rank0001.pt",
+      "bytes": 203922199,
+      "sha256": "52caa564e3ea9d6a9b448fe6023e24abccd409c519be70b00f802009e2d5da0f",
+      "group": "Native"
+    }
+  ],
+  "native_DCP_count_not_public": 16,
+  "native_DCP_bytes_not_public": 9480955824,
+  "checkpoint_completeness": "No complete DCP is published here"
+}

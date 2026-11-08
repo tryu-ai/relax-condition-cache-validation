@@ -1,0 +1,10 @@
+{
+  "after_close": {
+    "bypasses": 0,
+    "enabled": false,
+    "global_hits": 0,
+    "global_misses": 0,
+    "prefix_encodes": 4
+  },
+  "released": true
+}

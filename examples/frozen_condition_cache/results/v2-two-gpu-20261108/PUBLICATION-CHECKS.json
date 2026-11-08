@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "cpu_tests": {
+    "passed": 61,
+    "failed": 0,
+    "skipped": 0,
+    "prior_suite_cases": 48,
+    "new_two_gpu_cases": 13,
+    "elapsed_seconds": 2.51,
+    "command": "FROZEN_CACHE_RELAX_SRC=/path/to/Relax CUDA_VISIBLE_DEVICES=\"\" python -m pytest tests/cpu/examples/frozen_condition_cache tests/cpu/two_gpu_validation -q",
+    "prior_tests_deleted_or_changed": false,
+    "prior_published50_note": "Current validation-repository HEAD collects48 prior cases; all prior tracked test bytes are unchanged. No tests added merely to match an older50-case statement."
+  },
+  "ruff": "check passed after5 import-order fixes; format1file,26unchanged",
+  "production_source": "53a814afb7e9fc1b24e065c34cae451d2fbda316; all8runtime hashes byte-identical to measured source",
+  "historical_result_files_verified_unchanged": 98,
+  "new_evidence_verified": 298,
+  "formal_jobs": 16,
+  "formal_optimizer_updates": 3328,
+  "stored_strict_reports": 4,
+  "new_GPU_runs": false,
+  "scope": "CPU tooling regression and standard-library evidence checks only; published GPU results are the original recorded measurements"
+}

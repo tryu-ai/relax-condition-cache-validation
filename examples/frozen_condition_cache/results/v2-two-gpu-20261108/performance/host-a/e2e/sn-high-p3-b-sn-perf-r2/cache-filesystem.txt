@@ -1,0 +1,2 @@
+Filesystem      Size  Used Avail Use% Mounted on
+shm             110G  1.1M  110G   1% /dev/shm

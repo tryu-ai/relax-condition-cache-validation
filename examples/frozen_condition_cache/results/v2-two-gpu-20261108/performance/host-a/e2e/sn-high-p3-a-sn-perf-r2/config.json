@@ -1,0 +1,88 @@
+{
+  "name": "sn-high-p3-a-sn-perf-r2",
+  "model": "sensenova",
+  "arm": "online",
+  "data": "high128",
+  "model_path": "<RUN_ROOT>/assets/models/sensenova",
+  "model_identity": "4df2c617622be0aa9a776cfaba1afbeeb26ebf12f5f5736953856fb0bbaf39f2",
+  "metadata_path": "<RUN_ROOT>/assets/data/high128.json",
+  "dataset_size": 128,
+  "steps": 192,
+  "gpus": 2,
+  "global_batch": 4,
+  "rollout_batch": 4,
+  "micro_batch_size": 1,
+  "gradient_accumulation_steps": 2,
+  "protocol_scope": "real_ray_world2_global_batch4",
+  "deterministic": 0,
+  "save_interval": 0,
+  "image_prefetch_depth": 2,
+  "image_prefetch_workers": 2,
+  "max_pixels": 1048576,
+  "requested_attention_implementation": "flash_attention_2",
+  "seed": 42,
+  "lora_rank": 32,
+  "learning_rate": 0.0001,
+  "cache_bytes": 0,
+  "cache_root": "<SHM_CACHE>",
+  "cache_metrics_scope": "rank0_branch_node_store",
+  "gpu_preflight": {
+    "passed": true,
+    "driver_hostname": "host-a",
+    "authorized_ids": "0,1",
+    "authorized_physical_gpus": [
+      {
+        "uuid": "GPU-host-a-0",
+        "name": "NVIDIA RTX 6000D",
+        "memory_total_mib": 85651
+      },
+      {
+        "uuid": "GPU-host-a-1",
+        "name": "NVIDIA RTX 6000D",
+        "memory_total_mib": 85651
+      }
+    ],
+    "ray_actors": [
+      {
+        "uuid": "GPU-host-a-0",
+        "name": "NVIDIA RTX 6000D",
+        "memory_total_bytes": 89173131264,
+        "hostname": "host-a",
+        "cuda_visible_devices": "0",
+        "ray_gpu_ids": [
+          "0"
+        ],
+        "logical_cuda_device": 0,
+        "torch_version": "2.9.0+cu128"
+      },
+      {
+        "uuid": "GPU-host-a-1",
+        "name": "NVIDIA RTX 6000D",
+        "memory_total_bytes": 89173131264,
+        "hostname": "host-a",
+        "cuda_visible_devices": "1",
+        "ray_gpu_ids": [
+          "1"
+        ],
+        "logical_cuda_device": 0,
+        "torch_version": "2.9.0+cu128"
+      }
+    ]
+  },
+  "metadata": "<RUN_ROOT>/assets/data/high128.json",
+  "metadata_sha256": "e49693b2f77197e87c503ee7e161bc0abef24128eafc0065dbf7be9b0091046f",
+  "runtime_env": {
+    "env_vars": {
+      "RELAX_CONDITION_CACHE_BYTES": "0",
+      "RELAX_CONDITION_CACHE_DEVICE": "shm",
+      "RELAX_CONDITION_CACHE_DIR": "<SHM_CACHE>",
+      "RELAX_CONDITION_CACHE_IDENTITY": "4df2c617622be0aa9a776cfaba1afbeeb26ebf12f5f5736953856fb0bbaf39f2",
+      "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+      "PYTHONPATH": "<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/deps/Megatron-LM",
+      "DIAG_SOURCE_ID": "b1b380451750b009dcf3833829e8c234b1ea9c95598b450e0384158c46f604d0"
+    }
+  },
+  "monitor_gpu_ids": "0,1",
+  "diagnostic_phase": null,
+  "lr_warmup_iters": 200
+}

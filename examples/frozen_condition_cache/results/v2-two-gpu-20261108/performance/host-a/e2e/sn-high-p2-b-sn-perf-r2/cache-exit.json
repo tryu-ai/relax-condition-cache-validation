@@ -1,0 +1,11 @@
+{
+  "root": "<SHM_CACHE>",
+  "exists": true,
+  "entries": [
+    {
+      "name": ".lifecycle.lock",
+      "type": "file",
+      "bytes": 0
+    }
+  ]
+}

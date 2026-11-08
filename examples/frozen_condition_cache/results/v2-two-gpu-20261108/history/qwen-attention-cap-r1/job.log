@@ -1,0 +1,404 @@
+2026-11-08 05:09:40,427	INFO cli.py:42 -- [37mJob submission server address[39m: [1mhttp://127.0.0.1:18265[22m
+2026-11-08 05:09:38,119	INFO job_manager.py:583 -- Runtime env is setting up.
+Running entrypoint for job raysubmit_M4hwWU46qjjcaVEA: python3 -m relax.entrypoints.train --train-backend fsdp --loss-type sft --generation-task i2i --model-path <RUN_ROOT>/assets/models/qwen_edit --prompt-data <RUN_ROOT>/assets/data/debug8.json --i2i-sft-config '{"data_root": "<RUN_ROOT>/assets/data", "dataset_size": 8, "max_pixels": 1048576, "conditioning_images": 1, "attention_implementation": "flash_attention_2", "deterministic_attention": true, "prefix_gradient_checkpointing": true, "image_prefetch_depth": 0, "image_prefetch_workers": 2}' --resource '{"actor": [1, 2], "sft": [1, 0]}' --fsdp-trainable-mode lora --fsdp-master-dtype fp32 --lora-rank 32 --lora-alpha 32 --micro-batch-size 1 --global-batch-size 2 --rollout-batch-size 2 --n-samples-per-prompt 1 --num-rollout 1 --seed 42 --lr 1e-4 --lr-warmup-iters 200 --weight-decay 0.01 --adam-beta1 0.9 --adam-beta2 0.999 --adam-eps 1e-8 --clip-grad 1.0 --global-batch-size 4 --rollout-batch-size 4 --micro-batch-size 1 --lr-warmup-iters 0 --model-adapter-path diagnostics.adapters.QwenImageEditDiagnosticAdapter
+<RUN_ROOT>/deps/Megatron-LM/megatron/core/optimizer/__init__.py:25: UserWarning: Transformer Engine and Apex are not installed. Falling back to Torch optimizers.
+  warnings.warn(
+<RUN_ROOT>/deps/Megatron-LM/megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:114: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+  warnings.warn(
+<RUN_ROOT>/deps/Megatron-LM/megatron/core/optimizer/optimizer.py:28: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+  warnings.warn(
+<RUN_ROOT>/deps/Megatron-LM/megatron/core/optimizer/clip_grads.py:32: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier, multi_tensor_l2norm, and multi_tensor_scale
+  warnings.warn(
+<RUN_ROOT>/deps/Megatron-LM/megatron/core/models/backends.py:34: UserWarning: Apex is not installed. Falling back to Torch Norm
+  warnings.warn("Apex is not installed. Falling back to Torch Norm")
+<RUN_ROOT>/deps/Megatron-LM/megatron/core/models/gpt/gpt_layer_specs.py:77: UserWarning: Apex is not installed. Falling back to Torch Norm
+  warnings.warn("Apex is not installed. Falling back to Torch Norm")
+<RUN_ROOT>/deps/Megatron-LM/megatron/training/utils/common_utils.py:27: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_l2norm
+  warnings.warn(
+<RUN_ROOT>/deps/Megatron-LM/megatron/core/models/gpt/heterogeneous/heterogeneous_layer_specs.py:68: UserWarning: Apex is not installed. Falling back to Torch Norm
+  warnings.warn("Apex is not installed. Falling back to Torch Norm")
+<RUN_ROOT>/deps/Megatron-LM/megatron/core/extensions/transformer_engine_spec_provider.py:100: UserWarning: Only transformer-engine>=1.7.0 supports MoE experts, but your version is 0.0.0. Use local linear implementation instead.
+  warnings.warn(
+LANG_RL Log directory: None
+Import of FP8GlobalStateManager from megatron.core.extensions.transformer_engine failed with: Traceback (most recent call last):
+  File "<RUN_ROOT>/deps/Megatron-LM/megatron/bridge/utils/import_utils.py", line 324, in safe_import_from
+    return getattr(imported_module, symbol), True
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'megatron.core.extensions.transformer_engine' has no attribute 'FP8GlobalStateManager'
+
+INFO:megatron.bridge.utils.import_utils:Import of FP8GlobalStateManager from megatron.core.extensions.transformer_engine failed with: Traceback (most recent call last):
+  File "<RUN_ROOT>/deps/Megatron-LM/megatron/bridge/utils/import_utils.py", line 324, in safe_import_from
+    return getattr(imported_module, symbol), True
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'megatron.core.extensions.transformer_engine' has no attribute 'FP8GlobalStateManager'
+
+[32m2026-11-08 05:09:50[0m | [1;33mWARNING[0m | [36mrelax.models:13[0m [1;33mFailed to import relax.models.keye_vl2: No module named 'transformer_engine'[0m
+[32m2026-11-08 05:09:50[0m | [1;33mWARNING[0m | [36mrelax.models:31[0m [1;33mFailed to import relax.models.qwen_omni (Omni path disabled): No module named 'transformer_engine'[0m
+[32m2026-11-08 05:09:50[0m | [1;33mWARNING[0m | [36mrelax.models:40[0m [1;33mFailed to import relax.models.glm_moe_dsa: No module named 'transformer_engine'[0m
+[32m2026-11-08 05:09:50[0m | [1;33mWARNING[0m | [36mrelax.models:49[0m [1;33mFailed to import relax.models.dots_ocr.megatron: No module named 'transformer_engine'[0m
+[32m2026-11-08 05:09:50[0m | [1;33mWARNING[0m | [36mrelax.models:59[0m [1;33mFailed to import relax.models.gemma4: No module named 'transformer_engine'[0m
+[32m2026-11-08 05:09:50[0m | [1;33mWARNING[0m | [36mrelax.models:68[0m [1;33mFailed to import relax.models.kimi_k3: No module named 'transformer_engine'[0m
+[32m2026-11-08 05:09:50[0m | [1;33mWARNING[0m | [36mroot:52[0m [1;33mdeep_ep is not installed, some functionalities may be limited.[0m
+WARNING: Inferring the appropriate argparse argument type from <class 'megatron.core.transformer.transformer_config.TransformerConfig'> failed for pad_packed_seq_alignment: typing.Union[int, typing.Literal['max'], NoneType].
+Deferring to attribute metadata. If the metadata is incomplete, 'parser.add_argument()' may fail.
+Original failure: Unions not supported by argparse: typing.Union[int, typing.Literal['max'], NoneType]
+[32m2026-11-08 05:09:50[0m | [1;37mINFO[0m | [36mrelax.backends.megatron.arguments:362[0m [1;37mDerived actor_num_gpus_per_node=2, actor_num_nodes=1 from --resource[0m
+[32m2026-11-08 05:09:50[0m | [1;37mINFO[0m | [36mrelax.backends.megatron.arguments:328[0m [1;37m--tokenizer-model not set, use --hf-checkpoint as tokenizer model.[0m
+[32m2026-11-08 05:09:50[0m | [1;37mINFO[0m | [36mrelax.utils.arguments:4663[0m [1;37mn_samples_per_prompt is set to 1, grpo_std_normalization will be set to False.[0m
+[32m2026-11-08 05:09:50[0m | [1;37mINFO[0m | [36mrelax.utils.arguments:4735[0m [1;37margs.eval_max_context_len is not set. Use args.rollout_max_context_len None as default value.[0m
+[32m2026-11-08 05:09:50[0m | [1;37mINFO[0m | [36mrelax.utils.utils:495[0m [1;37mRay runtime env: {'NCCL_DEBUG': 'WARN', 'CUDA_DEVICE_MAX_CONNECTIONS': '1', 'PYTHONBUFFERED': '16', 'PYTHONPATH': '<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/deps/Megatron-LM:<HOME>/Megatron-LM/:<HOME>/Relax', 'CLEARML_SUPPRESS_UPDATE_MESSAGE': '1', 'RAY_EXPERIMENTAL_NOSET_ASCEND_RT_VISIBLE_DEVICES': '1', 'TQ_PRE_ALLOC_SAMPLE_NUM': '4', 'TQ_ZERO_COPY_SERIALIZATION': 'true', 'SLIME_HOST_IP': '<NODE_ADDRESS>', 'RELAX_SFT_TQ_SHARDS': '1', 'RELAX_JSONL_INDEX_WORKERS': '16', 'TOKENIZERS_PARALLELISM': 'true'}[0m
+[32m2026-11-08 05:09:50[0m | [1;33mWARNING[0m | [36mrelax.utils.env:563[0m [1;33mUnregistered environment variables in a Relax-owned namespace: ['RELAX_SKIP_CLUSTER_CLEANUP']. Nothing reads them, so they have no effect. Declare each one as an EnvProperty in relax/utils/env.py::Envs so its type and default live alongside the rest of the configuration, and read it via Envs.<NAME> rather than os.environ. Silence known-good names with RELAX_EXTRA_ENV_ALLOWLIST.[0m
+2026-11-08 05:09:50,912	INFO worker.py:1683 -- Using address <NODE_ADDRESS>:16379 set in the environment variable RAY_ADDRESS
+2026-11-08 05:09:50,916	INFO worker.py:1833 -- Connecting to existing Ray cluster at address: <NODE_ADDRESS>:16379...
+2026-11-08 05:09:50,934	INFO worker.py:2015 -- Connected to Ray cluster. View the dashboard at [1m[32mhttp://127.0.0.1:18265 [39m[22m
+[32m2026-11-08 05:09:50[0m | [1;37mINFO[0m | [36m__main__:174[0m [1;37mRay initialized successfully[0m
+[36m(ProxyActor pid=7536)[0m INFO 2026-11-08 05:09:56,641 proxy <NODE_ADDRESS> -- Proxy starting on node 54b06bfee9da650228ebf3d553132eb4b1c025f936eda70de195f6c5 (HTTP port: 8000).
+INFO 2026-11-08 05:09:56,747 serve 7174 -- Started Serve in namespace "serve".
+[32m2026-11-08 05:09:56[0m | [1;37mINFO[0m | [36mrelax.utils.utils:679[0m [1;37mServe URL: http://<NODE_ADDRESS>:8000/metrics[0m
+[MetricsClient] health_check failed: HTTP 404, response: Path '/metrics/health' not found. Ping http://.../-/routes for available routes.
+2026-11-08 05:09:56.755 | WARNING  | relax.utils.metrics.metrics_service_adapter:__init__:33 - MetricsServiceAdapter: Warning - Cannot connect to metrics service: HTTP 404: Path '/metrics/health' not found. Ping http://.../-/routes for available routes.
+[36m(ProxyActor pid=7536)[0m INFO 2026-11-08 05:09:56,741 proxy <NODE_ADDRESS> -- Got updated endpoints: {}.
+[32m2026-11-08 05:09:56[0m | [1;37mINFO[0m | [36mrelax.utils.health_system:458[0m [1;37mHealthManager initialized[0m
+[32m2026-11-08 05:10:05[0m | [1;37mINFO[0m | [36mrelax.core.controller:427[0m [1;37m[dataplane] backend=SimpleStorage (default in-process init, no owner actor)[0m
+INFO 2026-11-08 05:10:05,858 serve 7174 -- Connecting to existing Serve app in namespace "serve". New http_options/controller_options will not be applied.
+[36m(ServeController pid=7467)[0m INFO 2026-11-08 05:10:05,932 controller 7467 -- Deploying new version of Deployment(name='DCSCoordinator', app='dcs_coordinator') (initial target replicas: 1).
+[36m(ProxyActor pid=7536)[0m INFO 2026-11-08 05:10:05,938 proxy <NODE_ADDRESS> -- Got updated endpoints: {Deployment(name='DCSCoordinator', app='dcs_coordinator'): EndpointInfo(route='/dcs_coordinator', app_is_cross_language=False, route_patterns=None)}.
+[36m(ProxyActor pid=7536)[0m INFO 2026-11-08 05:10:05,949 proxy <NODE_ADDRESS> -- Started <ray.serve._private.router.SharedRouterLongPollClient object at 0x7f1a95b70740>.
+[36m(ServeController pid=7467)[0m INFO 2026-11-08 05:10:06,039 controller 7467 -- Adding 1 replica to Deployment(name='DCSCoordinator', app='dcs_coordinator').
+[36m(ProxyActor pid=7536)[0m INFO 2026-11-08 05:10:12,648 proxy <NODE_ADDRESS> -- Got updated endpoints: {Deployment(name='DCSCoordinator', app='dcs_coordinator'): EndpointInfo(route='/dcs_coordinator', app_is_cross_language=False, route_patterns=[RoutePattern(methods=['GET'], path='/clear_weight_meta'), RoutePattern(methods=['GET'], path='/debug/topology'), RoutePattern(methods=['GET', 'HEAD'], path='/docs'), RoutePattern(methods=['GET', 'HEAD'], path='/docs/oauth2-redirect'), RoutePattern(methods=['GET'], path='/get_model_update_group_ranks'), RoutePattern(methods=['GET'], path='/global_rank'), RoutePattern(methods=['GET'], path='/health'), RoutePattern(methods=['GET'], path='/heartbeat'), RoutePattern(methods=['GET'], path='/node'), RoutePattern(methods=['GET', 'HEAD'], path='/openapi.json'), RoutePattern(methods=['GET'], path='/peer'), RoutePattern(methods=['GET'], path='/recv_weight_meta'), RoutePattern(methods=['GET', 'HEAD'], path='/redoc'), RoutePattern(methods=['POST'], path='/register'), RoutePattern(methods=['POST'], path='/send_weight_meta'), RoutePattern(methods=['GET'], path='/topology'), RoutePattern(methods=['DELETE'], path='/unregister')])}.
+INFO 2026-11-08 05:10:13,007 serve 7174 -- Application 'dcs_coordinator' is ready at http://0.0.0.0:8000/dcs_coordinator.
+[32m2026-11-08 05:10:13[0m | [1;37mINFO[0m | [36mrelax.utils.utils:679[0m [1;37mServe URL: http://<NODE_ADDRESS>:8000/dcs_coordinator[0m
+INFO 2026-11-08 05:10:13,185 serve 7174 -- Connecting to existing Serve app in namespace "serve". New http_options/controller_options will not be applied.
+[36m(ServeController pid=7467)[0m INFO 2026-11-08 05:10:13,274 controller 7467 -- Deploying new version of Deployment(name='MetricsService', app='metrics') (initial target replicas: 1).
+[36m(ProxyActor pid=7536)[0m INFO 2026-11-08 05:10:13,282 proxy <NODE_ADDRESS> -- Got updated endpoints: {Deployment(name='DCSCoordinator', app='dcs_coordinator'): EndpointInfo(route='/dcs_coordinator', app_is_cross_language=False, route_patterns=[RoutePattern(methods=['GET'], path='/clear_weight_meta'), RoutePattern(methods=['GET'], path='/debug/topology'), RoutePattern(methods=['GET', 'HEAD'], path='/docs'), RoutePattern(methods=['GET', 'HEAD'], path='/docs/oauth2-redirect'), RoutePattern(methods=['GET'], path='/get_model_update_group_ranks'), RoutePattern(methods=['GET'], path='/global_rank'), RoutePattern(methods=['GET'], path='/health'), RoutePattern(methods=['GET'], path='/heartbeat'), RoutePattern(methods=['GET'], path='/node'), RoutePattern(methods=['GET', 'HEAD'], path='/openapi.json'), RoutePattern(methods=['GET'], path='/peer'), RoutePattern(methods=['GET'], path='/recv_weight_meta'), RoutePattern(methods=['GET', 'HEAD'], path='/redoc'), RoutePattern(methods=['POST'], path='/register'), RoutePattern(methods=['POST'], path='/send_weight_meta'), RoutePattern(methods=['GET'], path='/topology'), RoutePattern(methods=['DELETE'], path='/unregister')]), Deployment(name='MetricsService', app='metrics'): EndpointInfo(route='/metrics', app_is_cross_language=False, route_patterns=None)}.
+[36m(ServeController pid=7467)[0m INFO 2026-11-08 05:10:13,383 controller 7467 -- Adding 1 replica to Deployment(name='MetricsService', app='metrics').
+[36m(ServeReplica:metrics:MetricsService pid=8094)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/optimizer/__init__.py:25: UserWarning: Transformer Engine and Apex are not installed. Falling back to Torch optimizers.
+[36m(ServeReplica:metrics:MetricsService pid=8094)[0m   warnings.warn(
+[36m(ServeReplica:metrics:MetricsService pid=8094)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:114: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+[36m(ServeReplica:metrics:MetricsService pid=8094)[0m   warnings.warn(
+[36m(ServeReplica:metrics:MetricsService pid=8094)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/optimizer/optimizer.py:28: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+[36m(ServeReplica:metrics:MetricsService pid=8094)[0m   warnings.warn(
+[36m(ServeReplica:metrics:MetricsService pid=8094)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/optimizer/clip_grads.py:32: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier, multi_tensor_l2norm, and multi_tensor_scale
+[36m(ServeReplica:metrics:MetricsService pid=8094)[0m   warnings.warn(
+[36m(ServeReplica:metrics:MetricsService pid=8094)[0m [32m2026-11-08 05:10:20[0m | [1;33mWARNING[0m | [36mrelax.utils.metrics.adapters.tensorboard:44[0m [1;33mNo tb_project_name / tb_experiment_name / TENSORBOARD_DIR / args.save supplied; defaulting tb_project_name='relax' and auto-generating tb_experiment_name.[0m
+[36m(ServeReplica:metrics:MetricsService pid=8094)[0m [32m2026-11-08 05:10:20[0m | [1;37mINFO[0m | [36mrelax.utils.metrics.adapters.tensorboard:62[0m [1;37mSaving tensorboard log to tensorboard_log/relax/20261108_051020.[0m
+[36m(ServeReplica:metrics:MetricsService pid=8094)[0m [32m2026-11-08 05:10:20[0m | [1;37mINFO[0m | [36mrelax.utils.metrics.service:136[0m [1;37mTensorBoard adapter initialized[0m
+[36m(ServeReplica:metrics:MetricsService pid=8094)[0m [32m2026-11-08 05:10:20[0m | [1;37mINFO[0m | [36mrelax.utils.metrics.service:171[0m [1;37mMetricsService initialized with adapters: ['tensorboard'][0m
+[36m(ProxyActor pid=7536)[0m INFO 2026-11-08 05:10:20,758 proxy <NODE_ADDRESS> -- Got updated endpoints: {Deployment(name='DCSCoordinator', app='dcs_coordinator'): EndpointInfo(route='/dcs_coordinator', app_is_cross_language=False, route_patterns=[RoutePattern(methods=['GET'], path='/clear_weight_meta'), RoutePattern(methods=['GET'], path='/debug/topology'), RoutePattern(methods=['GET', 'HEAD'], path='/docs'), RoutePattern(methods=['GET', 'HEAD'], path='/docs/oauth2-redirect'), RoutePattern(methods=['GET'], path='/get_model_update_group_ranks'), RoutePattern(methods=['GET'], path='/global_rank'), RoutePattern(methods=['GET'], path='/health'), RoutePattern(methods=['GET'], path='/heartbeat'), RoutePattern(methods=['GET'], path='/node'), RoutePattern(methods=['GET', 'HEAD'], path='/openapi.json'), RoutePattern(methods=['GET'], path='/peer'), RoutePattern(methods=['GET'], path='/recv_weight_meta'), RoutePattern(methods=['GET', 'HEAD'], path='/redoc'), RoutePattern(methods=['POST'], path='/register'), RoutePattern(methods=['POST'], path='/send_weight_meta'), RoutePattern(methods=['GET'], path='/topology'), RoutePattern(methods=['DELETE'], path='/unregister')]), Deployment(name='MetricsService', app='metrics'): EndpointInfo(route='/metrics', app_is_cross_language=False, route_patterns=[RoutePattern(methods=['GET'], path='/'), RoutePattern(methods=['POST'], path='/clear_metrics'), RoutePattern(methods=['GET', 'HEAD'], path='/docs'), RoutePattern(methods=['GET', 'HEAD'], path='/docs/oauth2-redirect'), RoutePattern(methods=['GET'], path='/health'), RoutePattern(methods=['POST'], path='/log_error'), RoutePattern(methods=['POST'], path='/log_metric'), RoutePattern(methods=['POST'], path='/log_metrics_batch'), RoutePattern(methods=['GET', 'HEAD'], path='/openapi.json'), RoutePattern(methods=['GET'], path='/query_metrics'), RoutePattern(methods=['GET', 'HEAD'], path='/redoc'), RoutePattern(methods=['POST'], path='/report_step')])}.
+INFO 2026-11-08 05:10:21,335 serve 7174 -- Application 'metrics' is ready at http://0.0.0.0:8000/metrics.
+[32m2026-11-08 05:10:21[0m | [1;37mINFO[0m | [36mrelax.core.controller:655[0m [1;37mMetricsService deployed at /metrics[0m
+[32m2026-11-08 05:10:21[0m | [1;37mINFO[0m | [36mrelax.core.controller:1211[0m [1;37mService sft start creating.[0m
+[32m2026-11-08 05:10:21[0m | [1;37mINFO[0m | [36mrelax.core.controller:1211[0m [1;37mService actor start creating.[0m
+[32m2026-11-08 05:10:21[0m | [1;37mINFO[0m | [36mrelax.core.controller:1121[0m [1;37mResource validation: required GPUs=2, cluster GPUs=2, colocate=False[0m
+[32m2026-11-08 05:10:21[0m | [1;37mINFO[0m | [36mrelax.core.controller:850[0m [1;37mUsing serial service deploy mode (fully_async=False)[0m
+[32m2026-11-08 05:10:21[0m | [1;37mINFO[0m | [36mrelax.core.service:58[0m [1;37m[sft] Initializing service with num_gpus=0, actor_rollout_pgs=False[0m
+[32m2026-11-08 05:10:21[0m | [1;37mINFO[0m | [36mrelax.core.service:83[0m [1;37m[sft] Placement group initialized: None[0m
+[32m2026-11-08 05:10:21[0m | [1;37mINFO[0m | [36mrelax.core.service:151[0m [1;37m[sft] Deploying service...[0m
+INFO 2026-11-08 05:10:21,385 serve 7174 -- Connecting to existing Serve app in namespace "serve". New http_options/controller_options will not be applied.
+[36m(ServeController pid=7467)[0m INFO 2026-11-08 05:10:26,749 controller 7467 -- Deploying new version of Deployment(name='ImageSFT', app='sft') (initial target replicas: 1).
+[36m(ServeController pid=7467)[0m INFO 2026-11-08 05:10:26,858 controller 7467 -- Adding 1 replica to Deployment(name='ImageSFT', app='sft').
+[36m(ProxyActor pid=7536)[0m INFO 2026-11-08 05:10:31,247 proxy <NODE_ADDRESS> -- Got updated endpoints: {Deployment(name='DCSCoordinator', app='dcs_coordinator'): EndpointInfo(route='/dcs_coordinator', app_is_cross_language=False, route_patterns=[RoutePattern(methods=['GET'], path='/clear_weight_meta'), RoutePattern(methods=['GET'], path='/debug/topology'), RoutePattern(methods=['GET', 'HEAD'], path='/docs'), RoutePattern(methods=['GET', 'HEAD'], path='/docs/oauth2-redirect'), RoutePattern(methods=['GET'], path='/get_model_update_group_ranks'), RoutePattern(methods=['GET'], path='/global_rank'), RoutePattern(methods=['GET'], path='/health'), RoutePattern(methods=['GET'], path='/heartbeat'), RoutePattern(methods=['GET'], path='/node'), RoutePattern(methods=['GET', 'HEAD'], path='/openapi.json'), RoutePattern(methods=['GET'], path='/peer'), RoutePattern(methods=['GET'], path='/recv_weight_meta'), RoutePattern(methods=['GET', 'HEAD'], path='/redoc'), RoutePattern(methods=['POST'], path='/register'), RoutePattern(methods=['POST'], path='/send_weight_meta'), RoutePattern(methods=['GET'], path='/topology'), RoutePattern(methods=['DELETE'], path='/unregister')]), Deployment(name='MetricsService', app='metrics'): EndpointInfo(route='/metrics', app_is_cross_language=False, route_patterns=[RoutePattern(methods=['GET'], path='/'), RoutePattern(methods=['POST'], path='/clear_metrics'), RoutePattern(methods=['GET', 'HEAD'], path='/docs'), RoutePattern(methods=['GET', 'HEAD'], path='/docs/oauth2-redirect'), RoutePattern(methods=['GET'], path='/health'), RoutePattern(methods=['POST'], path='/log_error'), RoutePattern(methods=['POST'], path='/log_metric'), RoutePattern(methods=['POST'], path='/log_metrics_batch'), RoutePattern(methods=['GET', 'HEAD'], path='/openapi.json'), RoutePattern(methods=['GET'], path='/query_metrics'), RoutePattern(methods=['GET', 'HEAD'], path='/redoc'), RoutePattern(methods=['POST'], path='/report_step')]), Deployment(name='ImageSFT', app='sft'): EndpointInfo(route='/sft', app_is_cross_language=False, route_patterns=None)}.
+[36m(ServeReplica:sft:ImageSFT pid=8344)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/optimizer/__init__.py:25: UserWarning: Transformer Engine and Apex are not installed. Falling back to Torch optimizers.
+[36m(ServeReplica:sft:ImageSFT pid=8344)[0m   warnings.warn(
+[36m(ServeReplica:sft:ImageSFT pid=8344)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:114: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+[36m(ServeReplica:sft:ImageSFT pid=8344)[0m   warnings.warn(
+[36m(ServeReplica:sft:ImageSFT pid=8344)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/optimizer/optimizer.py:28: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+[36m(ServeReplica:sft:ImageSFT pid=8344)[0m   warnings.warn(
+[36m(ServeReplica:sft:ImageSFT pid=8344)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/optimizer/clip_grads.py:32: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier, multi_tensor_l2norm, and multi_tensor_scale
+[36m(ServeReplica:sft:ImageSFT pid=8344)[0m   warnings.warn(
+INFO 2026-11-08 05:10:36,804 serve 7174 -- Application 'sft' is ready at http://0.0.0.0:8000/sft.
+[32m2026-11-08 05:10:36[0m | [1;37mINFO[0m | [36mrelax.core.service:104[0m [1;37m[sft] Service deployed successfully[0m
+[32m2026-11-08 05:10:36[0m | [1;37mINFO[0m | [36mrelax.core.controller:808[0m [1;37mService sft has been created successfully[0m
+[32m2026-11-08 05:10:36[0m | [1;37mINFO[0m | [36mrelax.core.service:58[0m [1;37m[actor] Initializing service with num_gpus=2, actor_rollout_pgs=False[0m
+[32m2026-11-08 05:10:40[0m | [1;37mINFO[0m | [36mrelax.distributed.ray.placement_group:151[0m [1;37m  bundle    0, actual_bundle_index:    0, node: <NODE_ADDRESS>, gpu: 0[0m
+[32m2026-11-08 05:10:40[0m | [1;37mINFO[0m | [36mrelax.distributed.ray.placement_group:151[0m [1;37m  bundle    1, actual_bundle_index:    1, node: <NODE_ADDRESS>, gpu: 1[0m
+[32m2026-11-08 05:10:40[0m | [1;37mINFO[0m | [36mrelax.core.service:83[0m [1;37m[actor] Placement group initialized: (<ray.util.placement_group.PlacementGroup object at 0x7f5c8b162720>, [0, 1], ['0', '1'])[0m
+[32m2026-11-08 05:10:40[0m | [1;37mINFO[0m | [36mrelax.core.service:151[0m [1;37m[actor] Deploying service...[0m
+INFO 2026-11-08 05:10:40,470 serve 7174 -- Connecting to existing Serve app in namespace "serve". New http_options/controller_options will not be applied.
+[36m(ServeController pid=7467)[0m INFO 2026-11-08 05:10:40,521 controller 7467 -- Deploying new version of Deployment(name='Actor', app='actor') (initial target replicas: 1).
+[36m(ProxyActor pid=7536)[0m INFO 2026-11-08 05:10:40,529 proxy <NODE_ADDRESS> -- Got updated endpoints: {Deployment(name='DCSCoordinator', app='dcs_coordinator'): EndpointInfo(route='/dcs_coordinator', app_is_cross_language=False, route_patterns=[RoutePattern(methods=['GET'], path='/clear_weight_meta'), RoutePattern(methods=['GET'], path='/debug/topology'), RoutePattern(methods=['GET', 'HEAD'], path='/docs'), RoutePattern(methods=['GET', 'HEAD'], path='/docs/oauth2-redirect'), RoutePattern(methods=['GET'], path='/get_model_update_group_ranks'), RoutePattern(methods=['GET'], path='/global_rank'), RoutePattern(methods=['GET'], path='/health'), RoutePattern(methods=['GET'], path='/heartbeat'), RoutePattern(methods=['GET'], path='/node'), RoutePattern(methods=['GET', 'HEAD'], path='/openapi.json'), RoutePattern(methods=['GET'], path='/peer'), RoutePattern(methods=['GET'], path='/recv_weight_meta'), RoutePattern(methods=['GET', 'HEAD'], path='/redoc'), RoutePattern(methods=['POST'], path='/register'), RoutePattern(methods=['POST'], path='/send_weight_meta'), RoutePattern(methods=['GET'], path='/topology'), RoutePattern(methods=['DELETE'], path='/unregister')]), Deployment(name='MetricsService', app='metrics'): EndpointInfo(route='/metrics', app_is_cross_language=False, route_patterns=[RoutePattern(methods=['GET'], path='/'), RoutePattern(methods=['POST'], path='/clear_metrics'), RoutePattern(methods=['GET', 'HEAD'], path='/docs'), RoutePattern(methods=['GET', 'HEAD'], path='/docs/oauth2-redirect'), RoutePattern(methods=['GET'], path='/health'), RoutePattern(methods=['POST'], path='/log_error'), RoutePattern(methods=['POST'], path='/log_metric'), RoutePattern(methods=['POST'], path='/log_metrics_batch'), RoutePattern(methods=['GET', 'HEAD'], path='/openapi.json'), RoutePattern(methods=['GET'], path='/query_metrics'), RoutePattern(methods=['GET', 'HEAD'], path='/redoc'), RoutePattern(methods=['POST'], path='/report_step')]), Deployment(name='ImageSFT', app='sft'): EndpointInfo(route='/sft', app_is_cross_language=False, route_patterns=None), Deployment(name='Actor', app='actor'): EndpointInfo(route='/actor', app_is_cross_language=False, route_patterns=None)}.
+[36m(ServeController pid=7467)[0m INFO 2026-11-08 05:10:40,629 controller 7467 -- Adding 1 replica to Deployment(name='Actor', app='actor').
+[36m(ServeReplica:actor:Actor pid=8702)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/optimizer/__init__.py:25: UserWarning: Transformer Engine and Apex are not installed. Falling back to Torch optimizers.
+[36m(ServeReplica:actor:Actor pid=8702)[0m   warnings.warn(
+[36m(ServeReplica:actor:Actor pid=8702)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:114: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+[36m(ServeReplica:actor:Actor pid=8702)[0m   warnings.warn(
+[36m(ServeReplica:actor:Actor pid=8702)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/optimizer/optimizer.py:28: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+[36m(ServeReplica:actor:Actor pid=8702)[0m   warnings.warn(
+[36m(ServeReplica:actor:Actor pid=8702)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/optimizer/clip_grads.py:32: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier, multi_tensor_l2norm, and multi_tensor_scale
+[36m(ServeReplica:actor:Actor pid=8702)[0m   warnings.warn(
+[36m(ServeReplica:actor:Actor pid=8702)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/models/backends.py:34: UserWarning: Apex is not installed. Falling back to Torch Norm
+[36m(ServeReplica:actor:Actor pid=8702)[0m   warnings.warn("Apex is not installed. Falling back to Torch Norm")
+[36m(ServeReplica:actor:Actor pid=8702)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/models/gpt/gpt_layer_specs.py:77: UserWarning: Apex is not installed. Falling back to Torch Norm
+[36m(ServeReplica:actor:Actor pid=8702)[0m   warnings.warn("Apex is not installed. Falling back to Torch Norm")
+[36m(ServeReplica:actor:Actor pid=8702)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/training/utils/common_utils.py:27: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_l2norm
+[36m(ServeReplica:actor:Actor pid=8702)[0m   warnings.warn(
+[36m(ServeReplica:actor:Actor pid=8702)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/models/gpt/heterogeneous/heterogeneous_layer_specs.py:68: UserWarning: Apex is not installed. Falling back to Torch Norm
+[36m(ServeReplica:actor:Actor pid=8702)[0m   warnings.warn("Apex is not installed. Falling back to Torch Norm")
+[36m(ServeReplica:actor:Actor pid=8702)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/extensions/transformer_engine_spec_provider.py:100: UserWarning: Only transformer-engine>=1.7.0 supports MoE experts, but your version is 0.0.0. Use local linear implementation instead.
+[36m(ServeReplica:actor:Actor pid=8702)[0m   warnings.warn(
+[36m(ServeReplica:actor:Actor pid=8702)[0m LANG_RL Log directory: None
+[36m(ServeReplica:actor:Actor pid=8702)[0m INFO:megatron.bridge.utils.import_utils:Import of FP8GlobalStateManager from megatron.core.extensions.transformer_engine failed with: Traceback (most recent call last):
+[36m(ServeReplica:actor:Actor pid=8702)[0m   File "<RUN_ROOT>/deps/Megatron-LM/megatron/bridge/utils/import_utils.py", line 324, in safe_import_from
+[36m(ServeReplica:actor:Actor pid=8702)[0m     return getattr(imported_module, symbol), True
+[36m(ServeReplica:actor:Actor pid=8702)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(ServeReplica:actor:Actor pid=8702)[0m AttributeError: module 'megatron.core.extensions.transformer_engine' has no attribute 'FP8GlobalStateManager'
+[36m(ServeReplica:actor:Actor pid=8702)[0m 
+[36m(ServeReplica:actor:Actor pid=8702)[0m Import of FP8GlobalStateManager from megatron.core.extensions.transformer_engine failed with: Traceback (most recent call last):
+[36m(ServeReplica:actor:Actor pid=8702)[0m   File "<RUN_ROOT>/deps/Megatron-LM/megatron/bridge/utils/import_utils.py", line 324, in safe_import_from
+[36m(ServeReplica:actor:Actor pid=8702)[0m     return getattr(imported_module, symbol), True
+[36m(ServeReplica:actor:Actor pid=8702)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(ServeReplica:actor:Actor pid=8702)[0m AttributeError: module 'megatron.core.extensions.transformer_engine' has no attribute 'FP8GlobalStateManager'
+[36m(ServeReplica:actor:Actor pid=8702)[0m 
+[36m(ServeReplica:actor:Actor pid=8702)[0m [32m2026-11-08 05:10:50[0m | [1;33mWARNING[0m | [36mrelax.models:13[0m [1;33mFailed to import relax.models.keye_vl2: No module named 'transformer_engine'[0m
+[36m(ServeReplica:actor:Actor pid=8702)[0m [32m2026-11-08 05:10:50[0m | [1;33mWARNING[0m | [36mrelax.models:31[0m [1;33mFailed to import relax.models.qwen_omni (Omni path disabled): No module named 'transformer_engine'[0m
+[36m(ServeReplica:actor:Actor pid=8702)[0m [32m2026-11-08 05:10:50[0m | [1;33mWARNING[0m | [36mrelax.models:40[0m [1;33mFailed to import relax.models.glm_moe_dsa: No module named 'transformer_engine'[0m
+[36m(ServeReplica:actor:Actor pid=8702)[0m [32m2026-11-08 05:10:50[0m | [1;33mWARNING[0m | [36mrelax.models:49[0m [1;33mFailed to import relax.models.dots_ocr.megatron: No module named 'transformer_engine'[0m
+[36m(ServeReplica:actor:Actor pid=8702)[0m [32m2026-11-08 05:10:50[0m | [1;33mWARNING[0m | [36mrelax.models:59[0m [1;33mFailed to import relax.models.gemma4: No module named 'transformer_engine'[0m
+[36m(ServeReplica:actor:Actor pid=8702)[0m [32m2026-11-08 05:10:50[0m | [1;33mWARNING[0m | [36mrelax.models:68[0m [1;33mFailed to import relax.models.kimi_k3: No module named 'transformer_engine'[0m
+[36m(pid=8930)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/optimizer/__init__.py:25: UserWarning: Transformer Engine and Apex are not installed. Falling back to Torch optimizers.
+[36m(pid=8930)[0m   warnings.warn([32m [repeated 4x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+[36m(pid=8930)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/optimizer/optimizer.py:28: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale[32m [repeated 2x across cluster][0m
+[36m(pid=8930)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/optimizer/clip_grads.py:32: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier, multi_tensor_l2norm, and multi_tensor_scale
+[36m(pid=8930)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/models/backends.py:34: UserWarning: Apex is not installed. Falling back to Torch Norm
+[36m(pid=8930)[0m   warnings.warn("Apex is not installed. Falling back to Torch Norm")
+[36m(pid=8930)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/models/gpt/gpt_layer_specs.py:77: UserWarning: Apex is not installed. Falling back to Torch Norm
+[36m(pid=8930)[0m   warnings.warn("Apex is not installed. Falling back to Torch Norm")
+[36m(pid=8930)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/training/utils/common_utils.py:27: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_l2norm
+[36m(pid=8930)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/models/gpt/heterogeneous/heterogeneous_layer_specs.py:68: UserWarning: Apex is not installed. Falling back to Torch Norm
+[36m(pid=8930)[0m   warnings.warn("Apex is not installed. Falling back to Torch Norm")
+[36m(pid=8930)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/extensions/transformer_engine_spec_provider.py:100: UserWarning: Only transformer-engine>=1.7.0 supports MoE experts, but your version is 0.0.0. Use local linear implementation instead.
+[36m(pid=8930)[0m 
+[36m(pid=8930)[0m LANG_RL Log directory: None
+[36m(pid=8930)[0m INFO:megatron.bridge.utils.import_utils:Import of FP8GlobalStateManager from megatron.core.extensions.transformer_engine failed with: Traceback (most recent call last):
+[36m(pid=8930)[0m   File "<RUN_ROOT>/deps/Megatron-LM/megatron/bridge/utils/import_utils.py", line 324, in safe_import_from
+[36m(pid=8930)[0m     return getattr(imported_module, symbol), True
+[36m(pid=8930)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(pid=8930)[0m AttributeError: module 'megatron.core.extensions.transformer_engine' has no attribute 'FP8GlobalStateManager'
+[36m(pid=8930)[0m Import of FP8GlobalStateManager from megatron.core.extensions.transformer_engine failed with: Traceback (most recent call last):
+[36m(pid=8930)[0m   File "<RUN_ROOT>/deps/Megatron-LM/megatron/bridge/utils/import_utils.py", line 324, in safe_import_from
+[36m(pid=8930)[0m     return getattr(imported_module, symbol), True
+[36m(pid=8930)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(pid=8930)[0m AttributeError: module 'megatron.core.extensions.transformer_engine' has no attribute 'FP8GlobalStateManager'
+[36m(pid=8930)[0m 
+[36m(pid=8930)[0m [32m2026-11-08 05:10:59[0m | [1;33mWARNING[0m | [36mrelax.models:13[0m [1;33mFailed to import relax.models.keye_vl2: No module named 'transformer_engine'[0m
+[36m(pid=8930)[0m [32m2026-11-08 05:10:59[0m | [1;33mWARNING[0m | [36mrelax.models:31[0m [1;33mFailed to import relax.models.qwen_omni (Omni path disabled): No module named 'transformer_engine'[0m
+[36m(pid=8930)[0m [32m2026-11-08 05:10:59[0m | [1;33mWARNING[0m | [36mrelax.models:40[0m [1;33mFailed to import relax.models.glm_moe_dsa: No module named 'transformer_engine'[0m
+[36m(pid=8930)[0m [32m2026-11-08 05:10:59[0m | [1;33mWARNING[0m | [36mrelax.models:49[0m [1;33mFailed to import relax.models.dots_ocr.megatron: No module named 'transformer_engine'[0m
+[36m(pid=8930)[0m [32m2026-11-08 05:10:59[0m | [1;33mWARNING[0m | [36mrelax.models:59[0m [1;33mFailed to import relax.models.gemma4: No module named 'transformer_engine'[0m
+[36m(pid=8930)[0m [32m2026-11-08 05:10:59[0m | [1;33mWARNING[0m | [36mrelax.models:68[0m [1;33mFailed to import relax.models.kimi_k3: No module named 'transformer_engine'[0m
+[36m(pid=9099)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/optimizer/__init__.py:25: UserWarning: Transformer Engine and Apex are not installed. Falling back to Torch optimizers.
+[36m(pid=9099)[0m   warnings.warn([32m [repeated 3x across cluster][0m
+[36m(pid=9099)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:114: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+[36m(pid=9099)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/optimizer/optimizer.py:28: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+[36m(pid=9099)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/optimizer/clip_grads.py:32: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier, multi_tensor_l2norm, and multi_tensor_scale
+[36m(pid=9099)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/models/backends.py:34: UserWarning: Apex is not installed. Falling back to Torch Norm
+[36m(pid=9099)[0m   warnings.warn("Apex is not installed. Falling back to Torch Norm")
+[36m(pid=9099)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/models/gpt/gpt_layer_specs.py:77: UserWarning: Apex is not installed. Falling back to Torch Norm
+[36m(pid=9099)[0m   warnings.warn("Apex is not installed. Falling back to Torch Norm")
+[36m(pid=9099)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/training/utils/common_utils.py:27: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_l2norm
+[36m(pid=9099)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/models/gpt/heterogeneous/heterogeneous_layer_specs.py:68: UserWarning: Apex is not installed. Falling back to Torch Norm
+[36m(pid=9099)[0m   warnings.warn("Apex is not installed. Falling back to Torch Norm")
+[36m(pid=9099)[0m <RUN_ROOT>/deps/Megatron-LM/megatron/core/extensions/transformer_engine_spec_provider.py:100: UserWarning: Only transformer-engine>=1.7.0 supports MoE experts, but your version is 0.0.0. Use local linear implementation instead.
+[36m(pid=9099)[0m LANG_RL Log directory: None
+[36m(pid=9099)[0m INFO:megatron.bridge.utils.import_utils:Import of FP8GlobalStateManager from megatron.core.extensions.transformer_engine failed with: Traceback (most recent call last):
+[36m(pid=9099)[0m   File "<RUN_ROOT>/deps/Megatron-LM/megatron/bridge/utils/import_utils.py", line 324, in safe_import_from
+[36m(pid=9099)[0m     return getattr(imported_module, symbol), True
+[36m(pid=9099)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(pid=9099)[0m AttributeError: module 'megatron.core.extensions.transformer_engine' has no attribute 'FP8GlobalStateManager'
+[36m(pid=9099)[0m 
+[36m(pid=9099)[0m Import of FP8GlobalStateManager from megatron.core.extensions.transformer_engine failed with: Traceback (most recent call last):
+[36m(pid=9099)[0m   File "<RUN_ROOT>/deps/Megatron-LM/megatron/bridge/utils/import_utils.py", line 324, in safe_import_from
+[36m(pid=9099)[0m     return getattr(imported_module, symbol), True
+[36m(pid=9099)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(pid=9099)[0m AttributeError: module 'megatron.core.extensions.transformer_engine' has no attribute 'FP8GlobalStateManager'
+[36m(pid=9099)[0m 
+[36m(pid=9099)[0m [32m2026-11-08 05:11:09[0m | [1;33mWARNING[0m | [36mrelax.models:13[0m [1;33mFailed to import relax.models.keye_vl2: No module named 'transformer_engine'[0m
+[36m(pid=9099)[0m [32m2026-11-08 05:11:09[0m | [1;33mWARNING[0m | [36mrelax.models:31[0m [1;33mFailed to import relax.models.qwen_omni (Omni path disabled): No module named 'transformer_engine'[0m
+[36m(pid=9099)[0m [32m2026-11-08 05:11:09[0m | [1;33mWARNING[0m | [36mrelax.models:40[0m [1;33mFailed to import relax.models.glm_moe_dsa: No module named 'transformer_engine'[0m
+[36m(pid=9099)[0m [32m2026-11-08 05:11:09[0m | [1;33mWARNING[0m | [36mrelax.models:49[0m [1;33mFailed to import relax.models.dots_ocr.megatron: No module named 'transformer_engine'[0m
+[36m(pid=9099)[0m [32m2026-11-08 05:11:09[0m | [1;33mWARNING[0m | [36mrelax.models:59[0m [1;33mFailed to import relax.models.gemma4: No module named 'transformer_engine'[0m
+[36m(pid=9099)[0m [32m2026-11-08 05:11:09[0m | [1;33mWARNING[0m | [36mrelax.models:68[0m [1;33mFailed to import relax.models.kimi_k3: No module named 'transformer_engine'[0m
+[36m(ServeReplica:metrics:MetricsService pid=8094)[0m INFO 2026-11-08 05:11:10,587 metrics_MetricsService m9g9l77n 79c5b498-7194-464c-b037-eef2aa8f54e5 -- GET /metrics/health 200 12.4ms
+[36m(pid=9099)[0m   warnings.warn([32m [repeated 5x across cluster][0m
+[36m(FSDPTrainRayActor pid=8930)[0m [Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[36m(FSDPTrainRayActor pid=8930)[0m [32m2026-11-08 05:11:10[0m | [1;37mINFO[0m | [36mrelax.utils.device:472[0m [1;37mpynvml not available, skipping NUMA affinity setup[0m
+[36m(FSDPTrainRayActor pid=8930)[0m [32m2026-11-08 05:11:10[0m | [1;37mINFO[0m | [36mrelax.utils.utils:679[0m [1;37mServe URL: http://<NODE_ADDRESS>:8000/metrics[0m
+[36m(FSDPTrainRayActor pid=8930)[0m 2026-11-08 05:11:10.589 | INFO     | relax.utils.metrics.metrics_service_adapter:__init__:31 - MetricsServiceAdapter: Connected to metrics service at http://<NODE_ADDRESS>:8000/metrics
+[36m(ServeController pid=7467)[0m WARNING 2026-11-08 05:11:10,653 controller 7467 -- Deployment 'Actor' in application 'actor' has 1 replicas that have taken more than 30s to initialize.
+[36m(ServeController pid=7467)[0m This may be caused by a slow __init__ or reconfigure method.
+[36m(FSDPTrainRayActor pid=8930)[0m 
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]
+[36m(FSDPTrainRayActor pid=9099)[0m 
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]
+[36m(FSDPTrainRayActor pid=9099)[0m 
+Loading weights: 100%|██████████| 729/729 [00:00<00:00, 11827.01it/s]
+[36m(FSDPTrainRayActor pid=8930)[0m 
+Loading pipeline components...:  17%|█▋        | 1/6 [00:00<00:01,  2.88it/s]
+[36m(FSDPTrainRayActor pid=8930)[0m 
+[36m(FSDPTrainRayActor pid=8930)[0m 
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s][A
+[36m(FSDPTrainRayActor pid=8930)[0m 
+Loading pipeline components...:  33%|███▎      | 2/6 [00:00<00:01,  3.74it/s]
+[36m(FSDPTrainRayActor pid=8930)[0m 
+Loading pipeline components...:  67%|██████▋   | 4/6 [00:00<00:00,  6.14it/s]
+[36m(FSDPTrainRayActor pid=8930)[0m 
+[36m(FSDPTrainRayActor pid=8930)[0m 
+Loading checkpoint shards:   0%|          | 0/9 [00:00<?, ?it/s][A
+[36m(FSDPTrainRayActor pid=9099)[0m [32m2026-11-08 05:11:10[0m | [1;37mINFO[0m | [36mrelax.utils.device:472[0m [1;37mpynvml not available, skipping NUMA affinity setup[0m
+[36m(FSDPTrainRayActor pid=8930)[0m 
+[36m(FSDPTrainRayActor pid=8930)[0m 
+Loading checkpoint shards:  89%|████████▉ | 8/9 [00:00<00:00, 76.31it/s][A
+Loading checkpoint shards: 100%|██████████| 9/9 [00:00<00:00, 80.16it/s]
+[36m(FSDPTrainRayActor pid=8930)[0m 
+Loading pipeline components...:  83%|████████▎ | 5/6 [00:04<00:01,  1.34s/it]
+Loading pipeline components...: 100%|██████████| 6/6 [00:04<00:00,  1.26it/s]
+[36m(FSDPTrainRayActor pid=8930)[0m [32m2026-11-08 05:11:17[0m | [1;37mINFO[0m | [36mrelax.backends.fsdp.lora:149[0m [1;37mInjected LoRA adapter 'default': r=32, alpha=32, dropout=0.0, 480 layers, per-target counts={'attn.to_q': 60, 'attn.to_k': 60, 'attn.to_v': 60, 'attn.to_out.0': 60, 'attn.add_q_proj': 60, 'attn.add_k_proj': 60, 'attn.add_v_proj': 60, 'attn.to_add_out': 60}[0m
+[36m(FSDPTrainRayActor pid=8930)[0m 
+Loading weights: 100%|██████████| 729/729 [00:00<00:00, 11960.29it/s]
+[36m(FSDPTrainRayActor pid=8930)[0m [32m2026-11-08 05:11:17[0m | [1;37mINFO[0m | [36mrelax.backends.fsdp.runtime:147[0m [1;37mfsdp2_wrap: promoted 960 trainable param(s) to fp32 optimizer masters[0m
+[36m(FSDPTrainRayActor pid=8930)[0m [32m2026-11-08 05:11:32[0m | [1;37mINFO[0m | [36mrelax.backends.fsdp.runtime:176[0m [1;37mFSDP2 wrapped model; fine-grained modules: 0 ([]); block classes: ['QwenImageTransformerBlock', 'Qwen2_5_VLDecoderLayer']; activation_checkpointing=False, cpu_offload=False, master_dtype=fp32[0m
+[36m(FSDPTrainRayActor pid=9099)[0m [32m2026-11-08 05:11:17[0m | [1;37mINFO[0m | [36mrelax.backends.fsdp.lora:149[0m [1;37mInjected LoRA adapter 'default': r=32, alpha=32, dropout=0.0, 480 layers, per-target counts={'attn.to_q': 60, 'attn.to_k': 60, 'attn.to_v': 60, 'attn.to_out.0': 60, 'attn.add_q_proj': 60, 'attn.add_k_proj': 60, 'attn.add_v_proj': 60, 'attn.to_add_out': 60}[0m
+[36m(FSDPTrainRayActor pid=9099)[0m [32m2026-11-08 05:11:17[0m | [1;37mINFO[0m | [36mrelax.backends.fsdp.runtime:147[0m [1;37mfsdp2_wrap: promoted 960 trainable param(s) to fp32 optimizer masters[0m
+[36m(ServeController pid=7467)[0m ERROR 2026-11-08 05:11:32,389 controller 7467 -- Exception in Replica(id='8nfaz79p', deployment='Actor', app='actor'), the replica will be stopped.
+[36m(ServeController pid=7467)[0m Traceback (most recent call last):
+[36m(ServeController pid=7467)[0m   File "<RUN_ROOT>/env/lib/python3.12/site-packages/ray/serve/_private/deployment_state.py", line 1489, in check_ready
+[36m(ServeController pid=7467)[0m     ) = ray.get(self._ready_obj_ref)
+[36m(ServeController pid=7467)[0m         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(ServeController pid=7467)[0m   File "<RUN_ROOT>/env/lib/python3.12/site-packages/ray/_private/auto_init_hook.py", line 22, in auto_init_wrapper
+[36m(ServeController pid=7467)[0m     return fn(*args, **kwargs)
+[36m(ServeController pid=7467)[0m            ^^^^^^^^^^^^^^^^^^^
+[36m(ServeController pid=7467)[0m   File "<RUN_ROOT>/env/lib/python3.12/site-packages/ray/_private/client_mode_hook.py", line 134, in wrapper
+[36m(ServeController pid=7467)[0m     return func(*args, **kwargs)
+[36m(ServeController pid=7467)[0m            ^^^^^^^^^^^^^^^^^^^^^
+[36m(ServeController pid=7467)[0m   File "<RUN_ROOT>/env/lib/python3.12/site-packages/ray/_private/worker.py", line 2986, in get
+[36m(ServeController pid=7467)[0m     values, debugger_breakpoint = worker.get_objects(
+[36m(ServeController pid=7467)[0m                                   ^^^^^^^^^^^^^^^^^^^
+[36m(ServeController pid=7467)[0m   File "<RUN_ROOT>/env/lib/python3.12/site-packages/ray/_private/worker.py", line 1050, in get_objects
+[36m(ServeController pid=7467)[0m     raise value.as_instanceof_cause()
+[36m(ServeController pid=7467)[0m ray.exceptions.RayTaskError(RuntimeError): [36mray::ServeReplica:actor:Actor.initialize_and_get_metadata()[39m (pid=8702, ip=<NODE_ADDRESS>, actor_id=f943a228c0c1b9c45c4a741503000000, repr=<ray.serve._private.replica.ServeReplica:actor:Actor object at 0x7f4c9df62210>)
+[36m(ServeController pid=7467)[0m   File "<PYTHON_ROOT>/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+[36m(ServeController pid=7467)[0m     return self.__get_result()
+[36m(ServeController pid=7467)[0m            ^^^^^^^^^^^^^^^^^^^
+[36m(ServeController pid=7467)[0m   File "<PYTHON_ROOT>/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+[36m(ServeController pid=7467)[0m     raise self._exception
+[36m(ServeController pid=7467)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(ServeController pid=7467)[0m   File "<RUN_ROOT>/env/lib/python3.12/site-packages/ray/serve/_private/replica.py", line 3297, in initialize_and_get_metadata
+[36m(ServeController pid=7467)[0m     await self._replica_impl.initialize(deployment_config, rank, gang_context)
+[36m(ServeController pid=7467)[0m   File "<RUN_ROOT>/env/lib/python3.12/site-packages/ray/serve/_private/replica.py", line 1888, in initialize
+[36m(ServeController pid=7467)[0m     raise RuntimeError(traceback.format_exc()) from None
+[36m(ServeController pid=7467)[0m RuntimeError: Traceback (most recent call last):
+[36m(ServeController pid=7467)[0m   File "<RUN_ROOT>/env/lib/python3.12/site-packages/ray/serve/_private/replica.py", line 1829, in initialize
+[36m(ServeController pid=7467)[0m     await self._user_callable_wrapper.initialize_callable()
+[36m(ServeController pid=7467)[0m   File "<RUN_ROOT>/env/lib/python3.12/site-packages/ray/serve/_private/replica.py", line 3847, in initialize_callable
+[36m(ServeController pid=7467)[0m     await self._call_func_or_gen(
+[36m(ServeController pid=7467)[0m   File "<RUN_ROOT>/env/lib/python3.12/site-packages/ray/serve/_private/replica.py", line 3773, in _call_func_or_gen
+[36m(ServeController pid=7467)[0m     result = await result
+[36m(ServeController pid=7467)[0m              ^^^^^^^^^^^^
+[36m(ServeController pid=7467)[0m   File "<RUN_ROOT>/env/lib/python3.12/site-packages/ray/serve/api.py", line 458, in __init__
+[36m(ServeController pid=7467)[0m     cls.__init__(self, *args, **kwargs)
+[36m(ServeController pid=7467)[0m   File "<RUN_ROOT>/work/relax-src/relax/components/actor.py", line 82, in __init__
+[36m(ServeController pid=7467)[0m     self.steps = self.actor_model.init_and_wait(
+[36m(ServeController pid=7467)[0m                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(ServeController pid=7467)[0m   File "<RUN_ROOT>/work/relax-src/relax/distributed/ray/actor_group.py", line 177, in init_and_wait
+[36m(ServeController pid=7467)[0m     results[ref] = ray.get(ref)
+[36m(ServeController pid=7467)[0m                    ^^^^^^^^^^^^
+[36m(ServeController pid=7467)[0m            ^^^^^^^^^^^^^^^^^^^
+[36m(ServeController pid=7467)[0m            ^^^^^^^^^^^^^^^^^^^^^
+[36m(ServeController pid=7467)[0m                                   ^^^^^^^^^^^^^^^^^^^
+[36m(ServeController pid=7467)[0m ray.exceptions.RayTaskError(ValueError): [36mray::FSDPTrainRayActor.init()[39m (pid=8930, ip=<NODE_ADDRESS>, actor_id=6487a084a59c2639eb470e0d03000000, repr=<relax.backends.fsdp.actor.FSDPTrainRayActor object at 0x7f0fecc3b200>)
+[36m(ServeController pid=7467)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(ServeController pid=7467)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(ServeController pid=7467)[0m   File "<RUN_ROOT>/work/relax-src/relax/backends/fsdp/actor.py", line 418, in init
+[36m(ServeController pid=7467)[0m     self.sft = FSDPSFTTrainer(self)
+[36m(ServeController pid=7467)[0m                ^^^^^^^^^^^^^^^^^^^^
+[36m(ServeController pid=7467)[0m   File "<RUN_ROOT>/no17-v2-two-gpu-20261108/diagnostics/ray_hook.py", line 354, in initialize
+[36m(ServeController pid=7467)[0m     probe = Probe(self)
+[36m(ServeController pid=7467)[0m             ^^^^^^^^^^^
+[36m(ServeController pid=7467)[0m   File "<RUN_ROOT>/no17-v2-two-gpu-20261108/diagnostics/ray_hook.py", line 92, in __init__
+[36m(ServeController pid=7467)[0m     "execution_state": execution_state(trainer.actor.model),
+[36m(ServeController pid=7467)[0m                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(ServeController pid=7467)[0m   File "<RUN_ROOT>/no17-v2-two-gpu-20261108/diagnostics/capture.py", line 158, in execution_state
+[36m(ServeController pid=7467)[0m     raise ValueError("Attention metadata bound exceeded")
+[36m(ServeController pid=7467)[0m ValueError: Attention metadata bound exceeded
+[36m(ServeController pid=7467)[0m ERROR 2026-11-08 05:11:32,396 controller 7467 -- Failed to update the deployments ['Actor'].
+[36m(ServeController pid=7467)[0m INFO 2026-11-08 05:11:32,501 controller 7467 -- Replica(id='8nfaz79p', deployment='Actor', app='actor') is stopped.
+INFO 2026-11-08 05:11:32,805 serve 7174 -- Deleting app [<ROLES_SFT_ONLY.actor: 'actor'>]
+[36m(ProxyActor pid=7536)[0m INFO 2026-11-08 05:11:32,825 proxy <NODE_ADDRESS> -- Got updated endpoints: {Deployment(name='DCSCoordinator', app='dcs_coordinator'): EndpointInfo(route='/dcs_coordinator', app_is_cross_language=False, route_patterns=[RoutePattern(methods=['GET'], path='/clear_weight_meta'), RoutePattern(methods=['GET'], path='/debug/topology'), RoutePattern(methods=['GET', 'HEAD'], path='/docs'), RoutePattern(methods=['GET', 'HEAD'], path='/docs/oauth2-redirect'), RoutePattern(methods=['GET'], path='/get_model_update_group_ranks'), RoutePattern(methods=['GET'], path='/global_rank'), RoutePattern(methods=['GET'], path='/health'), RoutePattern(methods=['GET'], path='/heartbeat'), RoutePattern(methods=['GET'], path='/node'), RoutePattern(methods=['GET', 'HEAD'], path='/openapi.json'), RoutePattern(methods=['GET'], path='/peer'), RoutePattern(methods=['GET'], path='/recv_weight_meta'), RoutePattern(methods=['GET', 'HEAD'], path='/redoc'), RoutePattern(methods=['POST'], path='/register'), RoutePattern(methods=['POST'], path='/send_weight_meta'), RoutePattern(methods=['GET'], path='/topology'), RoutePattern(methods=['DELETE'], path='/unregister')]), Deployment(name='MetricsService', app='metrics'): EndpointInfo(route='/metrics', app_is_cross_language=False, route_patterns=[RoutePattern(methods=['GET'], path='/'), RoutePattern(methods=['POST'], path='/clear_metrics'), RoutePattern(methods=['GET', 'HEAD'], path='/docs'), RoutePattern(methods=['GET', 'HEAD'], path='/docs/oauth2-redirect'), RoutePattern(methods=['GET'], path='/health'), RoutePattern(methods=['POST'], path='/log_error'), RoutePattern(methods=['POST'], path='/log_metric'), RoutePattern(methods=['POST'], path='/log_metrics_batch'), RoutePattern(methods=['GET', 'HEAD'], path='/openapi.json'), RoutePattern(methods=['GET'], path='/query_metrics'), RoutePattern(methods=['GET', 'HEAD'], path='/redoc'), RoutePattern(methods=['POST'], path='/report_step')]), Deployment(name='ImageSFT', app='sft'): EndpointInfo(route='/sft', app_is_cross_language=False, route_patterns=None)}.
+[32m2026-11-08 05:11:33[0m | [1;31mERROR[0m | [36mrelax.core.controller:204[0m [1;31mFailed to create service actor: Deploying application actor failed: Failed to update the deployments ['Actor'].[0m
+Traceback (most recent call last):
+  File "<RUN_ROOT>/work/relax-src/relax/core/controller.py", line 804, in _create_service_task
+    service.deploy()
+  File "<RUN_ROOT>/work/relax-src/relax/core/service.py", line 93, in deploy
+    self._deploy(self.pgs)
+  File "<RUN_ROOT>/work/relax-src/relax/core/service.py", line 152, in _deploy
+    self.handle = serve.run(self.service, name=self.role, route_prefix=f"/{self.role}")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<RUN_ROOT>/env/lib/python3.12/site-packages/ray/serve/api.py", line 985, in run
+    handle = _run(
+             ^^^^^
+  File "<RUN_ROOT>/env/lib/python3.12/site-packages/ray/serve/api.py", line 873, in _run
+    return _run_many(
+           ^^^^^^^^^^
+  File "<RUN_ROOT>/env/lib/python3.12/site-packages/ray/serve/api.py", line 848, in _run_many
+    handles = client.deploy_applications(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<RUN_ROOT>/env/lib/python3.12/site-packages/ray/serve/_private/client.py", line 56, in check
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<RUN_ROOT>/env/lib/python3.12/site-packages/ray/serve/_private/client.py", line 423, in deploy_applications
+    self._wait_for_application_running(app.name)
+  File "<RUN_ROOT>/env/lib/python3.12/site-packages/ray/serve/_private/client.py", line 282, in _wait_for_application_running
+    raise RuntimeError(
+RuntimeError: Deploying application actor failed: Failed to update the deployments ['Actor'].
+INFO 2026-11-08 05:11:33,823 serve 7174 -- Deleting app [<ROLES_SFT_ONLY.actor: 'actor'>]
+[32m2026-11-08 05:11:33[0m | [1;37mINFO[0m | [36mrelax.core.controller:1279[0m [1;37mError reported to metrics service successfully[0m
+[32m2026-11-08 05:11:33[0m | [1;31mERROR[0m | [36mrelax.core.controller:283[0m [1;31mController construction failed; closing any initialized TQ state.[0m
+[32m2026-11-08 05:11:33[0m | [1;31mERROR[0m | [36m__main__:204[0m [1;31mTraining startup or loop failed with error: Failed to deploy service actor: Deploying application actor failed: Failed to update the deployments ['Actor'].[0m
+Traceback (most recent call last):
+  File "<RUN_ROOT>/work/relax-src/relax/entrypoints/train.py", line 199, in main
+    _ctrl.__init__(args, runtime_env, **fault_options)
+  File "<RUN_ROOT>/work/relax-src/relax/core/controller.py", line 257, in __init__
+    self.register_all_serve()
+  File "<RUN_ROOT>/work/relax-src/relax/core/controller.py", line 1247, in register_all_serve
+    model_prefetch_refs = self._start_services(service_args)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<RUN_ROOT>/work/relax-src/relax/core/controller.py", line 971, in _start_services
+    services = self._run_service_phase(
+2026-11-08 05:11:41,637	INFO sdk.py:520 -- WebSocket closed for job raysubmit_M4hwWU46qjjcaVEA with close code 1000
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<RUN_ROOT>/work/relax-src/relax/core/controller.py", line 891, in _run_service_phase
+    raise RuntimeError(f"Failed to {phase.value} service {role}: {error}")
+RuntimeError: Failed to deploy service actor: Deploying application actor failed: Failed to update the deployments ['Actor'].
+[32m2026-11-08 05:11:33[0m | [1;37mINFO[0m | [36m__main__:78[0m [1;37mGraceful shutdown triggered (atexit) — cleaning up SGLang engines...[0m
+[32m2026-11-08 05:11:33[0m | [1;37mINFO[0m | [36mrelax.core.controller:1454[0m [1;37mController shutting down — cleaning up engine processes...[0m
+[36m(ServeReplica:metrics:MetricsService pid=8094)[0m [32m2026-11-08 05:11:33[0m | [1;33mWARNING[0m | [36mrelax.utils.metrics.service:446[0m [1;33mApprise adapter not configured, error notification not sent[0m
+[36m(ServeReplica:metrics:MetricsService pid=8094)[0m INFO 2026-11-08 05:11:33,846 metrics_MetricsService m9g9l77n 4eb48594-dfa2-4b50-aab1-bf1a6131ea86 -- POST /metrics/log_error 200 6.3ms
+INFO 2026-11-08 05:11:33,858 serve 7174 -- Started <ray.serve._private.router.SharedRouterLongPollClient object at 0x7f5c8b1731a0>.
+[32m2026-11-08 05:11:33[0m | [1;37mINFO[0m | [36mrelax.core.controller:1497[0m [1;37mController shutdown complete.[0m
+[36m(ServeReplica:sft:ImageSFT pid=8344)[0m INFO 2026-11-08 05:11:33,877 sft_ImageSFT ytl1da3p c1c70ff5-155f-49a8-ae2a-fda2f807008a -- CALL stop OK 2.5ms
+[36m(ServeController pid=7467)[0m INFO 2026-11-08 05:11:33,988 controller 7467 -- Removing 1 replica from Deployment(name='DCSCoordinator', app='dcs_coordinator').
+[36m(ServeController pid=7467)[0m INFO 2026-11-08 05:11:33,988 controller 7467 -- Removing 1 replica from Deployment(name='MetricsService', app='metrics').
+[36m(ServeController pid=7467)[0m INFO 2026-11-08 05:11:33,988 controller 7467 -- Removing 1 replica from Deployment(name='ImageSFT', app='sft').
+[36m(ServeController pid=7467)[0m INFO 2026-11-08 05:11:36,048 controller 7467 -- Replica(id='7gkm5v12', deployment='DCSCoordinator', app='dcs_coordinator') is stopped.
+[36m(ServeController pid=7467)[0m INFO 2026-11-08 05:11:36,049 controller 7467 -- Replica(id='m9g9l77n', deployment='MetricsService', app='metrics') is stopped.
+[36m(ServeController pid=7467)[0m INFO 2026-11-08 05:11:36,049 controller 7467 -- Replica(id='ytl1da3p', deployment='ImageSFT', app='sft') is stopped.
+[33m(raylet)[0m Task ServeController.listen_for_change failed. There are infinite retries remaining, so the task will be retried. Error: The actor is dead because it was killed by `ray.kill`.
+[36m(FSDPTrainRayActor pid=9099)[0m [Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[33m(raylet)[0m Task ServeController.graceful_shutdown failed. There are infinite retries remaining, so the task will be retried. Error: The actor is dead because it was killed by `ray.kill`.
+[36m(FSDPTrainRayActor pid=9099)[0m [32m2026-11-08 05:11:32[0m | [1;37mINFO[0m | [36mrelax.backends.fsdp.runtime:176[0m [1;37mFSDP2 wrapped model; fine-grained modules: 0 ([]); block classes: ['QwenImageTransformerBlock', 'Qwen2_5_VLDecoderLayer']; activation_checkpointing=False, cpu_offload=False, master_dtype=fp32[0m
+[32m2026-11-08 05:11:36[0m | [1;37mINFO[0m | [36m__main__:130[0m [1;37mRay shutdown successfully[0m
+2026-11-08 05:11:41,643	ERR cli.py:74 -- [31m---------------------------------------[39m
+2026-11-08 05:11:41,643	ERR cli.py:75 -- [31mJob 'raysubmit_M4hwWU46qjjcaVEA' failed[39m
+2026-11-08 05:11:41,643	ERR cli.py:76 -- [31m---------------------------------------[39m
+2026-11-08 05:11:41,643	INFO cli.py:89 -- Status message: Job entrypoint command failed with exit code 1, last available logs (truncated to 20,000 chars):
+[36m(ServeController pid=7467)[0m INFO 2026-11-08 05:11:33,988 controller 7467 -- Removing 1 replica from Deployment(name='MetricsService', app='metrics').
+[36m(ServeController pid=7467)[0m INFO 2026-11-08 05:11:33,988 controller 7467 -- Removing 1 replica from Deployment(name='ImageSFT', app='sft').
+[36m(ServeController pid=7467)[0m INFO 2026-11-08 05:11:36,048 controller 7467 -- Replica(id='7gkm5v12', deployment='DCSCoordinator', app='dcs_coordinator') is stopped.
+[36m(ServeController pid=7467)[0m INFO 2026-11-08 05:11:36,049 controller 7467 -- Replica(id='m9g9l77n', deployment='MetricsService', app='metrics') is stopped.
+[36m(ServeController pid=7467)[0m INFO 2026-11-08 05:11:36,049 controller 7467 -- Replica(id='ytl1da3p', deployment='ImageSFT', app='sft') is stopped.
+[33m(raylet)[0m Task ServeController.listen_for_change failed. There are infinite retries remaining, so the task will be retried. Error: The actor is dead because it was killed by `ray.kill`.
+[36m(FSDPTrainRayActor pid=9099)[0m [Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[33m(raylet)[0m Task ServeController.graceful_shutdown failed. There are infinite retries remaining, so the task will be retried. Error: The actor is dead because it was killed by `ray.kill`.
+[36m(FSDPTrainRayActor pid=9099)[0m [32m2026-11-08 05:11:32[0m | [1;37mINFO[0m | [36mrelax.backends.fsdp.runtime:176[0m [1;37mFSDP2 wrapped model; fine-grained modules: 0 ([]); block classes: ['QwenImageTransformerBlock', 'Qwen2_5_VLDecoderLayer']; activation_checkpointing=False, cpu_offload=False, master_dtype=fp32[0m
+[32m2026-11-08 05:11:36[0m | [1;37mINFO[0m | [36m__main__:130[0m [1;37mRay shutdown successfully[0m
+

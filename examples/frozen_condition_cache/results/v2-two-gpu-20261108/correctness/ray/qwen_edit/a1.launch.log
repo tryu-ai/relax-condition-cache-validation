@@ -1,0 +1,126 @@
+b1b380451750b009dcf3833829e8c234b1ea9c95598b450e0384158c46f604d0 matches delivered runtime: True
+2026-11-08 05:18:26,854	INFO worker.py:1833 -- Connecting to existing Ray cluster at address: <NODE_ADDRESS>:16379...
+2026-11-08 05:18:26,865	INFO worker.py:2015 -- Connected to Ray cluster. View the dashboard at [1m[32mhttp://127.0.0.1:18265 [39m[22m
+=== Skipping cluster cleanup (RELAX_SKIP_CLUSTER_CLEANUP=1) ===
++++ ray list nodes --format json
++++ jq -r '
+  map(select(.state == "ALIVE" and (.resources_total.GPU // 0) > 0)) |
+  sort_by(.is_head_node | not) |
+  .[0].node_ip
+'
+++ MASTER_ADDR=<NODE_ADDRESS>
+++ '[' -z <NODE_ADDRESS> ']'
+++ '[' <NODE_ADDRESS> = null ']'
+++ export MASTER_ADDR
+++ export PYTHONUNBUFFERED=1
+++ PYTHONUNBUFFERED=1
+++ export CUDA_DEVICE_MAX_CONNECTIONS=1
+++ CUDA_DEVICE_MAX_CONNECTIONS=1
+++ export MEGATRON=<RUN_ROOT>/deps/Megatron-LM
+++ MEGATRON=<RUN_ROOT>/deps/Megatron-LM
+++ export RELAX=<RUN_ROOT>/work/relax-src/scripts/entrypoint/../../
+++ RELAX=<RUN_ROOT>/work/relax-src/scripts/entrypoint/../../
+++ export PYTHONPATH=<RUN_ROOT>/work/relax-src/scripts/entrypoint/../../:<RUN_ROOT>/deps/Megatron-LM:<RUN_ROOT>/work/relax-src/scripts/entrypoint/../../:<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/deps/Megatron-LM
+++ PYTHONPATH=<RUN_ROOT>/work/relax-src/scripts/entrypoint/../../:<RUN_ROOT>/deps/Megatron-LM:<RUN_ROOT>/work/relax-src/scripts/entrypoint/../../:<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/deps/Megatron-LM
+++ export MODEL_CONFIG_DIR=<RUN_ROOT>/work/relax-src/scripts/entrypoint/../models
+++ MODEL_CONFIG_DIR=<RUN_ROOT>/work/relax-src/scripts/entrypoint/../models
+++ nvidia-smi -L
+++ grep -q GPU
++++ nvidia-smi topo -m
++++ grep -o 'NV[0-9][0-9]*'
++++ wc -l
++++ true
+++ NVLINK_COUNT=0
+++ '[' 0 -gt 0 ']'
+++ export HAS_NVLINK=0
+++ HAS_NVLINK=0
+++ echo 'HAS_NVLINK: 0 (detected 0 NVLink references)'
+HAS_NVLINK: 0 (detected 0 NVLink references)
+++ export RELAX_ENTRYPOINT_MODE=ray-job
+++ RELAX_ENTRYPOINT_MODE=ray-job
+++ RAY_DEBUG=0
+++ RAY_DEBUG_POST_MORTEM=0
+++ NVSHMEM_LIB_PATH=/usr/local/lib/python3.12/dist-packages/nvidia/nvshmem/lib
+++ TORCH_LIB_PATH=/usr/local/lib/python3.12/dist-packages/torch/lib
+++ CURRENT_LD_LIBRARY_PATH=/usr/local/lib/python3.12/dist-packages/nvidia/nvshmem/lib:/usr/local/lib/python3.12/dist-packages/torch/lib
+++ relax_kernel_cache_configure '' --global-batch-size 4 --rollout-batch-size 4 --micro-batch-size 1 --lr-warmup-iters 0 --model-adapter-path diagnostics.adapters.QwenImageEditDiagnosticAdapter
+++ local run_script=
+++ shift
+++ '[' -z '' ']'
+++ return 0
+++ relax_kernel_cache_start_agents cluster
+++ local mode=cluster
+++ '[' -n '' ']'
+++ export 'RUNTIME_ENV_JSON={
+"worker_process_setup_hook": "relax.utils.logging_utils.install_asyncio_noise_filter",
+"env_vars": {
+   "PATH": "<RUN_ROOT>/env/bin:/usr/local/cuda-12.8/bin:<PYTHON_ROOT>/bin:/usr/bin:/bin",
+   "PYTHONUNBUFFERED": "1",
+   "PYTHONPATH": "<RUN_ROOT>/work/relax-src/scripts/entrypoint/../../:<RUN_ROOT>/deps/Megatron-LM:<RUN_ROOT>/work/relax-src/scripts/entrypoint/../../:<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/deps/Megatron-LM",
+   "CUDA_DEVICE_MAX_CONNECTIONS": "1",
+   "RAY_OVERRIDE_JOB_RUNTIME_ENV": "1",
+   "OMP_NUM_THREADS": "4",
+   "MKL_NUM_THREADS": "24",
+   "OPENBLAS_NUM_THREADS": "4",
+   "NCCL_NVLS_ENABLE": "0",
+   "MASTER_ADDR": "<NODE_ADDRESS>",
+   "RAY_DEBUG": "0",
+   "RAY_DEBUG_POST_MORTEM": "0",
+   "SGLANG_DEEPEP_NUM_MAX_DISPATCH_TOKENS_PER_RANK": "32",
+   "NVSHMEM_DISABLE_NCCL": "1",
+   "SGLANG_HEALTH_CHECK_TIMEOUT": "180",
+   "INDEXER_ROPE_NEOX_STYLE": "0",
+   "NVSHMEM_BOOTSTRAP_UID_SOCK_IFNAME": "",
+   "NVTE_USE_CUTLASS_GROUPED_GEMM": "0",
+   "NVTE_CUTLASS_GROUPED_GEMM_WARN_FALLBACK": "1",
+   "LD_LIBRARY_PATH": "/usr/local/lib/python3.12/dist-packages/nvidia/nvshmem/lib:/usr/local/lib/python3.12/dist-packages/torch/lib"
+}
+}'
+++ RUNTIME_ENV_JSON='{
+"worker_process_setup_hook": "relax.utils.logging_utils.install_asyncio_noise_filter",
+"env_vars": {
+   "PATH": "<RUN_ROOT>/env/bin:/usr/local/cuda-12.8/bin:<PYTHON_ROOT>/bin:/usr/bin:/bin",
+   "PYTHONUNBUFFERED": "1",
+   "PYTHONPATH": "<RUN_ROOT>/work/relax-src/scripts/entrypoint/../../:<RUN_ROOT>/deps/Megatron-LM:<RUN_ROOT>/work/relax-src/scripts/entrypoint/../../:<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/deps/Megatron-LM",
+   "CUDA_DEVICE_MAX_CONNECTIONS": "1",
+   "RAY_OVERRIDE_JOB_RUNTIME_ENV": "1",
+   "OMP_NUM_THREADS": "4",
+   "MKL_NUM_THREADS": "24",
+   "OPENBLAS_NUM_THREADS": "4",
+   "NCCL_NVLS_ENABLE": "0",
+   "MASTER_ADDR": "<NODE_ADDRESS>",
+   "RAY_DEBUG": "0",
+   "RAY_DEBUG_POST_MORTEM": "0",
+   "SGLANG_DEEPEP_NUM_MAX_DISPATCH_TOKENS_PER_RANK": "32",
+   "NVSHMEM_DISABLE_NCCL": "1",
+   "SGLANG_HEALTH_CHECK_TIMEOUT": "180",
+   "INDEXER_ROPE_NEOX_STYLE": "0",
+   "NVSHMEM_BOOTSTRAP_UID_SOCK_IFNAME": "",
+   "NVTE_USE_CUTLASS_GROUPED_GEMM": "0",
+   "NVTE_CUTLASS_GROUPED_GEMM_WARN_FALLBACK": "1",
+   "LD_LIBRARY_PATH": "/usr/local/lib/python3.12/dist-packages/nvidia/nvshmem/lib:/usr/local/lib/python3.12/dist-packages/torch/lib"
+}
+}'
+++ relax_kernel_cache_inject_runtime_env
+++ '[' -z '' ']'
+++ return 0
+++ echo '=== Ray-job environment ready ==='
+=== Ray-job environment ready ===
+++ '[' -n '' ']'
+++ python3 -
++ RUNTIME_ENV_JSON='{"worker_process_setup_hook": "relax.utils.logging_utils.install_asyncio_noise_filter", "env_vars": {"PATH": "<RUN_ROOT>/env/bin:/usr/local/cuda-12.8/bin:<PYTHON_ROOT>/bin:/usr/bin:/bin", "PYTHONUNBUFFERED": "1", "PYTHONPATH": "<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/work/relax-src:<RUN_ROOT>/no17-v2-two-gpu-20261108:<RUN_ROOT>/work/validation/examples/frozen_condition_cache:<RUN_ROOT>/deps/Megatron-LM", "CUDA_DEVICE_MAX_CONNECTIONS": "1", "RAY_OVERRIDE_JOB_RUNTIME_ENV": "1", "OMP_NUM_THREADS": "4", "MKL_NUM_THREADS": "24", "OPENBLAS_NUM_THREADS": "4", "NCCL_NVLS_ENABLE": "0", "MASTER_ADDR": "<NODE_ADDRESS>", "RAY_DEBUG": "0", "RAY_DEBUG_POST_MORTEM": "0", "SGLANG_DEEPEP_NUM_MAX_DISPATCH_TOKENS_PER_RANK": "32", "NVSHMEM_DISABLE_NCCL": "1", "SGLANG_HEALTH_CHECK_TIMEOUT": "180", "INDEXER_ROPE_NEOX_STYLE": "0", "NVSHMEM_BOOTSTRAP_UID_SOCK_IFNAME": "", "NVTE_USE_CUTLASS_GROUPED_GEMM": "0", "NVTE_CUTLASS_GROUPED_GEMM_WARN_FALLBACK": "1", "LD_LIBRARY_PATH": "/usr/local/lib/python3.12/dist-packages/nvidia/nvshmem/lib:/usr/local/lib/python3.12/dist-packages/torch/lib", "RELAX_CONDITION_CACHE_BYTES": "0", "RELAX_CONDITION_CACHE_DEVICE": "shm", "RELAX_CONDITION_CACHE_DIR": "<SHM_CACHE>", "RELAX_CONDITION_CACHE_IDENTITY": "8e5978f1f40129da6348bc9aebca1a8bd879d80d07cc1e7eabcda313272fbc1a", "CUBLAS_WORKSPACE_CONFIG": ":4096:8", "DIAG_PHASE": "a1", "DIAG_ROOT": "<RUN_ROOT>/work/ray-single/qw-b4-r2", "DIAG_MODEL_IDENTITY": "8e5978f1f40129da6348bc9aebca1a8bd879d80d07cc1e7eabcda313272fbc1a", "DIAG_SOURCE_ID": "b1b380451750b009dcf3833829e8c234b1ea9c95598b450e0384158c46f604d0", "DIAG_DETERMINISTIC": "1"}}'
++ export RUNTIME_ENV_JSON
++ exec bash scripts/training/diffusion/run-sensenova-i2i-sft-8xgpu.sh --global-batch-size 4 --rollout-batch-size 4 --micro-batch-size 1 --lr-warmup-iters 0 --model-adapter-path diagnostics.adapters.QwenImageEditDiagnosticAdapter
+2026-11-08 05:18:33,978	INFO cli.py:42 -- [37mJob submission server address[39m: [1mhttp://127.0.0.1:18265[22m
+2026-11-08 05:18:33,995	SUCC cli.py:66 -- [32m-------------------------------------------------------[39m
+2026-11-08 05:18:33,995	SUCC cli.py:67 -- [32mJob 'raysubmit_M7EdpfjNPLivwupR' submitted successfully[39m
+2026-11-08 05:18:33,995	SUCC cli.py:68 -- [32m-------------------------------------------------------[39m
+2026-11-08 05:18:33,995	INFO cli.py:330 -- [36mNext steps[39m
+2026-11-08 05:18:33,995	INFO cli.py:331 -- Query the logs of the job:
+2026-11-08 05:18:33,995	INFO cli.py:333 -- [1mray job logs raysubmit_M7EdpfjNPLivwupR[22m
+2026-11-08 05:18:33,995	INFO cli.py:335 -- Query the status of the job:
+2026-11-08 05:18:33,995	INFO cli.py:337 -- [1mray job status raysubmit_M7EdpfjNPLivwupR[22m
+2026-11-08 05:18:33,995	INFO cli.py:339 -- Request the job to be stopped:
+2026-11-08 05:18:33,995	INFO cli.py:341 -- [1mray job stop raysubmit_M7EdpfjNPLivwupR[22m
+{'status': 'SUCCEEDED', 'job_id': 'raysubmit_M7EdpfjNPLivwupR', 'submit_wall': 1794086309.294306, 'start_time_ms': 1794086313985, 'end_time_ms': 1794086454928, 'message': 'Job finished successfully.'}
+{'passed': True, 'steps': 1, 'smoke_hits_checked': False, 'last_cache': None, 'smoke_quality': None}

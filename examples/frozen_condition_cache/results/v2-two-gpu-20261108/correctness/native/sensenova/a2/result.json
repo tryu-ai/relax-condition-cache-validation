@@ -1,0 +1,768 @@
+{
+  "all_rank_resource_summary": [
+    {
+      "final_cache": {
+        "bypasses": 0,
+        "enabled": false,
+        "encode_seconds_host": 3.9248411459848285,
+        "global_hits": 0,
+        "global_misses": 0,
+        "invalidations": 0,
+        "local_hits": 0,
+        "prefix_encodes": 4
+      },
+      "peak_cache_bytes": 0,
+      "peak_cuda_allocated": 35972135424,
+      "peak_cuda_reserved": 41607495680,
+      "peak_process_rss": 3477381120,
+      "rank": 0,
+      "stage_boundary_resources": {
+        "after_checkpoint_before_result": {
+          "VmHWM": 11354845184,
+          "VmRSS": 4384755712,
+          "cpu_maxrss_platform_units": 11088716,
+          "cuda_allocated": 18314719232,
+          "cuda_peak_allocated": 35972135424,
+          "cuda_peak_reserved": 41607495680,
+          "cuda_reserved": 41607495680,
+          "storage": {
+            "run_directory": {
+              "allocated_file_bytes": 2045915136,
+              "complete": true,
+              "errors": 0,
+              "excludes": "directory metadata, external symlink targets, deleted-but-open files",
+              "logical_file_bytes": 2045875035,
+              "path": "<RUN_ROOT>/work/numerics/native-w2-r2/sensenova-w2-shm/a2",
+              "scope": "run_directory_only",
+              "symlinks_not_followed": 0,
+              "unique_regular_files": 13
+            },
+            "run_filesystem": {
+              "available": true,
+              "free_bytes": 91289178112,
+              "path": "<RUN_ROOT>/work/numerics/native-w2-r2/sensenova-w2-shm/a2",
+              "scope": "filesystem_global",
+              "total_bytes": 209379655680,
+              "used_bytes": 118090477568
+            },
+            "sampled_unix": 1794088310.1466784,
+            "sampling": "stage_boundary_only; no recursive walk during optimizer updates",
+            "shared_memory_filesystem": {
+              "available": true,
+              "free_bytes": 118110461952,
+              "path": "/dev/shm",
+              "scope": "filesystem_global",
+              "total_bytes": 118111600640,
+              "used_bytes": 1138688
+            }
+          }
+        },
+        "before_model_load": {
+          "VmHWM": 1395675136,
+          "VmRSS": 1395388416,
+          "cpu_maxrss_platform_units": 1362964,
+          "cuda_allocated": 0,
+          "cuda_peak_allocated": 0,
+          "cuda_peak_reserved": 0,
+          "cuda_reserved": 0,
+          "storage": {
+            "run_directory": {
+              "allocated_file_bytes": 0,
+              "complete": true,
+              "errors": 0,
+              "excludes": "directory metadata, external symlink targets, deleted-but-open files",
+              "logical_file_bytes": 0,
+              "path": "<RUN_ROOT>/work/numerics/native-w2-r2/sensenova-w2-shm/a2",
+              "scope": "run_directory_only",
+              "symlinks_not_followed": 0,
+              "unique_regular_files": 0
+            },
+            "run_filesystem": {
+              "available": true,
+              "free_bytes": 93335101440,
+              "path": "<RUN_ROOT>/work/numerics/native-w2-r2/sensenova-w2-shm/a2",
+              "scope": "filesystem_global",
+              "total_bytes": 209379655680,
+              "used_bytes": 116044554240
+            },
+            "sampled_unix": 1794088261.3150396,
+            "sampling": "stage_boundary_only; no recursive walk during optimizer updates",
+            "shared_memory_filesystem": {
+              "available": true,
+              "free_bytes": 118110461952,
+              "path": "/dev/shm",
+              "scope": "filesystem_global",
+              "total_bytes": 118111600640,
+              "used_bytes": 1138688
+            }
+          }
+        }
+      }
+    },
+    {
+      "final_cache": {
+        "bypasses": 0,
+        "enabled": false,
+        "encode_seconds_host": 3.9259724114090204,
+        "global_hits": 0,
+        "global_misses": 0,
+        "invalidations": 0,
+        "local_hits": 0,
+        "prefix_encodes": 4
+      },
+      "peak_cache_bytes": 0,
+      "peak_cuda_allocated": 35972135424,
+      "peak_cuda_reserved": 41607495680,
+      "peak_process_rss": 3563810816,
+      "rank": 1,
+      "stage_boundary_resources": {
+        "after_checkpoint_before_result": {
+          "VmHWM": 11413495808,
+          "VmRSS": 4488577024,
+          "cpu_maxrss_platform_units": 11145992,
+          "cuda_allocated": 18315893248,
+          "cuda_peak_allocated": 35972135424,
+          "cuda_peak_reserved": 41607495680,
+          "cuda_reserved": 41607495680,
+          "storage": {
+            "run_directory": {
+              "allocated_file_bytes": 2045915136,
+              "complete": true,
+              "errors": 0,
+              "excludes": "directory metadata, external symlink targets, deleted-but-open files",
+              "logical_file_bytes": 2045875035,
+              "path": "<RUN_ROOT>/work/numerics/native-w2-r2/sensenova-w2-shm/a2",
+              "scope": "run_directory_only",
+              "symlinks_not_followed": 0,
+              "unique_regular_files": 13
+            },
+            "run_filesystem": {
+              "available": true,
+              "free_bytes": 91289178112,
+              "path": "<RUN_ROOT>/work/numerics/native-w2-r2/sensenova-w2-shm/a2",
+              "scope": "filesystem_global",
+              "total_bytes": 209379655680,
+              "used_bytes": 118090477568
+            },
+            "sampled_unix": 1794088310.1436923,
+            "sampling": "stage_boundary_only; no recursive walk during optimizer updates",
+            "shared_memory_filesystem": {
+              "available": true,
+              "free_bytes": 118110461952,
+              "path": "/dev/shm",
+              "scope": "filesystem_global",
+              "total_bytes": 118111600640,
+              "used_bytes": 1138688
+            }
+          }
+        },
+        "before_model_load": {
+          "VmHWM": 1395499008,
+          "VmRSS": 1395343360,
+          "cpu_maxrss_platform_units": 1362792,
+          "cuda_allocated": 0,
+          "cuda_peak_allocated": 0,
+          "cuda_peak_reserved": 0,
+          "cuda_reserved": 0,
+          "storage": {
+            "run_directory": {
+              "allocated_file_bytes": 0,
+              "complete": true,
+              "errors": 0,
+              "excludes": "directory metadata, external symlink targets, deleted-but-open files",
+              "logical_file_bytes": 0,
+              "path": "<RUN_ROOT>/work/numerics/native-w2-r2/sensenova-w2-shm/a2",
+              "scope": "run_directory_only",
+              "symlinks_not_followed": 0,
+              "unique_regular_files": 0
+            },
+            "run_filesystem": {
+              "available": true,
+              "free_bytes": 93335101440,
+              "path": "<RUN_ROOT>/work/numerics/native-w2-r2/sensenova-w2-shm/a2",
+              "scope": "filesystem_global",
+              "total_bytes": 209379655680,
+              "used_bytes": 116044554240
+            },
+            "sampled_unix": 1794088261.3164227,
+            "sampling": "stage_boundary_only; no recursive walk during optimizer updates",
+            "shared_memory_filesystem": {
+              "available": true,
+              "free_bytes": 118110461952,
+              "path": "/dev/shm",
+              "scope": "filesystem_global",
+              "total_bytes": 118111600640,
+              "used_bytes": 1138688
+            }
+          }
+        }
+      }
+    }
+  ],
+  "cache_audit": {
+    "checked_hits": 0,
+    "failed": 0,
+    "writes": 0
+  },
+  "cache_before_training": {
+    "bypasses": 0,
+    "enabled": false,
+    "encode_seconds_host": 0.0,
+    "global_hits": 0,
+    "global_misses": 0,
+    "invalidations": 0,
+    "local_hits": 0,
+    "prefix_encodes": 0
+  },
+  "cache_budget_per_rank": 0,
+  "cache_device": "shm",
+  "checkpoint": "<RUN_ROOT>/work/numerics/native-w2-r2/sensenova-w2-shm/a2/final/i2i_sft/iter_0000001",
+  "condition_cache_storage": {
+    "basis": "implementation uses an in-process OrderedDict and torch.Tensor.to(copy=True); no file/SHM API",
+    "enabled": false,
+    "implementation": "relax.models.condition_cache.ConditionFeatureCache",
+    "persistent_files_created_by_cache_backend": false,
+    "scope": "condition-feature cache only; does not attribute DataLoader, DCP or global filesystem use",
+    "shared_memory_segments_created_by_cache_backend": false,
+    "storage": "disabled"
+  },
+  "condition_phase_diagnostics": {
+    "added_model_forwards": 0,
+    "cuda_event_samples_complete": true,
+    "cuda_timing_requested": true,
+    "cuda_timing_scope": "current-stream event spans including launch gaps/observer overhead; not pure kernel time",
+    "extra_cuda_synchronizations": 0,
+    "host_timing_scope": "wrapper wall time; includes diagnostic CPU source hashing when active",
+    "max_samples_per_phase_per_region": 32,
+    "not_installed_in_performance": true,
+    "phases": {
+      "training/frozen_encoder": {
+        "calls": 4,
+        "cuda_sample_seconds": [
+          1.6500201416015625,
+          0.7536746215820312,
+          0.7601737060546875,
+          0.76058056640625
+        ],
+        "cuda_seconds": 3.9244490356445314,
+        "failed_calls": 0,
+        "host_seconds": 3.924192214384675,
+        "sampled_calls": 4,
+        "timing_errors": []
+      }
+    },
+    "sample_window_complete": true,
+    "scope": "existing frozen encoder/cache calls in correctness trajectories only; prefill and training separated"
+  },
+  "contract": {
+    "adapter": "relax.models.sensenova.adapter.SenseNovaSFTAdapter",
+    "attention_implementation": "torch",
+    "base_identity": "4df2c617622be0aa9a776cfaba1afbeeb26ebf12f5f5736953856fb0bbaf39f2",
+    "global_batch": 8,
+    "lora_rank": 32,
+    "lr_warmup_iters": 0,
+    "master_dtype": "fp32",
+    "optimizer": {
+      "amsgrad": false,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "capturable": false,
+      "decoupled_weight_decay": true,
+      "differentiable": false,
+      "eps": 1e-08,
+      "foreach": null,
+      "fused": null,
+      "lr": 0.0001,
+      "maximize": false,
+      "weight_decay": 0.01
+    },
+    "param_dtype": "bf16",
+    "reduce_dtype": "fp32",
+    "seed": 20261030,
+    "world": 2
+  },
+  "initial_reused": true,
+  "initialization_plus_total_seconds": 45.1824935991317,
+  "logical_copy_audit": {
+    "calls": 14626,
+    "completed_without_exception": true,
+    "excludes": [
+      "views and identity/self copies",
+      "numerical-evidence copies inside suspend_logical_copy_audit",
+      "wrapper-level tensors, background threads, collectives and backend-internal/compiled copies"
+    ],
+    "logical_bytes": 71052167216,
+    "logical_bytes_by_direction": {
+      "cpu->cpu": 102252296,
+      "cpu->cuda:0": 40943640,
+      "cuda:0->cpu": 32,
+      "cuda:0->cuda:0": 70908971248
+    },
+    "metric": "logical destination payload bytes, not physical PCIe or memory-bus traffic",
+    "operations": [
+      {
+        "calls": 4,
+        "destination_bytes": 8,
+        "destination_dtype": "torch.bfloat16",
+        "direction": "cpu->cpu",
+        "logical_bytes": 8,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.float32",
+        "source_equivalent_bytes": 16
+      },
+      {
+        "calls": 84,
+        "destination_bytes": 16128,
+        "destination_dtype": "torch.float32",
+        "direction": "cpu->cpu",
+        "logical_bytes": 16128,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.int64",
+        "source_equivalent_bytes": 32256
+      },
+      {
+        "calls": 4,
+        "destination_bytes": 31457280,
+        "destination_dtype": "torch.float32",
+        "direction": "cpu->cpu",
+        "logical_bytes": 31457280,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.uint8",
+        "source_equivalent_bytes": 7864320
+      },
+      {
+        "calls": 4,
+        "destination_bytes": 8,
+        "destination_dtype": "torch.bfloat16",
+        "direction": "cpu->cuda:0",
+        "logical_bytes": 8,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.bfloat16",
+        "source_equivalent_bytes": 8
+      },
+      {
+        "calls": 8,
+        "destination_bytes": 40894464,
+        "destination_dtype": "torch.bfloat16",
+        "direction": "cpu->cuda:0",
+        "logical_bytes": 40894464,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.float32",
+        "source_equivalent_bytes": 81788928
+      },
+      {
+        "calls": 92,
+        "destination_bytes": 20224,
+        "destination_dtype": "torch.float32",
+        "direction": "cpu->cuda:0",
+        "logical_bytes": 20224,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.float32",
+        "source_equivalent_bytes": 20224
+      },
+      {
+        "calls": 8,
+        "destination_bytes": 28944,
+        "destination_dtype": "torch.int64",
+        "direction": "cpu->cuda:0",
+        "logical_bytes": 28944,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.int64",
+        "source_equivalent_bytes": 28944
+      },
+      {
+        "calls": 1,
+        "destination_bytes": 8,
+        "destination_dtype": "torch.float32",
+        "direction": "cuda:0->cpu",
+        "logical_bytes": 8,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.float32",
+        "source_equivalent_bytes": 8
+      },
+      {
+        "calls": 1,
+        "destination_bytes": 24,
+        "destination_dtype": "torch.int64",
+        "direction": "cuda:0->cpu",
+        "logical_bytes": 24,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.int64",
+        "source_equivalent_bytes": 24
+      },
+      {
+        "calls": 4064,
+        "destination_bytes": 35890544640,
+        "destination_dtype": "torch.float32",
+        "direction": "cuda:0->cuda:0",
+        "logical_bytes": 35890544640,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.bfloat16",
+        "source_equivalent_bytes": 17945272320
+      },
+      {
+        "calls": 12,
+        "destination_bytes": 86640,
+        "destination_dtype": "torch.int64",
+        "direction": "cuda:0->cuda:0",
+        "logical_bytes": 86640,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.bool",
+        "source_equivalent_bytes": 10830
+      },
+      {
+        "calls": 7252,
+        "destination_bytes": 18501169872,
+        "destination_dtype": "torch.bfloat16",
+        "direction": "cuda:0->cuda:0",
+        "logical_bytes": 18501169872,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.float32",
+        "source_equivalent_bytes": 37002339744
+      },
+      {
+        "calls": 1516,
+        "destination_bytes": 6030256,
+        "destination_dtype": "torch.float32",
+        "direction": "cuda:0->cuda:0",
+        "logical_bytes": 6030256,
+        "operator": "aten._to_copy.default",
+        "source_dtype": "torch.int64",
+        "source_equivalent_bytes": 12060512
+      },
+      {
+        "calls": 8,
+        "destination_bytes": 62914560,
+        "destination_dtype": "torch.float32",
+        "direction": "cpu->cpu",
+        "logical_bytes": 62914560,
+        "operator": "aten.clone.default",
+        "source_dtype": "torch.float32",
+        "source_equivalent_bytes": 62914560
+      },
+      {
+        "calls": 4,
+        "destination_bytes": 7864320,
+        "destination_dtype": "torch.uint8",
+        "direction": "cpu->cpu",
+        "logical_bytes": 7864320,
+        "operator": "aten.clone.default",
+        "source_dtype": "torch.uint8",
+        "source_equivalent_bytes": 7864320
+      },
+      {
+        "calls": 1528,
+        "destination_bytes": 16361127936,
+        "destination_dtype": "torch.bfloat16",
+        "direction": "cuda:0->cuda:0",
+        "logical_bytes": 16361127936,
+        "operator": "aten.clone.default",
+        "source_dtype": "torch.bfloat16",
+        "source_equivalent_bytes": 16361127936
+      },
+      {
+        "calls": 4,
+        "destination_bytes": 40960000,
+        "destination_dtype": "torch.float32",
+        "direction": "cuda:0->cuda:0",
+        "logical_bytes": 40960000,
+        "operator": "aten.clone.default",
+        "source_dtype": "torch.float32",
+        "source_equivalent_bytes": 40960000
+      },
+      {
+        "calls": 32,
+        "destination_bytes": 109051904,
+        "destination_dtype": "torch.float32",
+        "direction": "cuda:0->cuda:0",
+        "logical_bytes": 109051904,
+        "operator": "aten.copy_.default",
+        "source_dtype": "torch.float32",
+        "source_equivalent_bytes": 109051904
+      }
+    ],
+    "repeated_transfers": {
+      "complete_traffic_measurement": false,
+      "cuda_value_readbacks_for_audit": 0,
+      "diagnostic_overhead": "CPU source hashing in correctness only; never installed in measured performance",
+      "directions": [
+        [
+          "cpu",
+          "cuda"
+        ]
+      ],
+      "enabled": true,
+      "fingerprints": [
+        {
+          "calls": 1,
+          "destination_bytes_per_call": 10304,
+          "destination_dtype": "torch.int64",
+          "destination_shape": [
+            1,
+            1288
+          ],
+          "direction": "cpu->cuda:0",
+          "phases": {
+            "frozen_encoder": 1
+          },
+          "sha256": "2e4dc432ad3ff4d46ad150b1be00fed2e876d4e8f6ec5d910852fbf6597ec203",
+          "source_dtype": "torch.int64",
+          "source_payload_bytes": 10304,
+          "source_shape": [
+            1,
+            1288
+          ]
+        },
+        {
+          "calls": 42,
+          "destination_bytes_per_call": 128,
+          "destination_dtype": "torch.float32",
+          "destination_shape": [
+            32
+          ],
+          "direction": "cpu->cuda:0",
+          "phases": {
+            "frozen_encoder": 42
+          },
+          "sha256": "55cfe144ad580f87b909ec624dc7a276c9ea5bad10a23aa4301066ba185d13f3",
+          "source_dtype": "torch.float32",
+          "source_payload_bytes": 128,
+          "source_shape": [
+            32
+          ]
+        },
+        {
+          "calls": 1,
+          "destination_bytes_per_call": 4112,
+          "destination_dtype": "torch.int64",
+          "destination_shape": [
+            1,
+            514
+          ],
+          "direction": "cpu->cuda:0",
+          "phases": {
+            "frozen_encoder": 1
+          },
+          "sha256": "5ebf332afd57816d44e8928eb5aba727087aa4c07c3ac69f29c7f0aa19afd6c0",
+          "source_dtype": "torch.int64",
+          "source_payload_bytes": 4112,
+          "source_shape": [
+            1,
+            514
+          ]
+        },
+        {
+          "calls": 1,
+          "destination_bytes_per_call": 10272,
+          "destination_dtype": "torch.int64",
+          "destination_shape": [
+            1,
+            1284
+          ],
+          "direction": "cpu->cuda:0",
+          "phases": {
+            "frozen_encoder": 1
+          },
+          "sha256": "6e5788840c41180cac8177506363bf693711e2c0360fcc6c4425d19b501e6744",
+          "source_dtype": "torch.int64",
+          "source_payload_bytes": 10272,
+          "source_shape": [
+            1,
+            1284
+          ]
+        },
+        {
+          "calls": 1,
+          "destination_bytes_per_call": 4192,
+          "destination_dtype": "torch.int64",
+          "destination_shape": [
+            1,
+            524
+          ],
+          "direction": "cpu->cuda:0",
+          "phases": {
+            "frozen_encoder": 1
+          },
+          "sha256": "d696e7df7d3615ffef5263e3dfc5ddedd31ddaf18ee055977c96d34984a0ff9f",
+          "source_dtype": "torch.int64",
+          "source_payload_bytes": 4192,
+          "source_shape": [
+            1,
+            524
+          ]
+        },
+        {
+          "calls": 42,
+          "destination_bytes_per_call": 256,
+          "destination_dtype": "torch.float32",
+          "destination_shape": [
+            64
+          ],
+          "direction": "cpu->cuda:0",
+          "phases": {
+            "frozen_encoder": 42
+          },
+          "sha256": "fd18f9987cf214184df7a6be0cb51cd40f45cc383417c30742c89a8a64cb94d4",
+          "source_dtype": "torch.float32",
+          "source_payload_bytes": 256,
+          "source_shape": [
+            64
+          ]
+        }
+      ],
+      "hashed_cpu_source_bytes": 45008,
+      "limits": {
+        "fingerprint_entries": 1024,
+        "per_source_bytes": 33554432,
+        "total_hashed_bytes": 536870912
+      },
+      "metric": "logical destination bytes after the first identical observed source transfer; not physical PCIe bytes",
+      "repeated_destination_bytes": 15744,
+      "repeated_transfer_calls": 82,
+      "scope": "actual condition-scoped copies with byte-identical CPU source plus identical shape/dtype transfer encoding",
+      "unfingerprinted": {
+        "outside_condition_phase": {
+          "calls": 10374,
+          "destination_bytes": 55841042608
+        },
+        "outside_declared_cpu_source_directions": {
+          "calls": 4164,
+          "destination_bytes": 15211079600
+        }
+      }
+    },
+    "schema": 1,
+    "scope": "current-thread dispatcher-visible concrete aten._to_copy/clone/copy_; correctness only",
+    "skipped": {
+      "empty_or_self_copy": 0,
+      "suspended_copy_calls": 1176,
+      "wrapper_or_unsupported_tensor": 0
+    }
+  },
+  "measured_seconds": 12.282666397280991,
+  "measured_updates": 1,
+  "metadata_sha256": "cb456da865600c2ac4d6a0b6829b215934c6f4e232092544235e654332dc2e8d",
+  "metrics": [
+    {
+      "perf/data_wait_seconds": 0.00019158,
+      "perf/peak_allocated_bytes": 35972135424,
+      "perf/peak_reserved_bytes": 41607495680,
+      "perf/train_seconds": 12.274369814433157,
+      "train/grad_norm": 0.005092653911560774,
+      "train/loss": 0.04739968851208687,
+      "train/lr": 0.0001,
+      "train/step": 1
+    }
+  ],
+  "mode": "correctness",
+  "native_contract": {
+    "adapter_path": "relax.models.sensenova.adapter.SenseNovaSFTAdapter",
+    "clip_grad": 1.0,
+    "config": {
+      "attention_implementation": "torch",
+      "conditioning_images": 1,
+      "data_root": "<RUN_ROOT>/assets/data",
+      "dataset_size": 8,
+      "deterministic_attention": true,
+      "max_pixels": 1048576,
+      "prefix_gradient_checkpointing": true
+    },
+    "family": "sensenova",
+    "global_batch_size": 8,
+    "lora": {
+      "adapter_name": "default",
+      "alpha": 32,
+      "bias": "none",
+      "dropout": 0.0,
+      "rank": 32,
+      "scaling": 1.0,
+      "target_modules": [
+        "q_proj_mot_gen",
+        "k_proj_mot_gen",
+        "v_proj_mot_gen",
+        "o_proj_mot_gen",
+        "mlp_mot_gen.gate_proj",
+        "mlp_mot_gen.up_proj",
+        "mlp_mot_gen.down_proj"
+      ],
+      "task_type": "FEATURE_EXTRACTION"
+    },
+    "master_dtype": "fp32",
+    "metadata_sha256": "cb456da865600c2ac4d6a0b6829b215934c6f4e232092544235e654332dc2e8d",
+    "model_path": "<RUN_ROOT>/assets/models/sensenova",
+    "optimizer": {
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "foreach": null,
+      "lr": 0.0001,
+      "weight_decay": 0.01
+    },
+    "param_dtype": "bf16",
+    "reduce_dtype": "fp32",
+    "sampler": "global-padded-randperm-v1",
+    "schema_version": 1,
+    "seed": 20261030,
+    "torch_version": "2.9.0+cu128",
+    "trainable_mode": "lora",
+    "warmup": 0,
+    "world_size": 2
+  },
+  "numerical_execution_policy": {
+    "cublas_workspace_config": ":4096:8",
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "deterministic_algorithms": true,
+    "torch_version": "2.9.0+cu128"
+  },
+  "passed": true,
+  "rank": 0,
+  "resources_and_cache": [
+    {
+      "cache": {
+        "bypasses": 0,
+        "enabled": false,
+        "encode_seconds_host": 3.9248411459848285,
+        "global_hits": 0,
+        "global_misses": 0,
+        "invalidations": 0,
+        "local_hits": 0,
+        "prefix_encodes": 4
+      },
+      "completed_step": 1,
+      "resources": {
+        "VmHWM": 11354845184,
+        "VmRSS": 3477381120,
+        "cpu_maxrss_platform_units": 11088716,
+        "cuda_allocated": 18314718720,
+        "cuda_peak_allocated": 35972135424,
+        "cuda_peak_reserved": 41607495680,
+        "cuda_reserved": 41607495680
+      },
+      "wall_seconds": 12.28231639135629
+    }
+  ],
+  "sample_id_occurrences": [
+    [
+      3,
+      7,
+      6,
+      2,
+      1,
+      0,
+      4,
+      5
+    ]
+  ],
+  "samples_per_second": null,
+  "schema": 1,
+  "scope": "real native FSDPSFTTrainer; Ray/TQ and checkpoint I/O excluded from measured time",
+  "stagepass": true,
+  "status": "completed",
+  "warmup_seconds": 0.0,
+  "warmup_updates": 0
+}

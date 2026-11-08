@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "steps": 192,
+  "smoke_hits_checked": false,
+  "last_cache": {
+    "cache/bypasses": 0,
+    "cache/bytes": 19320606464,
+    "cache/committed": 64,
+    "cache/corruptions": 0,
+    "cache/d2h_bytes": 10060283904,
+    "cache/encode_seconds_host": 56.0466628447175,
+    "cache/entries": 128,
+    "cache/evictions": 0,
+    "cache/global_hits": 320,
+    "cache/global_misses": 64,
+    "cache/h2d_bytes": 50283700224,
+    "cache/hit_rate": 0.8333333333333334,
+    "cache/oversized": 0,
+    "cache/pending_bytes": 0,
+    "cache/prefix_encodes": 64,
+    "cache/read_seconds": 11.148646970279515,
+    "cache/write_dropped": 0,
+    "cache/write_errors": 0,
+    "cache/write_seconds": 4.43776732031256
+  },
+  "smoke_quality": null
+}

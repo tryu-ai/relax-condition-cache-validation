@@ -1,0 +1,13 @@
+{
+  "after_close": {
+    "bypasses": 0,
+    "enabled": false,
+    "encode_seconds_host": 3.909428016282618,
+    "global_hits": 0,
+    "global_misses": 0,
+    "invalidations": 0,
+    "local_hits": 0,
+    "prefix_encodes": 4
+  },
+  "released": true
+}

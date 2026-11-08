@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "driver_hostname": "host-b",
+  "authorized_ids": "0,1",
+  "authorized_physical_gpus": [
+    {
+      "uuid": "GPU-host-b-0",
+      "name": "NVIDIA RTX 6000D",
+      "memory_total_mib": 85651
+    },
+    {
+      "uuid": "GPU-host-b-1",
+      "name": "NVIDIA RTX 6000D",
+      "memory_total_mib": 85651
+    }
+  ],
+  "ray_actors": [
+    {
+      "uuid": "GPU-host-b-1",
+      "name": "NVIDIA RTX 6000D",
+      "memory_total_bytes": 89173131264,
+      "hostname": "host-b",
+      "cuda_visible_devices": "1",
+      "ray_gpu_ids": [
+        "1"
+      ],
+      "logical_cuda_device": 0,
+      "torch_version": "2.9.0+cu128"
+    },
+    {
+      "uuid": "GPU-host-b-0",
+      "name": "NVIDIA RTX 6000D",
+      "memory_total_bytes": 89173131264,
+      "hostname": "host-b",
+      "cuda_visible_devices": "0",
+      "ray_gpu_ids": [
+        "0"
+      ],
+      "logical_cuda_device": 0,
+      "torch_version": "2.9.0+cu128"
+    }
+  ]
+}

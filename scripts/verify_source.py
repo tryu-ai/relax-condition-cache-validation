@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import os
@@ -10,11 +11,16 @@ from pathlib import Path
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--lock", type=Path, default=Path(__file__).resolve().parents[1] / "sources.lock.json")
+    args = parser.parse_args()
     location = os.environ.get("FROZEN_CACHE_RELAX_SRC")
     if not location:
         raise SystemExit("Set FROZEN_CACHE_RELAX_SRC to the separate Relax checkout.")
     source = Path(location).expanduser().resolve()
-    lock = json.loads((Path(__file__).resolve().parents[1] / "sources.lock.json").read_text())
+    lock = json.loads(args.lock.read_text())
+    if not lock.get("commit") or lock.get("status", "READY") != "READY":
+        raise SystemExit("Source lock is pending the reviewed production commit.")
     commit = subprocess.check_output(["git", "-C", str(source), "rev-parse", "HEAD"], text=True).strip()
     if commit != lock["commit"]:
         raise SystemExit(f"Relax revision mismatch: expected {lock['commit']}, got {commit}")

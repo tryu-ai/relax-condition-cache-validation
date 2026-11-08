@@ -1,0 +1,97 @@
+<RUN_ROOT>/deps/Megatron-LM/megatron/core/optimizer/__init__.py:25: UserWarning: Transformer Engine and Apex are not installed. Falling back to Torch optimizers.
+  warnings.warn(
+<RUN_ROOT>/deps/Megatron-LM/megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:114: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+  warnings.warn(
+<RUN_ROOT>/deps/Megatron-LM/megatron/core/optimizer/optimizer.py:28: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+  warnings.warn(
+<RUN_ROOT>/deps/Megatron-LM/megatron/core/optimizer/clip_grads.py:32: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier, multi_tensor_l2norm, and multi_tensor_scale
+  warnings.warn(
+<RUN_ROOT>/deps/Megatron-LM/megatron/core/optimizer/__init__.py:25: UserWarning: Transformer Engine and Apex are not installed. Falling back to Torch optimizers.
+  warnings.warn(
+<RUN_ROOT>/deps/Megatron-LM/megatron/core/distributed/fsdp/src/megatron_fsdp/mixed_precision.py:114: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+  warnings.warn(
+<RUN_ROOT>/deps/Megatron-LM/megatron/core/optimizer/optimizer.py:28: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_scale
+  warnings.warn(
+<RUN_ROOT>/deps/Megatron-LM/megatron/core/optimizer/clip_grads.py:32: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier, multi_tensor_l2norm, and multi_tensor_scale
+  warnings.warn(
+<RUN_ROOT>/deps/Megatron-LM/megatron/core/models/backends.py:34: UserWarning: Apex is not installed. Falling back to Torch Norm
+  warnings.warn("Apex is not installed. Falling back to Torch Norm")
+<RUN_ROOT>/deps/Megatron-LM/megatron/core/models/gpt/gpt_layer_specs.py:77: UserWarning: Apex is not installed. Falling back to Torch Norm
+  warnings.warn("Apex is not installed. Falling back to Torch Norm")
+<RUN_ROOT>/deps/Megatron-LM/megatron/core/models/backends.py:34: UserWarning: Apex is not installed. Falling back to Torch Norm
+  warnings.warn("Apex is not installed. Falling back to Torch Norm")
+<RUN_ROOT>/deps/Megatron-LM/megatron/core/models/gpt/gpt_layer_specs.py:77: UserWarning: Apex is not installed. Falling back to Torch Norm
+  warnings.warn("Apex is not installed. Falling back to Torch Norm")
+<RUN_ROOT>/deps/Megatron-LM/megatron/training/utils/common_utils.py:27: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_l2norm
+  warnings.warn(
+<RUN_ROOT>/deps/Megatron-LM/megatron/core/models/gpt/heterogeneous/heterogeneous_layer_specs.py:68: UserWarning: Apex is not installed. Falling back to Torch Norm
+  warnings.warn("Apex is not installed. Falling back to Torch Norm")
+<RUN_ROOT>/deps/Megatron-LM/megatron/core/extensions/transformer_engine_spec_provider.py:100: UserWarning: Only transformer-engine>=1.7.0 supports MoE experts, but your version is 0.0.0. Use local linear implementation instead.
+  warnings.warn(
+<RUN_ROOT>/deps/Megatron-LM/megatron/training/utils/common_utils.py:27: UserWarning: Transformer Engine and Apex are not installed. Falling back to local implementations of multi_tensor_applier and multi_tensor_l2norm
+  warnings.warn(
+<RUN_ROOT>/deps/Megatron-LM/megatron/core/models/gpt/heterogeneous/heterogeneous_layer_specs.py:68: UserWarning: Apex is not installed. Falling back to Torch Norm
+  warnings.warn("Apex is not installed. Falling back to Torch Norm")
+<RUN_ROOT>/deps/Megatron-LM/megatron/core/extensions/transformer_engine_spec_provider.py:100: UserWarning: Only transformer-engine>=1.7.0 supports MoE experts, but your version is 0.0.0. Use local linear implementation instead.
+  warnings.warn(
+LANG_RL Log directory: None
+Import of FP8GlobalStateManager from megatron.core.extensions.transformer_engine failed with: Traceback (most recent call last):
+  File "<RUN_ROOT>/deps/Megatron-LM/megatron/bridge/utils/import_utils.py", line 324, in safe_import_from
+    return getattr(imported_module, symbol), True
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'megatron.core.extensions.transformer_engine' has no attribute 'FP8GlobalStateManager'
+
+INFO:megatron.bridge.utils.import_utils:Import of FP8GlobalStateManager from megatron.core.extensions.transformer_engine failed with: Traceback (most recent call last):
+  File "<RUN_ROOT>/deps/Megatron-LM/megatron/bridge/utils/import_utils.py", line 324, in safe_import_from
+    return getattr(imported_module, symbol), True
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'megatron.core.extensions.transformer_engine' has no attribute 'FP8GlobalStateManager'
+
+[32m2026-11-08 05:57:16[0m | [1;33mWARNING[0m | [36mrelax.models:13[0m [1;33mFailed to import relax.models.keye_vl2: No module named 'transformer_engine'[0m
+[32m2026-11-08 05:57:16[0m | [1;33mWARNING[0m | [36mrelax.models:31[0m [1;33mFailed to import relax.models.qwen_omni (Omni path disabled): No module named 'transformer_engine'[0m
+[32m2026-11-08 05:57:16[0m | [1;33mWARNING[0m | [36mrelax.models:40[0m [1;33mFailed to import relax.models.glm_moe_dsa: No module named 'transformer_engine'[0m
+[32m2026-11-08 05:57:16[0m | [1;33mWARNING[0m | [36mrelax.models:49[0m [1;33mFailed to import relax.models.dots_ocr.megatron: No module named 'transformer_engine'[0m
+[32m2026-11-08 05:57:16[0m | [1;33mWARNING[0m | [36mrelax.models:59[0m [1;33mFailed to import relax.models.gemma4: No module named 'transformer_engine'[0m
+[32m2026-11-08 05:57:16[0m | [1;33mWARNING[0m | [36mrelax.models:68[0m [1;33mFailed to import relax.models.kimi_k3: No module named 'transformer_engine'[0m
+LANG_RL Log directory: None
+Import of FP8GlobalStateManager from megatron.core.extensions.transformer_engine failed with: Traceback (most recent call last):
+  File "<RUN_ROOT>/deps/Megatron-LM/megatron/bridge/utils/import_utils.py", line 324, in safe_import_from
+    return getattr(imported_module, symbol), True
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'megatron.core.extensions.transformer_engine' has no attribute 'FP8GlobalStateManager'
+
+INFO:megatron.bridge.utils.import_utils:Import of FP8GlobalStateManager from megatron.core.extensions.transformer_engine failed with: Traceback (most recent call last):
+  File "<RUN_ROOT>/deps/Megatron-LM/megatron/bridge/utils/import_utils.py", line 324, in safe_import_from
+    return getattr(imported_module, symbol), True
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'megatron.core.extensions.transformer_engine' has no attribute 'FP8GlobalStateManager'
+
+[32m2026-11-08 05:57:16[0m | [1;33mWARNING[0m | [36mrelax.models:13[0m [1;33mFailed to import relax.models.keye_vl2: No module named 'transformer_engine'[0m
+[32m2026-11-08 05:57:16[0m | [1;33mWARNING[0m | [36mrelax.models:31[0m [1;33mFailed to import relax.models.qwen_omni (Omni path disabled): No module named 'transformer_engine'[0m
+[32m2026-11-08 05:57:16[0m | [1;33mWARNING[0m | [36mrelax.models:40[0m [1;33mFailed to import relax.models.glm_moe_dsa: No module named 'transformer_engine'[0m
+[32m2026-11-08 05:57:16[0m | [1;33mWARNING[0m | [36mrelax.models:49[0m [1;33mFailed to import relax.models.dots_ocr.megatron: No module named 'transformer_engine'[0m
+[32m2026-11-08 05:57:16[0m | [1;33mWARNING[0m | [36mrelax.models:59[0m [1;33mFailed to import relax.models.gemma4: No module named 'transformer_engine'[0m
+[32m2026-11-08 05:57:16[0m | [1;33mWARNING[0m | [36mrelax.models:68[0m [1;33mFailed to import relax.models.kimi_k3: No module named 'transformer_engine'[0m
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 729/729 [00:00<00:00, 12112.33it/s]
+Loading pipeline components...:  17%|█▋        | 1/6 [00:00<00:02,  1.94it/s]
+Loading checkpoint shards:   0%|          | 0/9 [00:00<?, ?it/s][A
+Loading checkpoint shards: 100%|██████████| 9/9 [00:00<00:00, 87.83it/s][ALoading checkpoint shards: 100%|██████████| 9/9 [00:00<00:00, 87.58it/s]
+Loading pipeline components...:  67%|██████▋   | 4/6 [00:04<00:02,  1.20s/it]Loading pipeline components...:  83%|████████▎ | 5/6 [00:05<00:01,  1.03s/it]Loading pipeline components...: 100%|██████████| 6/6 [00:05<00:00,  1.27it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:05<00:00,  1.12it/s]
+[32m2026-11-08 05:57:24[0m | [1;37mINFO[0m | [36mrelax.backends.fsdp.lora:149[0m [1;37mInjected LoRA adapter 'default': r=32, alpha=32, dropout=0.0, 480 layers, per-target counts={'attn.to_q': 60, 'attn.to_k': 60, 'attn.to_v': 60, 'attn.to_out.0': 60, 'attn.add_q_proj': 60, 'attn.add_k_proj': 60, 'attn.add_v_proj': 60, 'attn.to_add_out': 60}[0m
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights: 100%|██████████| 729/729 [00:00<00:00, 12391.18it/s]
+[32m2026-11-08 05:57:41[0m | [1;37mINFO[0m | [36mrelax.backends.fsdp.lora:149[0m [1;37mInjected LoRA adapter 'default': r=32, alpha=32, dropout=0.0, 480 layers, per-target counts={'attn.to_q': 60, 'attn.to_k': 60, 'attn.to_v': 60, 'attn.to_out.0': 60, 'attn.add_q_proj': 60, 'attn.add_k_proj': 60, 'attn.add_v_proj': 60, 'attn.to_add_out': 60}[0m
+[32m2026-11-08 05:57:51[0m | [1;37mINFO[0m | [36mrelax.backends.fsdp.runtime:147[0m [1;37mfsdp2_wrap: promoted 960 trainable param(s) to fp32 optimizer masters[0m
+[32m2026-11-08 05:57:51[0m | [1;37mINFO[0m | [36mrelax.backends.fsdp.runtime:147[0m [1;37mfsdp2_wrap: promoted 960 trainable param(s) to fp32 optimizer masters[0m
+[32m2026-11-08 05:57:51[0m | [1;37mINFO[0m | [36mrelax.backends.fsdp.runtime:176[0m [1;37mFSDP2 wrapped model; fine-grained modules: 0 ([]); block classes: ['QwenImageTransformerBlock', 'Qwen2_5_VLDecoderLayer']; activation_checkpointing=False, cpu_offload=False, master_dtype=fp32[0m
+[32m2026-11-08 05:57:52[0m | [1;37mINFO[0m | [36mrelax.backends.fsdp.runtime:176[0m [1;37mFSDP2 wrapped model; fine-grained modules: 0 ([]); block classes: ['QwenImageTransformerBlock', 'Qwen2_5_VLDecoderLayer']; activation_checkpointing=False, cpu_offload=False, master_dtype=fp32[0m
+<RUN_ROOT>/env/lib/python3.12/site-packages/diffusers/models/transformers/transformer_qwenimage.py:887: FutureWarning: Passing `txt_seq_lens` is deprecated and will be removed in version 0.39.0. Please use `encoder_hidden_states_mask` instead. The mask-based approach is more flexible and supports variable-length sequences.
+  deprecate(
+<RUN_ROOT>/env/lib/python3.12/site-packages/diffusers/models/transformers/transformer_qwenimage.py:887: FutureWarning: Passing `txt_seq_lens` is deprecated and will be removed in version 0.39.0. Please use `encoder_hidden_states_mask` instead. The mask-based approach is more flexible and supports variable-length sequences.
+  deprecate(
+[32m2026-11-08 05:58:26[0m | [1;37mINFO[0m | [36mrelax.backends.fsdp.sft:250[0m [1;37mi2i SFT condition cache step=1 {"cache/bypasses": 0, "cache/bytes": 55197216, "cache/committed": 4, "cache/corruptions": 0, "cache/d2h_bytes": 27589632, "cache/entries": 8, "cache/evictions": 0, "cache/global_hits": 0, "cache/global_misses": 4, "cache/h2d_bytes": 0, "cache/hit_rate": 0.0, "cache/oversized": 0, "cache/pending_bytes": 0, "cache/prefix_encodes": 4, "cache/read_seconds": 0.00035909470170736313, "cache/write_dropped": 0, "cache/write_errors": 0, "cache/write_seconds": 0.0279197720810771}[0m
+[32m2026-11-08 05:58:26[0m | [1;37mINFO[0m | [36mrelax.backends.fsdp.sft:332[0m [1;37mi2i SFT step=1 loss=0.11594854 grad_norm=0.00407506 lr=0.0001 peak_allocated=58479014912 peak_reserved=70934069248 train_seconds=33.8140 data_wait_seconds=0.1961 wall=1794088706.199[0m
+[32m2026-11-08 05:58:31[0m | [1;37mINFO[0m | [36mrelax.backends.fsdp.checkpoint:370[0m [1;37mSaved committed checkpoint: <RUN_ROOT>/work/numerics/native-w2-r2/qwen_edit-w2-shm/bcold/final/i2i_sft/iter_0000001[0m
+[32m2026-11-08 05:58:31[0m | [1;37mINFO[0m | [36mrelax.backends.fsdp.checkpoint:370[0m [1;37mSaved committed checkpoint: <RUN_ROOT>/work/numerics/native-w2-r2/qwen_edit-w2-shm/bcold/final/i2i_sft/iter_0000001[0m

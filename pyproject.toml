@@ -11,4 +11,4 @@ lines-after-imports = 2
 known-first-party = ["relax"]
 
 [tool.pytest.ini_options]
-testpaths = ["tests/cpu/examples/frozen_condition_cache"]
+testpaths = ["tests/cpu/examples/frozen_condition_cache", "tests/cpu/two_gpu_validation"]

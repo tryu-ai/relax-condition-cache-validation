@@ -1,0 +1,29 @@
+{
+  "schema": 2,
+  "status": "READY",
+  "repository": "https://github.com/tryu-ai/Relax.git",
+  "commit": "53a814afb7e9fc1b24e065c34cae451d2fbda316",
+  "pull_request": "https://github.com/redai-studio/Relax/pull/557",
+  "recorded_source_id": "b1b380451750b009dcf3833829e8c234b1ea9c95598b450e0384158c46f604d0",
+  "runtime_sha256": {
+    "relax/backends/fsdp/sft.py": "82e1593d6287d7f8a372a5072b14244a28c78ada49cd48eb5bdd808bf38f12c9",
+    "relax/backends/fsdp/sft_collectives.py": "c1e3a4c1475120857859564fae627720d2c3092fe4ccd086fbda704e86827409",
+    "relax/models/condition_cache.py": "866686d415e0f2fbea36c1f9836261e1b685260886c5af78b2b627b8f0bd3554",
+    "relax/models/qwen_image/sft_adapter.py": "39b9dda1f25d1996720016bf4e9984d59c60baa507c73b371b8a452ee2d43d7f",
+    "relax/models/sensenova/adapter.py": "415d02803dfdadfdfad773babd6dc041d448704e603204146f9175608c13d106",
+    "relax/models/sensenova/model.py": "ff3fd1eca1ab59114d56021ad57c5137a574dba003df292a152ed0e02e5eae24",
+    "relax/models/sensenova/pipeline.py": "21207a3db5fe6156a2e81f4c31e4cf8ad36646b33059027c57bd71bc4d7a9611",
+    "relax/utils/env.py": "62fd07ec68e32fc9d8f7a2a457556030de2f64dbbe39a08dee351752f65f1d27"
+  },
+  "recorded_runtime_sha256": {
+    "relax/backends/fsdp/sft.py": "82e1593d6287d7f8a372a5072b14244a28c78ada49cd48eb5bdd808bf38f12c9",
+    "relax/backends/fsdp/sft_collectives.py": "c1e3a4c1475120857859564fae627720d2c3092fe4ccd086fbda704e86827409",
+    "relax/models/condition_cache.py": "866686d415e0f2fbea36c1f9836261e1b685260886c5af78b2b627b8f0bd3554",
+    "relax/models/qwen_image/sft_adapter.py": "39b9dda1f25d1996720016bf4e9984d59c60baa507c73b371b8a452ee2d43d7f",
+    "relax/models/sensenova/adapter.py": "415d02803dfdadfdfad773babd6dc041d448704e603204146f9175608c13d106",
+    "relax/models/sensenova/model.py": "ff3fd1eca1ab59114d56021ad57c5137a574dba003df292a152ed0e02e5eae24",
+    "relax/models/sensenova/pipeline.py": "21207a3db5fe6156a2e81f4c31e4cf8ad36646b33059027c57bd71bc4d7a9611",
+    "relax/utils/env.py": "62fd07ec68e32fc9d8f7a2a457556030de2f64dbbe39a08dee351752f65f1d27"
+  },
+  "instructions": "Eight recorded runtime files are byte-identical at this published production commit. Historical combined source identity is not a Git revision."
+}

@@ -817,5 +817,22 @@
       "bytes": 57
     }
   ],
-  "layout_note": "Original relative paths retained so archived evidence links and inspection commands remain valid. Portable source selection changes are documented separately."
+  "layout_note": "Original relative paths retained so archived evidence links and inspection commands remain valid. Portable source selection changes are documented separately.",
+  "updates": [
+    {
+      "name": "two_gpu_validation_20261108",
+      "production_commit": "53a814afb7e9fc1b24e065c34cae451d2fbda316",
+      "recorded_combined_source_id": "b1b380451750b009dcf3833829e8c234b1ea9c95598b450e0384158c46f604d0",
+      "source_lock": "sources.v2.lock.json",
+      "portable_tools": "examples/frozen_condition_cache/two_gpu",
+      "public_evidence": "examples/frozen_condition_cache/results/v2-two-gpu-20261108",
+      "evidence_members": 298,
+      "formal_jobs": 16,
+      "formal_optimizer_updates": 3328,
+      "strict_comparisons": 4,
+      "original98_results_byte_unchanged": true,
+      "original_tracked_test_files_byte_unchanged": 14,
+      "raw_tensor_payloads_public": false
+    }
+  ]
 }
